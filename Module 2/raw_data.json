@@ -1,0 +1,902 @@
+[
+    {
+        "u_raw": "Emerson College",
+        "p_raw": "Communication Sciences And Disorders Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 26 Jan",
+        "stats_raw": "Interview on 26 Jan Fall 2026 American GPA 3.7",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994348"
+    },
+    {
+        "u_raw": "Rice University",
+        "p_raw": "Mathematics PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 International GPA 3.87",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994347"
+    },
+    {
+        "u_raw": "Midwestern University",
+        "p_raw": "Speech Language Pathology Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 30 Jan",
+        "stats_raw": "Accepted on 30 Jan Fall 2026 American GPA 3.7",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994346"
+    },
+    {
+        "u_raw": "Yeshiva University",
+        "p_raw": "Clinical Psychology PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 American GPA 3.88",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994345"
+    },
+    {
+        "u_raw": "University of Virginia",
+        "p_raw": "Economics PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 International GPA 3.91",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994344"
+    },
+    {
+        "u_raw": "London School of Economics and Political Science (LSE)",
+        "p_raw": "Gender Studies PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 12 Dec",
+        "stats_raw": "Rejected on 12 Dec Fall 2026 American GPA 3.82",
+        "comm_raw": "Received a personal email from a faculty member saying that they liked my research topic and plan but wanted a more mainstream dissertation idea (I'm making an encyclopedia).",
+        "url_raw": "https://www.thegradcafe.com/result/994342"
+    },
+    {
+        "u_raw": "CUNY Graduate Center",
+        "p_raw": "Sociology PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 27 Jan",
+        "stats_raw": "Rejected on 27 Jan Fall 2026 American GPA 3.82",
+        "comm_raw": "Emailed to check the portal for an \"Application Update\".",
+        "url_raw": "https://www.thegradcafe.com/result/994341"
+    },
+    {
+        "u_raw": "Indiana University",
+        "p_raw": "Gender Studies PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 8 Jan",
+        "stats_raw": "Interview on 8 Jan Fall 2026 American GPA 3.82",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994340"
+    },
+    {
+        "u_raw": "University of Michigan - Ann Arbor",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 23 Jan",
+        "stats_raw": "Rejected on 23 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994339"
+    },
+    {
+        "u_raw": "University of Wisconsin",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 21 Jan",
+        "stats_raw": "Rejected on 21 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994338"
+    },
+    {
+        "u_raw": "University of Washington",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 9 Jan",
+        "stats_raw": "Rejected on 9 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994337"
+    },
+    {
+        "u_raw": "University of California, Riverside",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 6 Jan",
+        "stats_raw": "Accepted on 6 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994336"
+    },
+    {
+        "u_raw": "Yeshiva University",
+        "p_raw": "Clinical Psychology (Health Emphasis) PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 American GPA 3.30",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994335"
+    },
+    {
+        "u_raw": "Emerson College",
+        "p_raw": "Speech Language Pathology Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 2 Jan",
+        "stats_raw": "Accepted on 2 Jan Fall 2026 American GPA 3.4",
+        "comm_raw": "CSDCAS GPA 2.8 Undergrad GPA 3.4 Interviewed December 19, 2025 Offered Acceptance January 2, 2026 To everyone awaiting acceptance good luck! :)",
+        "url_raw": "https://www.thegradcafe.com/result/994334"
+    },
+    {
+        "u_raw": "Johns Hopkins Bloomberg School of Public Health",
+        "p_raw": "Biostatistics Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Wait listed on 17 Jan",
+        "stats_raw": "Wait listed on 17 Jan Fall 2026 American GRE 167 GRE V 164 GPA 3.90",
+        "comm_raw": "No WE",
+        "url_raw": "https://www.thegradcafe.com/result/994333"
+    },
+    {
+        "u_raw": "University of California (UCLA)",
+        "p_raw": "Biostatistics Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 30 Jan",
+        "stats_raw": "Accepted on 30 Jan Fall 2026 American GRE 167 GRE V 164 GPA 3.90",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994332"
+    },
+    {
+        "u_raw": "University of Houston",
+        "p_raw": "Data Science Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 4 Dec",
+        "stats_raw": "Accepted on 4 Dec Fall 2026 American GRE 167 GRE V 164 GPA 3.9",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994331"
+    },
+    {
+        "u_raw": "Cornell University",
+        "p_raw": "Biomedical Engineering Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 31 Jan",
+        "stats_raw": "Accepted on 31 Jan Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994330"
+    },
+    {
+        "u_raw": "Nova Southeastern University",
+        "p_raw": "Clinical Psychology PsyD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 1 Feb",
+        "stats_raw": "Accepted on 1 Feb Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994329"
+    },
+    {
+        "u_raw": "University of Utah",
+        "p_raw": "Computer Science PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 18 Jan",
+        "stats_raw": "Interview on 18 Jan Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994328"
+    },
+    {
+        "u_raw": "Emerson College",
+        "p_raw": "Communication Sciences And Disorders Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 26 Jan",
+        "stats_raw": "Interview on 26 Jan Fall 2026 American GPA 3.7",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994348"
+    },
+    {
+        "u_raw": "Rice University",
+        "p_raw": "Mathematics PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 International GPA 3.87",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994347"
+    },
+    {
+        "u_raw": "Midwestern University",
+        "p_raw": "Speech Language Pathology Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 30 Jan",
+        "stats_raw": "Accepted on 30 Jan Fall 2026 American GPA 3.7",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994346"
+    },
+    {
+        "u_raw": "Yeshiva University",
+        "p_raw": "Clinical Psychology PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 American GPA 3.88",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994345"
+    },
+    {
+        "u_raw": "University of Virginia",
+        "p_raw": "Economics PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 International GPA 3.91",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994344"
+    },
+    {
+        "u_raw": "London School of Economics and Political Science (LSE)",
+        "p_raw": "Gender Studies PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 12 Dec",
+        "stats_raw": "Rejected on 12 Dec Fall 2026 American GPA 3.82",
+        "comm_raw": "Received a personal email from a faculty member saying that they liked my research topic and plan but wanted a more mainstream dissertation idea (I'm making an encyclopedia).",
+        "url_raw": "https://www.thegradcafe.com/result/994342"
+    },
+    {
+        "u_raw": "CUNY Graduate Center",
+        "p_raw": "Sociology PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 27 Jan",
+        "stats_raw": "Rejected on 27 Jan Fall 2026 American GPA 3.82",
+        "comm_raw": "Emailed to check the portal for an \"Application Update\".",
+        "url_raw": "https://www.thegradcafe.com/result/994341"
+    },
+    {
+        "u_raw": "Indiana University",
+        "p_raw": "Gender Studies PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 8 Jan",
+        "stats_raw": "Interview on 8 Jan Fall 2026 American GPA 3.82",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994340"
+    },
+    {
+        "u_raw": "University of Michigan - Ann Arbor",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 23 Jan",
+        "stats_raw": "Rejected on 23 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994339"
+    },
+    {
+        "u_raw": "University of Wisconsin",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 21 Jan",
+        "stats_raw": "Rejected on 21 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994338"
+    },
+    {
+        "u_raw": "University of Washington",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 9 Jan",
+        "stats_raw": "Rejected on 9 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994337"
+    },
+    {
+        "u_raw": "University of California, Riverside",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 6 Jan",
+        "stats_raw": "Accepted on 6 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994336"
+    },
+    {
+        "u_raw": "Yeshiva University",
+        "p_raw": "Clinical Psychology (Health Emphasis) PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 American GPA 3.30",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994335"
+    },
+    {
+        "u_raw": "Emerson College",
+        "p_raw": "Speech Language Pathology Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 2 Jan",
+        "stats_raw": "Accepted on 2 Jan Fall 2026 American GPA 3.4",
+        "comm_raw": "CSDCAS GPA 2.8 Undergrad GPA 3.4 Interviewed December 19, 2025 Offered Acceptance January 2, 2026 To everyone awaiting acceptance good luck! :)",
+        "url_raw": "https://www.thegradcafe.com/result/994334"
+    },
+    {
+        "u_raw": "Johns Hopkins Bloomberg School of Public Health",
+        "p_raw": "Biostatistics Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Wait listed on 17 Jan",
+        "stats_raw": "Wait listed on 17 Jan Fall 2026 American GRE 167 GRE V 164 GPA 3.90",
+        "comm_raw": "No WE",
+        "url_raw": "https://www.thegradcafe.com/result/994333"
+    },
+    {
+        "u_raw": "University of California (UCLA)",
+        "p_raw": "Biostatistics Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 30 Jan",
+        "stats_raw": "Accepted on 30 Jan Fall 2026 American GRE 167 GRE V 164 GPA 3.90",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994332"
+    },
+    {
+        "u_raw": "University of Houston",
+        "p_raw": "Data Science Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 4 Dec",
+        "stats_raw": "Accepted on 4 Dec Fall 2026 American GRE 167 GRE V 164 GPA 3.9",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994331"
+    },
+    {
+        "u_raw": "Cornell University",
+        "p_raw": "Biomedical Engineering Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 31 Jan",
+        "stats_raw": "Accepted on 31 Jan Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994330"
+    },
+    {
+        "u_raw": "Nova Southeastern University",
+        "p_raw": "Clinical Psychology PsyD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 1 Feb",
+        "stats_raw": "Accepted on 1 Feb Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994329"
+    },
+    {
+        "u_raw": "University of Utah",
+        "p_raw": "Computer Science PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 18 Jan",
+        "stats_raw": "Interview on 18 Jan Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994328"
+    },
+    {
+        "u_raw": "Emerson College",
+        "p_raw": "Communication Sciences And Disorders Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 26 Jan",
+        "stats_raw": "Interview on 26 Jan Fall 2026 American GPA 3.7",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994348"
+    },
+    {
+        "u_raw": "Rice University",
+        "p_raw": "Mathematics PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 International GPA 3.87",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994347"
+    },
+    {
+        "u_raw": "Midwestern University",
+        "p_raw": "Speech Language Pathology Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 30 Jan",
+        "stats_raw": "Accepted on 30 Jan Fall 2026 American GPA 3.7",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994346"
+    },
+    {
+        "u_raw": "Yeshiva University",
+        "p_raw": "Clinical Psychology PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 American GPA 3.88",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994345"
+    },
+    {
+        "u_raw": "University of Virginia",
+        "p_raw": "Economics PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 International GPA 3.91",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994344"
+    },
+    {
+        "u_raw": "London School of Economics and Political Science (LSE)",
+        "p_raw": "Gender Studies PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 12 Dec",
+        "stats_raw": "Rejected on 12 Dec Fall 2026 American GPA 3.82",
+        "comm_raw": "Received a personal email from a faculty member saying that they liked my research topic and plan but wanted a more mainstream dissertation idea (I'm making an encyclopedia).",
+        "url_raw": "https://www.thegradcafe.com/result/994342"
+    },
+    {
+        "u_raw": "CUNY Graduate Center",
+        "p_raw": "Sociology PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 27 Jan",
+        "stats_raw": "Rejected on 27 Jan Fall 2026 American GPA 3.82",
+        "comm_raw": "Emailed to check the portal for an \"Application Update\".",
+        "url_raw": "https://www.thegradcafe.com/result/994341"
+    },
+    {
+        "u_raw": "Indiana University",
+        "p_raw": "Gender Studies PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 8 Jan",
+        "stats_raw": "Interview on 8 Jan Fall 2026 American GPA 3.82",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994340"
+    },
+    {
+        "u_raw": "University of Michigan - Ann Arbor",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 23 Jan",
+        "stats_raw": "Rejected on 23 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994339"
+    },
+    {
+        "u_raw": "University of Wisconsin",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 21 Jan",
+        "stats_raw": "Rejected on 21 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994338"
+    },
+    {
+        "u_raw": "University of Washington",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 9 Jan",
+        "stats_raw": "Rejected on 9 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994337"
+    },
+    {
+        "u_raw": "University of California, Riverside",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 6 Jan",
+        "stats_raw": "Accepted on 6 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994336"
+    },
+    {
+        "u_raw": "Yeshiva University",
+        "p_raw": "Clinical Psychology (Health Emphasis) PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 American GPA 3.30",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994335"
+    },
+    {
+        "u_raw": "Emerson College",
+        "p_raw": "Speech Language Pathology Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 2 Jan",
+        "stats_raw": "Accepted on 2 Jan Fall 2026 American GPA 3.4",
+        "comm_raw": "CSDCAS GPA 2.8 Undergrad GPA 3.4 Interviewed December 19, 2025 Offered Acceptance January 2, 2026 To everyone awaiting acceptance good luck! :)",
+        "url_raw": "https://www.thegradcafe.com/result/994334"
+    },
+    {
+        "u_raw": "Johns Hopkins Bloomberg School of Public Health",
+        "p_raw": "Biostatistics Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Wait listed on 17 Jan",
+        "stats_raw": "Wait listed on 17 Jan Fall 2026 American GRE 167 GRE V 164 GPA 3.90",
+        "comm_raw": "No WE",
+        "url_raw": "https://www.thegradcafe.com/result/994333"
+    },
+    {
+        "u_raw": "University of California (UCLA)",
+        "p_raw": "Biostatistics Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 30 Jan",
+        "stats_raw": "Accepted on 30 Jan Fall 2026 American GRE 167 GRE V 164 GPA 3.90",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994332"
+    },
+    {
+        "u_raw": "University of Houston",
+        "p_raw": "Data Science Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 4 Dec",
+        "stats_raw": "Accepted on 4 Dec Fall 2026 American GRE 167 GRE V 164 GPA 3.9",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994331"
+    },
+    {
+        "u_raw": "Cornell University",
+        "p_raw": "Biomedical Engineering Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 31 Jan",
+        "stats_raw": "Accepted on 31 Jan Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994330"
+    },
+    {
+        "u_raw": "Nova Southeastern University",
+        "p_raw": "Clinical Psychology PsyD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 1 Feb",
+        "stats_raw": "Accepted on 1 Feb Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994329"
+    },
+    {
+        "u_raw": "University of Utah",
+        "p_raw": "Computer Science PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 18 Jan",
+        "stats_raw": "Interview on 18 Jan Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994328"
+    },
+    {
+        "u_raw": "Emerson College",
+        "p_raw": "Communication Sciences And Disorders Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 26 Jan",
+        "stats_raw": "Interview on 26 Jan Fall 2026 American GPA 3.7",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994348"
+    },
+    {
+        "u_raw": "Rice University",
+        "p_raw": "Mathematics PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 International GPA 3.87",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994347"
+    },
+    {
+        "u_raw": "Midwestern University",
+        "p_raw": "Speech Language Pathology Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 30 Jan",
+        "stats_raw": "Accepted on 30 Jan Fall 2026 American GPA 3.7",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994346"
+    },
+    {
+        "u_raw": "Yeshiva University",
+        "p_raw": "Clinical Psychology PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 American GPA 3.88",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994345"
+    },
+    {
+        "u_raw": "University of Virginia",
+        "p_raw": "Economics PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 International GPA 3.91",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994344"
+    },
+    {
+        "u_raw": "London School of Economics and Political Science (LSE)",
+        "p_raw": "Gender Studies PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 12 Dec",
+        "stats_raw": "Rejected on 12 Dec Fall 2026 American GPA 3.82",
+        "comm_raw": "Received a personal email from a faculty member saying that they liked my research topic and plan but wanted a more mainstream dissertation idea (I'm making an encyclopedia).",
+        "url_raw": "https://www.thegradcafe.com/result/994342"
+    },
+    {
+        "u_raw": "CUNY Graduate Center",
+        "p_raw": "Sociology PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 27 Jan",
+        "stats_raw": "Rejected on 27 Jan Fall 2026 American GPA 3.82",
+        "comm_raw": "Emailed to check the portal for an \"Application Update\".",
+        "url_raw": "https://www.thegradcafe.com/result/994341"
+    },
+    {
+        "u_raw": "Indiana University",
+        "p_raw": "Gender Studies PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 8 Jan",
+        "stats_raw": "Interview on 8 Jan Fall 2026 American GPA 3.82",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994340"
+    },
+    {
+        "u_raw": "University of Michigan - Ann Arbor",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 23 Jan",
+        "stats_raw": "Rejected on 23 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994339"
+    },
+    {
+        "u_raw": "University of Wisconsin",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 21 Jan",
+        "stats_raw": "Rejected on 21 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994338"
+    },
+    {
+        "u_raw": "University of Washington",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 9 Jan",
+        "stats_raw": "Rejected on 9 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994337"
+    },
+    {
+        "u_raw": "University of California, Riverside",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 6 Jan",
+        "stats_raw": "Accepted on 6 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994336"
+    },
+    {
+        "u_raw": "Yeshiva University",
+        "p_raw": "Clinical Psychology (Health Emphasis) PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 American GPA 3.30",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994335"
+    },
+    {
+        "u_raw": "Emerson College",
+        "p_raw": "Speech Language Pathology Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 2 Jan",
+        "stats_raw": "Accepted on 2 Jan Fall 2026 American GPA 3.4",
+        "comm_raw": "CSDCAS GPA 2.8 Undergrad GPA 3.4 Interviewed December 19, 2025 Offered Acceptance January 2, 2026 To everyone awaiting acceptance good luck! :)",
+        "url_raw": "https://www.thegradcafe.com/result/994334"
+    },
+    {
+        "u_raw": "Johns Hopkins Bloomberg School of Public Health",
+        "p_raw": "Biostatistics Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Wait listed on 17 Jan",
+        "stats_raw": "Wait listed on 17 Jan Fall 2026 American GRE 167 GRE V 164 GPA 3.90",
+        "comm_raw": "No WE",
+        "url_raw": "https://www.thegradcafe.com/result/994333"
+    },
+    {
+        "u_raw": "University of California (UCLA)",
+        "p_raw": "Biostatistics Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 30 Jan",
+        "stats_raw": "Accepted on 30 Jan Fall 2026 American GRE 167 GRE V 164 GPA 3.90",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994332"
+    },
+    {
+        "u_raw": "University of Houston",
+        "p_raw": "Data Science Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 4 Dec",
+        "stats_raw": "Accepted on 4 Dec Fall 2026 American GRE 167 GRE V 164 GPA 3.9",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994331"
+    },
+    {
+        "u_raw": "Cornell University",
+        "p_raw": "Biomedical Engineering Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 31 Jan",
+        "stats_raw": "Accepted on 31 Jan Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994330"
+    },
+    {
+        "u_raw": "Nova Southeastern University",
+        "p_raw": "Clinical Psychology PsyD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 1 Feb",
+        "stats_raw": "Accepted on 1 Feb Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994329"
+    },
+    {
+        "u_raw": "University of Utah",
+        "p_raw": "Computer Science PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 18 Jan",
+        "stats_raw": "Interview on 18 Jan Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994328"
+    },
+    {
+        "u_raw": "Emerson College",
+        "p_raw": "Communication Sciences And Disorders Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 26 Jan",
+        "stats_raw": "Interview on 26 Jan Fall 2026 American GPA 3.7",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994348"
+    },
+    {
+        "u_raw": "Rice University",
+        "p_raw": "Mathematics PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 International GPA 3.87",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994347"
+    },
+    {
+        "u_raw": "Midwestern University",
+        "p_raw": "Speech Language Pathology Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 30 Jan",
+        "stats_raw": "Accepted on 30 Jan Fall 2026 American GPA 3.7",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994346"
+    },
+    {
+        "u_raw": "Yeshiva University",
+        "p_raw": "Clinical Psychology PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 American GPA 3.88",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994345"
+    },
+    {
+        "u_raw": "University of Virginia",
+        "p_raw": "Economics PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 International GPA 3.91",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994344"
+    },
+    {
+        "u_raw": "London School of Economics and Political Science (LSE)",
+        "p_raw": "Gender Studies PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 12 Dec",
+        "stats_raw": "Rejected on 12 Dec Fall 2026 American GPA 3.82",
+        "comm_raw": "Received a personal email from a faculty member saying that they liked my research topic and plan but wanted a more mainstream dissertation idea (I'm making an encyclopedia).",
+        "url_raw": "https://www.thegradcafe.com/result/994342"
+    },
+    {
+        "u_raw": "CUNY Graduate Center",
+        "p_raw": "Sociology PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 27 Jan",
+        "stats_raw": "Rejected on 27 Jan Fall 2026 American GPA 3.82",
+        "comm_raw": "Emailed to check the portal for an \"Application Update\".",
+        "url_raw": "https://www.thegradcafe.com/result/994341"
+    },
+    {
+        "u_raw": "Indiana University",
+        "p_raw": "Gender Studies PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 8 Jan",
+        "stats_raw": "Interview on 8 Jan Fall 2026 American GPA 3.82",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994340"
+    },
+    {
+        "u_raw": "University of Michigan - Ann Arbor",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 23 Jan",
+        "stats_raw": "Rejected on 23 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994339"
+    },
+    {
+        "u_raw": "University of Wisconsin",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 21 Jan",
+        "stats_raw": "Rejected on 21 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994338"
+    },
+    {
+        "u_raw": "University of Washington",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Rejected on 9 Jan",
+        "stats_raw": "Rejected on 9 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994337"
+    },
+    {
+        "u_raw": "University of California, Riverside",
+        "p_raw": "Chemistry PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 6 Jan",
+        "stats_raw": "Accepted on 6 Jan Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994336"
+    },
+    {
+        "u_raw": "Yeshiva University",
+        "p_raw": "Clinical Psychology (Health Emphasis) PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 1 Feb",
+        "stats_raw": "Interview on 1 Feb Fall 2026 American GPA 3.30",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994335"
+    },
+    {
+        "u_raw": "Emerson College",
+        "p_raw": "Speech Language Pathology Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 2 Jan",
+        "stats_raw": "Accepted on 2 Jan Fall 2026 American GPA 3.4",
+        "comm_raw": "CSDCAS GPA 2.8 Undergrad GPA 3.4 Interviewed December 19, 2025 Offered Acceptance January 2, 2026 To everyone awaiting acceptance good luck! :)",
+        "url_raw": "https://www.thegradcafe.com/result/994334"
+    },
+    {
+        "u_raw": "Johns Hopkins Bloomberg School of Public Health",
+        "p_raw": "Biostatistics Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Wait listed on 17 Jan",
+        "stats_raw": "Wait listed on 17 Jan Fall 2026 American GRE 167 GRE V 164 GPA 3.90",
+        "comm_raw": "No WE",
+        "url_raw": "https://www.thegradcafe.com/result/994333"
+    },
+    {
+        "u_raw": "University of California (UCLA)",
+        "p_raw": "Biostatistics Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 30 Jan",
+        "stats_raw": "Accepted on 30 Jan Fall 2026 American GRE 167 GRE V 164 GPA 3.90",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994332"
+    },
+    {
+        "u_raw": "University of Houston",
+        "p_raw": "Data Science Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 4 Dec",
+        "stats_raw": "Accepted on 4 Dec Fall 2026 American GRE 167 GRE V 164 GPA 3.9",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994331"
+    },
+    {
+        "u_raw": "Cornell University",
+        "p_raw": "Biomedical Engineering Masters",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 31 Jan",
+        "stats_raw": "Accepted on 31 Jan Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994330"
+    },
+    {
+        "u_raw": "Nova Southeastern University",
+        "p_raw": "Clinical Psychology PsyD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Accepted on 1 Feb",
+        "stats_raw": "Accepted on 1 Feb Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994329"
+    },
+    {
+        "u_raw": "University of Utah",
+        "p_raw": "Computer Science PhD",
+        "d_raw": "February 01, 2026",
+        "s_raw": "Interview on 18 Jan",
+        "stats_raw": "Interview on 18 Jan Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/994328"
+    }
+]
