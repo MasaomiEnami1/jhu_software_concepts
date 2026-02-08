@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grad Cafe Analysis</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; background: #f4f7f6; }
+        .container { background: white; padding: 30px; border-radius: 8px; max-width: 900px; margin: auto; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 10px; border-bottom: 1px solid #ddd; text-align: left; }
+        th { background-color: #3498db; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Grad Cafe Data Analysis</h1>
+        
+        <p>If you can read this, the template is loading!</p>
+
+        <h2>Statistics</h2>
+        <p>Total Fall 2026 Entries: <strong>{{ data.q1 }}</strong></p>
+        <p>International Percentage: <strong>{{ data.q2 }}%</strong></p>
+
+        <h2>Top 5 Universities</h2>
+        <ul>
+            {% for uni, count in data.top_unis %}
+                <li>{{ uni }}: {{ count }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>Metadata Dictionary</h2>
+        <table>
+            <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+            {% for col, dtype, desc in data.metadata %}
+            <tr>
+                <td>{{ col }}</td>
+                <td>{{ dtype }}</td>
+                <td>{{ desc }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

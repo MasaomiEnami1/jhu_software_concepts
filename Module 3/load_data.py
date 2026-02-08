@@ -34,7 +34,6 @@ def clean_numeric(value):
         return None
     try:
         # Use regex to keep only digits and the first decimal point found
-        # This handles cases like "3.9 GPA" or " 160"
         numeric_part = re.search(r"[-+]?\d*\.\d+|\d+", cleaned)
         if numeric_part:
             return float(numeric_part.group())
@@ -108,21 +107,25 @@ def load_data_from_json():
         conn.commit()
         print(f"Success! {count} records loaded into the database.")
 
-        # --- DATA VIEW SECTION ---
-        print("\n--- SAMPLE DATA PREVIEW (3 STUDENTS) ---")
-        cur.execute("SELECT * FROM applicants LIMIT 3;")
+        # --- DATA VIEW SECTION (UPDATED) ---
+        print("\n--- SAMPLE DATA PREVIEW (Searching for students WITH GRE scores) ---")
+        
+        # We specifically look for rows where 'gre' is NOT NULL to prove it works
+        cur.execute("SELECT * FROM applicants WHERE gre IS NOT NULL LIMIT 3;")
         samples = cur.fetchall()
         
-        col_names = [desc[0] for desc in cur.description]
-        
-        for i, student in enumerate(samples, 1):
-            print(f"\n[Student Record #{i}]")
+        if not samples:
+            print("WARNING: No students with GRE scores were found! Check JSON keys.")
+        else:
+            col_names = [desc[0] for desc in cur.description]
+            
+            for i, student in enumerate(samples, 1):
+                print(f"\n[Student Record #{i} (Has GRE Score)]")
+                print("-" * 40)
+                for col, val in zip(col_names, student):
+                    display_val = val if val is not None else "N/A"
+                    print(f"{col.ljust(25)}: {display_val}")
             print("-" * 40)
-            for col, val in zip(col_names, student):
-                # Displays the score if it exists, otherwise displays 'N/A'
-                display_val = val if val is not None else "N/A"
-                print(f"{col.ljust(25)}: {display_val}")
-        print("-" * 40)
 
         cur.close()
 
