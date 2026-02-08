@@ -40,6 +40,7 @@
         }
         .answer {
             font-size: 14px;
+            color: #444;
         }
         table {
             width: 100%;
@@ -47,7 +48,9 @@
             font-size: 14px;
             border-collapse: collapse;
         }
-        td { padding: 5px 0; border-bottom: 1px solid #eee; }
+        td { padding: 8px 0; border-bottom: 1px dotted #ccc; }
+        .rank-col { width: 40px; font-weight: bold; }
+        .count-col { text-align: right; color: #666; }
     </style>
 </head>
 <body>
@@ -57,51 +60,80 @@
     <h2>Analysis</h2>
 
     <div class="item-box">
-        <div class="question">How many entries do you have in your database?</div>
+        <div class="question">How many entries do you have in your database who have applied for Fall 2026?</div>
         <div class="answer">Answer: Applicant count: {{ data.q1 }}</div>
     </div>
 
     <div class="item-box">
         <div class="question">What percentage of entries are from International students (to two decimal places)?</div>
-        <div class="answer">Answer: Percent International: {{ data.q2 }}</div>
+        <div class="answer">Answer: Percent International: {{ data.q2 }}%</div>
     </div>
 
     <div class="item-box">
         <div class="question">What is the average GPA, GRE, GRE V, GRE AW of applicants who provided these metrics?</div>
-        <div class="answer">Answer: Average GPA: {{ data.avg_gpa }}, Average GRE: {{ data.avg_gre }}, Average GRE V: {{ data.avg_gre_v }}, Average GRE AW: {{ data.avg_gre_aw }}</div>
+        <div class="answer">
+            Answer: Average GPA: {{ data.avg_gpa }}, 
+            Average GRE: {{ data.avg_gre }}, 
+            Average GRE V: {{ data.avg_gre_v }}, 
+            Average GRE AW: {{ data.avg_gre_aw }}
+        </div>
     </div>
 
     <div class="item-box">
-        <div class="question">What is the average GPA of American students?</div>
+        <div class="question">What is the average GPA of American students in Fall 2026?</div>
         <div class="answer">Answer: Average GPA American: {{ data.q4 }}</div>
     </div>
 
     <div class="item-box">
-        <div class="question">What percent of entries are Acceptances (to two decimal places)?</div>
-        <div class="answer">Answer: Acceptance percent: {{ data.q5 }}</div>
+        <div class="question">What percent of entries for Fall 2026 are Acceptances (to two decimal places)?</div>
+        <div class="answer">Answer: Acceptance percent: {{ data.q5 }}%</div>
     </div>
 
     <div class="item-box">
-        <div class="question">What is the average GPA of applicants who were Accepted?</div>
+        <div class="question">What is the average GPA of applicants who applied for Fall 2026 who applied for Acceptances?</div>
         <div class="answer">Answer: Average GPA Acceptance: {{ data.q6 }}</div>
     </div>
 
     <div class="item-box">
-        <div class="question">How many entries are there for Johns Hopkins University?</div>
-        <div class="answer">Answer: JHU Count: {{ data.q7 }}</div>
+        <div class="question">How many Johns Hopkins Computer Science Masters entries are in the database?</div>
+        <div class="answer">Answer: JHU CS Masters Count: {{ data.q7 }}</div>
     </div>
 
     <div class="item-box">
-        <div class="question">How many entries are from Elite Schools (Cleaned)?</div>
-        <div class="answer">Answer: Elite Count: {{ data.q9 }}</div>
+        <div class="question">How many Elite PhD CS Acceptances were found using original fields for Fall 2026?</div>
+        <div class="answer">Answer: Elite PhD CS (Original): {{ data.q8 }}</div>
     </div>
 
     <div class="item-box">
-        <div class="question">Top 5 Most Applied Universities</div>
+        <div class="question">How many Elite PhD CS Acceptances were found using LLM generated fields for Fall 2026?</div>
+        <div class="answer">Answer: Elite PhD CS (LLM Fields): {{ data.q9 }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">Top 5 Most Applied-To Universities</div>
         <div class="answer">
             <table>
-                {% for uni, count in data.q10 %}
-                <tr><td>#{{ loop.index }} {{ uni }}</td><td style="text-align:right;">{{ count }} apps</td></tr>
+                {% for row in data.q10 %}
+                <tr>
+                    <td class="rank-col">#{{ loop.index }}</td>
+                    <td>{{ row[0] }}</td>
+                    <td class="count-col">{{ row[1] }} applications</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">Top 5 Universities with the Lowest Application Counts</div>
+        <div class="answer">
+            <table>
+                {% for row in data.q11 %}
+                <tr>
+                    <td class="rank-col">#{{ loop.index }}</td>
+                    <td>{{ row[0] }}</td>
+                    <td class="count-col">{{ row[1] }} application(s)</td>
+                </tr>
                 {% endfor %}
             </table>
         </div>
