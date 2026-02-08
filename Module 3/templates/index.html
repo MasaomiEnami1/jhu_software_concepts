@@ -2,43 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Grad Cafe Analysis</title>
+    <title>Grad School Cafe Data Analysis</title>
     <style>
-        body { font-family: sans-serif; margin: 40px; background: #f4f7f6; }
-        .container { background: white; padding: 30px; border-radius: 8px; max-width: 900px; margin: auto; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { padding: 10px; border-bottom: 1px solid #ddd; text-align: left; }
-        th { background-color: #3498db; color: white; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background-color: #fff;
+        }
+        .container {
+            max-width: 950px;
+            margin: auto;
+        }
+        h1 {
+            font-size: 16px;
+            color: #777;
+            font-weight: normal;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+        .item-box {
+            background-color: #f7f7f7;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 2px;
+        }
+        .question {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        .answer {
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+            font-size: 14px;
+            border-collapse: collapse;
+        }
+        td { padding: 5px 0; border-bottom: 1px solid #eee; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Grad Cafe Data Analysis</h1>
-        
-        <p>If you can read this, the template is loading!</p>
 
-        <h2>Statistics</h2>
-        <p>Total Fall 2026 Entries: <strong>{{ data.q1 }}</strong></p>
-        <p>International Percentage: <strong>{{ data.q2 }}%</strong></p>
+<div class="container">
+    <h1>Grad School Cafe Data Analysis</h1>
+    <h2>Analysis</h2>
 
-        <h2>Top 5 Universities</h2>
-        <ul>
-            {% for uni, count in data.top_unis %}
-                <li>{{ uni }}: {{ count }}</li>
-            {% endfor %}
-        </ul>
-
-        <h2>Metadata Dictionary</h2>
-        <table>
-            <tr><th>Column</th><th>Type</th><th>Description</th></tr>
-            {% for col, dtype, desc in data.metadata %}
-            <tr>
-                <td>{{ col }}</td>
-                <td>{{ dtype }}</td>
-                <td>{{ desc }}</td>
-            </tr>
-            {% endfor %}
-        </table>
+    <div class="item-box">
+        <div class="question">How many entries do you have in your database?</div>
+        <div class="answer">Answer: Applicant count: {{ data.q1 }}</div>
     </div>
+
+    <div class="item-box">
+        <div class="question">What percentage of entries are from International students (to two decimal places)?</div>
+        <div class="answer">Answer: Percent International: {{ data.q2 }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">What is the average GPA, GRE, GRE V, GRE AW of applicants who provided these metrics?</div>
+        <div class="answer">Answer: Average GPA: {{ data.avg_gpa }}, Average GRE: {{ data.avg_gre }}, Average GRE V: {{ data.avg_gre_v }}, Average GRE AW: {{ data.avg_gre_aw }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">What is the average GPA of American students?</div>
+        <div class="answer">Answer: Average GPA American: {{ data.q4 }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">What percent of entries are Acceptances (to two decimal places)?</div>
+        <div class="answer">Answer: Acceptance percent: {{ data.q5 }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">What is the average GPA of applicants who were Accepted?</div>
+        <div class="answer">Answer: Average GPA Acceptance: {{ data.q6 }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">How many entries are there for Johns Hopkins University?</div>
+        <div class="answer">Answer: JHU Count: {{ data.q7 }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">How many entries are from Elite Schools (Cleaned)?</div>
+        <div class="answer">Answer: Elite Count: {{ data.q9 }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">Top 5 Most Applied Universities</div>
+        <div class="answer">
+            <table>
+                {% for uni, count in data.q10 %}
+                <tr><td>#{{ loop.index }} {{ uni }}</td><td style="text-align:right;">{{ count }} apps</td></tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
