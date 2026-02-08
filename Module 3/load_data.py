@@ -5,7 +5,7 @@ def connect_to_db():
         # These credentials must match what you set up in Stage 1
         connection = psycopg2.connect(
             host="localhost",          # Your computer
-            database="postgres",   # The DB name you created
+            database="postgres",   # Database name
             user="postgres",           # Default user
             password="postgres",  # The password you created during install
             port="5432"                # Default Postgres port
