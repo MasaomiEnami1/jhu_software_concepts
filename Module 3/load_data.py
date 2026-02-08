@@ -1,6 +1,7 @@
 import psycopg2
 import json
 import os
+import re
 
 # --- CONFIGURATION ---
 DB_CONFIG = {
@@ -24,12 +25,20 @@ def clean_for_sql(value):
     return val_str
 
 def clean_numeric(value):
-    """Safely converts GPA/GRE strings to float values."""
+    """
+    Enhanced numeric cleaner: Removes any non-numeric characters 
+    (except decimal points) before converting to float.
+    """
     cleaned = clean_for_sql(value)
     if cleaned is None:
         return None
     try:
-        return float(cleaned)
+        # Use regex to keep only digits and the first decimal point found
+        # This handles cases like "3.9 GPA" or " 160"
+        numeric_part = re.search(r"[-+]?\d*\.\d+|\d+", cleaned)
+        if numeric_part:
+            return float(numeric_part.group())
+        return None
     except (ValueError, TypeError):
         return None
 
@@ -47,7 +56,7 @@ def load_data_from_json():
         cur = conn.cursor()
         print("Successfully connected to the database.")
 
-        # 2. Clear the table before loading (Restarting IDs at 1)
+        # 2. Clear the table before loading
         print("Emptying existing table data...")
         cur.execute("TRUNCATE TABLE applicants RESTART IDENTITY;")
         conn.commit()
@@ -64,7 +73,7 @@ def load_data_from_json():
         print("Mapping JSON keys and loading records...")
         count = 0
 
-        # 4. Open and process the file line-by-line
+        # 4. Open and process the file
         with open(json_filename, 'r', encoding='utf-8', errors='ignore') as file:
             for line in file:
                 line = line.strip()
@@ -74,47 +83,45 @@ def load_data_from_json():
                 try:
                     entry = json.loads(line)
                     
-                    # Mapping logic based on your specific JSON structure:
+                    # Ensure we are using the correct keys from YOUR json
                     record = (
                         clean_for_sql(entry.get('program')),
                         clean_for_sql(entry.get('comments')),
                         clean_for_sql(entry.get('date_added')),
                         clean_for_sql(entry.get('url')),
-                        clean_for_sql(entry.get('applicant_status')),       # Mapped status
-                        clean_for_sql(entry.get('semester_year_start')),   # Mapped term
-                        clean_for_sql(entry.get('citizenship')),           # Mapped nationality
+                        clean_for_sql(entry.get('applicant_status')),
+                        clean_for_sql(entry.get('semester_year_start')),
+                        clean_for_sql(entry.get('citizenship')),
                         clean_numeric(entry.get('gpa')),
                         clean_numeric(entry.get('gre')),
                         clean_numeric(entry.get('gre_v')),
                         clean_numeric(entry.get('gre_aw')),
-                        clean_for_sql(entry.get('masters_or_phd')),        # Mapped degree
-                        clean_for_sql(entry.get('llm-generated-program')), # Mapped with hyphens
-                        clean_for_sql(entry.get('llm-generated-university'))# Mapped with hyphens
+                        clean_for_sql(entry.get('masters_or_phd')),
+                        clean_for_sql(entry.get('llm-generated-program')),
+                        clean_for_sql(entry.get('llm-generated-university'))
                     )
                     cur.execute(insert_query, record)
                     count += 1
                 except (json.JSONDecodeError, psycopg2.DataError):
-                    # Silently skip malformed rows to keep the load moving
                     continue
 
-        # 5. Commit all changes
         conn.commit()
         print(f"Success! {count} records loaded into the database.")
 
         # --- DATA VIEW SECTION ---
-        # Fetching 3 sample students using SELECT * to display full records
         print("\n--- SAMPLE DATA PREVIEW (3 STUDENTS) ---")
         cur.execute("SELECT * FROM applicants LIMIT 3;")
         samples = cur.fetchall()
         
-        # Get column names for labeling
         col_names = [desc[0] for desc in cur.description]
         
         for i, student in enumerate(samples, 1):
             print(f"\n[Student Record #{i}]")
             print("-" * 40)
             for col, val in zip(col_names, student):
-                print(f"{col.ljust(25)}: {val}")
+                # Displays the score if it exists, otherwise displays 'N/A'
+                display_val = val if val is not None else "N/A"
+                print(f"{col.ljust(25)}: {display_val}")
         print("-" * 40)
 
         cur.close()
