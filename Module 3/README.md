@@ -1,24 +1,20 @@
-Grad School Cafe Data Analysis
-Project Overview
+# Grad School Cafe Data Analysis
 
-This project is a web-based data analysis tool designed to scrape, store, and analyze graduate school application data from the Grad Cafe. The application utilizes Python, Flask, and PostgreSQL to provide real-time insights into application trends for the Fall 2026 semester.
-Features
+## Project Overview
+This project is a web-based data analysis tool designed to scrape, store, and analyze graduate school application data from the Grad Cafe. The application utilizes **Python**, **Flask**, and **PostgreSQL** to provide real-time insights into application trends for the **Fall 2026** semester.
 
-    Automated Data Scraping: Integrates a web scraper to collect application entries directly from the web.
+## Features
+* **Automated Data Scraping**: Integrates a web scraper to collect application entries directly from the web.
+* **Database Management**: Stores collected data in a structured PostgreSQL database for persistent storage and analysis.
+* **Interactive Dashboard**: A Flask-powered webpage displaying 11 key metrics, including applicant counts, average GPAs, GRE scores, and university rankings.
+* **Part B Management Tools**:
+    * **Pull Data Button**: Triggers the background scraper to add new data to the database without freezing the UI.
+    * **Update Analysis Button**: Refreshes the metrics on the dashboard to include newly pulled data.
 
-    Database Management: Stores collected data in a structured PostgreSQL database for persistent storage and analysis.
 
-    Interactive Dashboard: A Flask-powered webpage displaying 11 key metrics, including applicant counts, average GPAs, GRE scores, and university rankings.
 
-    Part B Management Tools:
-
-        Pull Data Button: Triggers the background scraper to add new data to the database without freezing the UI.
-
-        Update Analysis Button: Refreshes the metrics on the dashboard to include newly pulled data.
-
-Project Structure
-Plaintext
-
+## Project Structure
+```text
 module_3/
 ├── app.py              # Main Flask application and server logic
 ├── scrapy.py           # Web scraping logic from Module 2
@@ -30,7 +26,6 @@ module_3/
 ├── templates/
 │   └── index.html      # Styled frontend dashboard
 └── screenshots/        # Evidence of console and webpage functionality
-
 Setup and Installation
 
     Database Configuration:
