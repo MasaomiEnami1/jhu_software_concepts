@@ -26,7 +26,8 @@ module_3/
 ├── templates/
 │   └── index.html      # Styled frontend dashboard
 └── screenshots/        # Evidence of console and webpage functionality
-Setup and Installation
+
+## Setup and Installation
 
     Database Configuration:
 
