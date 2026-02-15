@@ -181,4 +181,9 @@ def test_load_data_line_46_coverage():
             with patch('builtins.print'):
                 src.load_data.load_data_from_json()
 
-    # The coverage tool now sees line 46 as executed because the loop ran once.
+def pytest_sessionfinish(session, exitstatus):
+    """
+    Forcefully terminates the process after tests finish to 
+    prevent hanging due to background threads or coverage file locks.
+    """
+    os._exit(exitstatus)

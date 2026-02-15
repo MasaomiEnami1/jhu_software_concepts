@@ -42,3 +42,23 @@ def test_busy_behavior(client):
     finally:
         # Reset flag so other tests don't break
         src.app.scraping_active = False
+
+import pytest
+from unittest.mock import patch
+@pytest.mark.buttons
+def test_busy_behavior(client):
+    """Test that the app blocks a second pull if one is running with 409 status."""
+    import src.app
+    # 1. Force the busy state
+    src.app.scraping_active = True
+
+    # 2. Try to pull data while busy
+    # We don't need follow_redirects=True because 409 doesn't redirect
+    response = client.post('/pull_data')
+
+    # 3. Assertions based on your new 409 logic
+    assert response.status_code == 409
+    assert b"Busy" in response.data
+    
+    # 4. Cleanup for other tests
+    src.app.scraping_active = False

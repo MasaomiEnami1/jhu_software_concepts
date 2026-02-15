@@ -30,3 +30,13 @@ def test_page_buttons(client):
     assert 'action="/pull_data"' in html or "pull_data" in html
     # Check for the update analysis link
     assert "update_analysis" in html
+
+@pytest.mark.web
+def test_analysis_page_load(client):
+    response = client.get('/')
+    assert response.status_code == 200
+    html = response.data.decode()
+    assert "Pull Data" in html
+    assert "Update Analysis" in html
+    assert "Analysis" in html
+    assert "Answer:" in html

@@ -1,363 +1,12 @@
 [
     {
-        "u_raw": "University of Illinois Chicago(UIC)",
-        "p_raw": "Computer Science PhD",
+        "u_raw": "American University",
+        "p_raw": "International Affairs Masters",
         "d_raw": "February 15, 2026",
         "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 International GPA 4.00",
-        "comm_raw": "RA funding offer received",
-        "url_raw": "https://www.thegradcafe.com/result/1002144"
-    },
-    {
-        "u_raw": "University of Miami",
-        "p_raw": "English PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 14 Feb",
-        "stats_raw": "Accepted on 14 Feb Fall 2026 American GPA 4.0",
-        "comm_raw": "First acceptance! 1a/3r/9p",
-        "url_raw": "https://www.thegradcafe.com/result/1002143"
-    },
-    {
-        "u_raw": "London School of Economics and Political Science (LSE)",
-        "p_raw": "Sociology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 6 Feb",
-        "stats_raw": "Rejected on 6 Feb Fall 2026 American",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002142"
-    },
-    {
-        "u_raw": "University of Toronto",
-        "p_raw": "Sociology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 9 Feb",
-        "stats_raw": "Rejected on 9 Feb Fall 2026 American",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002141"
-    },
-    {
-        "u_raw": "Northern Illinois University",
-        "p_raw": "Speech Language Pathology Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.86",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002140"
-    },
-    {
-        "u_raw": "Lehigh University",
-        "p_raw": "English Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 14 Feb",
-        "stats_raw": "Rejected on 14 Feb Fall 2026 American GPA 4.9",
-        "comm_raw": "Was surprised ngl",
-        "url_raw": "https://www.thegradcafe.com/result/1002139"
-    },
-    {
-        "u_raw": "Duke University",
-        "p_raw": "Pure Mathematics PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 5 Feb",
-        "stats_raw": "Accepted on 5 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002138"
-    },
-    {
-        "u_raw": "University of Southern California",
-        "p_raw": "Electrical And Computer Engineering PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002137"
-    },
-    {
-        "u_raw": "Columbia University",
-        "p_raw": "Chemical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 15 Feb",
-        "stats_raw": "Accepted on 15 Feb Fall 2026 American GPA 3.6",
-        "comm_raw": "MS Express. Application Submitted November 23. Received an email saying application status update .",
-        "url_raw": "https://www.thegradcafe.com/result/1002136"
-    },
-    {
-        "u_raw": "University of Florida",
-        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Interview on 13 Jan",
-        "stats_raw": "Interview on 13 Jan Fall 2026 American GPA 3.85",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002135"
-    },
-    {
-        "u_raw": "Massachusetts Institute of Technology (MIT)",
-        "p_raw": "Mechanical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Wait listed on 15 Feb",
-        "stats_raw": "Wait listed on 15 Feb Fall 2026 American GRE 165 GRE V 170 GRE AW 4.5 GPA 3.95",
-        "comm_raw": "Zoom interview with PI last week. Applied for GRFP.",
-        "url_raw": "https://www.thegradcafe.com/result/1002134"
-    },
-    {
-        "u_raw": "Florida State University",
-        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.85",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002133"
-    },
-    {
-        "u_raw": "The University of Texas at Austin",
-        "p_raw": "Counseling Psychology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 24 Jan",
-        "stats_raw": "Accepted on 24 Jan Fall 2026 American GPA 3.8",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002132"
-    },
-    {
-        "u_raw": "University of Southern California",
-        "p_raw": "Electrical And Computer Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 12 Nov",
-        "stats_raw": "Accepted on 12 Nov Fall 2026 American GPA 3.70",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002131"
-    },
-    {
-        "u_raw": "University of Massachusetts Amherst",
-        "p_raw": "Communication PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 15 Feb",
-        "stats_raw": "Rejected on 15 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002130"
-    },
-    {
-        "u_raw": "University of Texas at Dallas",
-        "p_raw": "Speech-Language Pathology Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 10 Feb",
-        "stats_raw": "Accepted on 10 Feb Fall 2026 American GRE V 151 GRE AW 3.5 GPA 3.85",
-        "comm_raw": "Submitted my application 1/4 and my application status changed to admitted on 2/9. I have many volunteer hours with various populations and tried to write a strong essay to make up for any weak areas of application!",
-        "url_raw": "https://www.thegradcafe.com/result/1002129"
-    },
-    {
-        "u_raw": "Columbia University",
-        "p_raw": "Electrical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 23 Dec",
-        "stats_raw": "Accepted on 23 Dec Fall 2026 American GPA 3.7",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002128"
-    },
-    {
-        "u_raw": "George Mason University",
-        "p_raw": "Industrial Organizational Psychology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 15 Feb",
-        "stats_raw": "Rejected on 15 Feb Fall 2026 American GPA 3.77",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002127"
-    },
-    {
-        "u_raw": "University of Oregon",
-        "p_raw": "Community and Regional Planning Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.98",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002126"
-    },
-    {
-        "u_raw": "Northeastern University",
-        "p_raw": "Urban Planning and Policy Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 18 Dec",
-        "stats_raw": "Accepted on 18 Dec Fall 2026 International GPA 3.8",
-        "comm_raw": "They offered me 25% for a scholarship: \"This award provides funds that will cover 25% of your total program tuition costs.\" I haven't rejected/accepted the offer. I am waiting for the Ph.D. in public policy update!",
-        "url_raw": "https://www.thegradcafe.com/result/1002125"
-    },
-    {
-        "u_raw": "University of Illinois Chicago(UIC)",
-        "p_raw": "Computer Science PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 International GPA 4.00",
-        "comm_raw": "RA funding offer received",
-        "url_raw": "https://www.thegradcafe.com/result/1002144"
-    },
-    {
-        "u_raw": "University of Miami",
-        "p_raw": "English PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 14 Feb",
-        "stats_raw": "Accepted on 14 Feb Fall 2026 American GPA 4.0",
-        "comm_raw": "First acceptance! 1a/3r/9p",
-        "url_raw": "https://www.thegradcafe.com/result/1002143"
-    },
-    {
-        "u_raw": "London School of Economics and Political Science (LSE)",
-        "p_raw": "Sociology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 6 Feb",
-        "stats_raw": "Rejected on 6 Feb Fall 2026 American",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002142"
-    },
-    {
-        "u_raw": "University of Toronto",
-        "p_raw": "Sociology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 9 Feb",
-        "stats_raw": "Rejected on 9 Feb Fall 2026 American",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002141"
-    },
-    {
-        "u_raw": "Northern Illinois University",
-        "p_raw": "Speech Language Pathology Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.86",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002140"
-    },
-    {
-        "u_raw": "Lehigh University",
-        "p_raw": "English Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 14 Feb",
-        "stats_raw": "Rejected on 14 Feb Fall 2026 American GPA 4.9",
-        "comm_raw": "Was surprised ngl",
-        "url_raw": "https://www.thegradcafe.com/result/1002139"
-    },
-    {
-        "u_raw": "Duke University",
-        "p_raw": "Pure Mathematics PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 5 Feb",
-        "stats_raw": "Accepted on 5 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002138"
-    },
-    {
-        "u_raw": "University of Southern California",
-        "p_raw": "Electrical And Computer Engineering PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002137"
-    },
-    {
-        "u_raw": "Columbia University",
-        "p_raw": "Chemical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 15 Feb",
-        "stats_raw": "Accepted on 15 Feb Fall 2026 American GPA 3.6",
-        "comm_raw": "MS Express. Application Submitted November 23. Received an email saying application status update .",
-        "url_raw": "https://www.thegradcafe.com/result/1002136"
-    },
-    {
-        "u_raw": "University of Florida",
-        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Interview on 13 Jan",
-        "stats_raw": "Interview on 13 Jan Fall 2026 American GPA 3.85",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002135"
-    },
-    {
-        "u_raw": "Massachusetts Institute of Technology (MIT)",
-        "p_raw": "Mechanical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Wait listed on 15 Feb",
-        "stats_raw": "Wait listed on 15 Feb Fall 2026 American GRE 165 GRE V 170 GRE AW 4.5 GPA 3.95",
-        "comm_raw": "Zoom interview with PI last week. Applied for GRFP.",
-        "url_raw": "https://www.thegradcafe.com/result/1002134"
-    },
-    {
-        "u_raw": "Florida State University",
-        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.85",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002133"
-    },
-    {
-        "u_raw": "The University of Texas at Austin",
-        "p_raw": "Counseling Psychology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 24 Jan",
-        "stats_raw": "Accepted on 24 Jan Fall 2026 American GPA 3.8",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002132"
-    },
-    {
-        "u_raw": "University of Southern California",
-        "p_raw": "Electrical And Computer Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 12 Nov",
-        "stats_raw": "Accepted on 12 Nov Fall 2026 American GPA 3.70",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002131"
-    },
-    {
-        "u_raw": "University of Massachusetts Amherst",
-        "p_raw": "Communication PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 15 Feb",
-        "stats_raw": "Rejected on 15 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002130"
-    },
-    {
-        "u_raw": "University of Texas at Dallas",
-        "p_raw": "Speech-Language Pathology Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 10 Feb",
-        "stats_raw": "Accepted on 10 Feb Fall 2026 American GRE V 151 GRE AW 3.5 GPA 3.85",
-        "comm_raw": "Submitted my application 1/4 and my application status changed to admitted on 2/9. I have many volunteer hours with various populations and tried to write a strong essay to make up for any weak areas of application!",
-        "url_raw": "https://www.thegradcafe.com/result/1002129"
-    },
-    {
-        "u_raw": "Columbia University",
-        "p_raw": "Electrical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 23 Dec",
-        "stats_raw": "Accepted on 23 Dec Fall 2026 American GPA 3.7",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002128"
-    },
-    {
-        "u_raw": "George Mason University",
-        "p_raw": "Industrial Organizational Psychology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 15 Feb",
-        "stats_raw": "Rejected on 15 Feb Fall 2026 American GPA 3.77",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002127"
-    },
-    {
-        "u_raw": "University of Oregon",
-        "p_raw": "Community and Regional Planning Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.98",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002126"
-    },
-    {
-        "u_raw": "Northeastern University",
-        "p_raw": "Urban Planning and Policy Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 18 Dec",
-        "stats_raw": "Accepted on 18 Dec Fall 2026 International GPA 3.8",
-        "comm_raw": "They offered me 25% for a scholarship: \"This award provides funds that will cover 25% of your total program tuition costs.\" I haven't rejected/accepted the offer. I am waiting for the Ph.D. in public policy update!",
-        "url_raw": "https://www.thegradcafe.com/result/1002125"
+        "stats_raw": "Accepted on 13 Feb Fall 2025 American GPA 3.7",
+        "comm_raw": "I got an email stating that my funding decision would be released in March and congratulating me but never received an update in my portal or a formal acceptance email.",
+        "url_raw": "https://www.thegradcafe.com/result/1002145"
     },
     {
         "u_raw": "University of Illinois Chicago(UIC)",
@@ -531,13 +180,13 @@
         "url_raw": "https://www.thegradcafe.com/result/1002126"
     },
     {
-        "u_raw": "Northeastern University",
-        "p_raw": "Urban Planning and Policy Masters",
+        "u_raw": "American University",
+        "p_raw": "International Affairs Masters",
         "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 18 Dec",
-        "stats_raw": "Accepted on 18 Dec Fall 2026 International GPA 3.8",
-        "comm_raw": "They offered me 25% for a scholarship: \"This award provides funds that will cover 25% of your total program tuition costs.\" I haven't rejected/accepted the offer. I am waiting for the Ph.D. in public policy update!",
-        "url_raw": "https://www.thegradcafe.com/result/1002125"
+        "s_raw": "Accepted on 13 Feb",
+        "stats_raw": "Accepted on 13 Feb Fall 2025 American GPA 3.7",
+        "comm_raw": "I got an email stating that my funding decision would be released in March and congratulating me but never received an update in my portal or a formal acceptance email.",
+        "url_raw": "https://www.thegradcafe.com/result/1002145"
     },
     {
         "u_raw": "University of Illinois Chicago(UIC)",
@@ -711,13 +360,13 @@
         "url_raw": "https://www.thegradcafe.com/result/1002126"
     },
     {
-        "u_raw": "Northeastern University",
-        "p_raw": "Urban Planning and Policy Masters",
+        "u_raw": "American University",
+        "p_raw": "International Affairs Masters",
         "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 18 Dec",
-        "stats_raw": "Accepted on 18 Dec Fall 2026 International GPA 3.8",
-        "comm_raw": "They offered me 25% for a scholarship: \"This award provides funds that will cover 25% of your total program tuition costs.\" I haven't rejected/accepted the offer. I am waiting for the Ph.D. in public policy update!",
-        "url_raw": "https://www.thegradcafe.com/result/1002125"
+        "s_raw": "Accepted on 13 Feb",
+        "stats_raw": "Accepted on 13 Feb Fall 2025 American GPA 3.7",
+        "comm_raw": "I got an email stating that my funding decision would be released in March and congratulating me but never received an update in my portal or a formal acceptance email.",
+        "url_raw": "https://www.thegradcafe.com/result/1002145"
     },
     {
         "u_raw": "University of Illinois Chicago(UIC)",
@@ -891,12 +540,363 @@
         "url_raw": "https://www.thegradcafe.com/result/1002126"
     },
     {
-        "u_raw": "Northeastern University",
-        "p_raw": "Urban Planning and Policy Masters",
+        "u_raw": "American University",
+        "p_raw": "International Affairs Masters",
         "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 18 Dec",
-        "stats_raw": "Accepted on 18 Dec Fall 2026 International GPA 3.8",
-        "comm_raw": "They offered me 25% for a scholarship: \"This award provides funds that will cover 25% of your total program tuition costs.\" I haven't rejected/accepted the offer. I am waiting for the Ph.D. in public policy update!",
-        "url_raw": "https://www.thegradcafe.com/result/1002125"
+        "s_raw": "Accepted on 13 Feb",
+        "stats_raw": "Accepted on 13 Feb Fall 2025 American GPA 3.7",
+        "comm_raw": "I got an email stating that my funding decision would be released in March and congratulating me but never received an update in my portal or a formal acceptance email.",
+        "url_raw": "https://www.thegradcafe.com/result/1002145"
+    },
+    {
+        "u_raw": "University of Illinois Chicago(UIC)",
+        "p_raw": "Computer Science PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 13 Feb",
+        "stats_raw": "Accepted on 13 Feb Fall 2026 International GPA 4.00",
+        "comm_raw": "RA funding offer received",
+        "url_raw": "https://www.thegradcafe.com/result/1002144"
+    },
+    {
+        "u_raw": "University of Miami",
+        "p_raw": "English PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 14 Feb",
+        "stats_raw": "Accepted on 14 Feb Fall 2026 American GPA 4.0",
+        "comm_raw": "First acceptance! 1a/3r/9p",
+        "url_raw": "https://www.thegradcafe.com/result/1002143"
+    },
+    {
+        "u_raw": "London School of Economics and Political Science (LSE)",
+        "p_raw": "Sociology PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Rejected on 6 Feb",
+        "stats_raw": "Rejected on 6 Feb Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002142"
+    },
+    {
+        "u_raw": "University of Toronto",
+        "p_raw": "Sociology PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Rejected on 9 Feb",
+        "stats_raw": "Rejected on 9 Feb Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002141"
+    },
+    {
+        "u_raw": "Northern Illinois University",
+        "p_raw": "Speech Language Pathology Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 13 Feb",
+        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.86",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002140"
+    },
+    {
+        "u_raw": "Lehigh University",
+        "p_raw": "English Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Rejected on 14 Feb",
+        "stats_raw": "Rejected on 14 Feb Fall 2026 American GPA 4.9",
+        "comm_raw": "Was surprised ngl",
+        "url_raw": "https://www.thegradcafe.com/result/1002139"
+    },
+    {
+        "u_raw": "Duke University",
+        "p_raw": "Pure Mathematics PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 5 Feb",
+        "stats_raw": "Accepted on 5 Feb Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002138"
+    },
+    {
+        "u_raw": "University of Southern California",
+        "p_raw": "Electrical And Computer Engineering PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 13 Feb",
+        "stats_raw": "Accepted on 13 Feb Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002137"
+    },
+    {
+        "u_raw": "Columbia University",
+        "p_raw": "Chemical Engineering Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 15 Feb",
+        "stats_raw": "Accepted on 15 Feb Fall 2026 American GPA 3.6",
+        "comm_raw": "MS Express. Application Submitted November 23. Received an email saying application status update .",
+        "url_raw": "https://www.thegradcafe.com/result/1002136"
+    },
+    {
+        "u_raw": "University of Florida",
+        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Interview on 13 Jan",
+        "stats_raw": "Interview on 13 Jan Fall 2026 American GPA 3.85",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002135"
+    },
+    {
+        "u_raw": "Massachusetts Institute of Technology (MIT)",
+        "p_raw": "Mechanical Engineering Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Wait listed on 15 Feb",
+        "stats_raw": "Wait listed on 15 Feb Fall 2026 American GRE 165 GRE V 170 GRE AW 4.5 GPA 3.95",
+        "comm_raw": "Zoom interview with PI last week. Applied for GRFP.",
+        "url_raw": "https://www.thegradcafe.com/result/1002134"
+    },
+    {
+        "u_raw": "Florida State University",
+        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 13 Feb",
+        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.85",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002133"
+    },
+    {
+        "u_raw": "The University of Texas at Austin",
+        "p_raw": "Counseling Psychology PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 24 Jan",
+        "stats_raw": "Accepted on 24 Jan Fall 2026 American GPA 3.8",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002132"
+    },
+    {
+        "u_raw": "University of Southern California",
+        "p_raw": "Electrical And Computer Engineering Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 12 Nov",
+        "stats_raw": "Accepted on 12 Nov Fall 2026 American GPA 3.70",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002131"
+    },
+    {
+        "u_raw": "University of Massachusetts Amherst",
+        "p_raw": "Communication PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Rejected on 15 Feb",
+        "stats_raw": "Rejected on 15 Feb Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002130"
+    },
+    {
+        "u_raw": "University of Texas at Dallas",
+        "p_raw": "Speech-Language Pathology Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 10 Feb",
+        "stats_raw": "Accepted on 10 Feb Fall 2026 American GRE V 151 GRE AW 3.5 GPA 3.85",
+        "comm_raw": "Submitted my application 1/4 and my application status changed to admitted on 2/9. I have many volunteer hours with various populations and tried to write a strong essay to make up for any weak areas of application!",
+        "url_raw": "https://www.thegradcafe.com/result/1002129"
+    },
+    {
+        "u_raw": "Columbia University",
+        "p_raw": "Electrical Engineering Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 23 Dec",
+        "stats_raw": "Accepted on 23 Dec Fall 2026 American GPA 3.7",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002128"
+    },
+    {
+        "u_raw": "George Mason University",
+        "p_raw": "Industrial Organizational Psychology PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Rejected on 15 Feb",
+        "stats_raw": "Rejected on 15 Feb Fall 2026 American GPA 3.77",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002127"
+    },
+    {
+        "u_raw": "University of Oregon",
+        "p_raw": "Community and Regional Planning Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 13 Feb",
+        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.98",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002126"
+    },
+    {
+        "u_raw": "American University",
+        "p_raw": "International Affairs Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 13 Feb",
+        "stats_raw": "Accepted on 13 Feb Fall 2025 American GPA 3.7",
+        "comm_raw": "I got an email stating that my funding decision would be released in March and congratulating me but never received an update in my portal or a formal acceptance email.",
+        "url_raw": "https://www.thegradcafe.com/result/1002145"
+    },
+    {
+        "u_raw": "University of Illinois Chicago(UIC)",
+        "p_raw": "Computer Science PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 13 Feb",
+        "stats_raw": "Accepted on 13 Feb Fall 2026 International GPA 4.00",
+        "comm_raw": "RA funding offer received",
+        "url_raw": "https://www.thegradcafe.com/result/1002144"
+    },
+    {
+        "u_raw": "University of Miami",
+        "p_raw": "English PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 14 Feb",
+        "stats_raw": "Accepted on 14 Feb Fall 2026 American GPA 4.0",
+        "comm_raw": "First acceptance! 1a/3r/9p",
+        "url_raw": "https://www.thegradcafe.com/result/1002143"
+    },
+    {
+        "u_raw": "London School of Economics and Political Science (LSE)",
+        "p_raw": "Sociology PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Rejected on 6 Feb",
+        "stats_raw": "Rejected on 6 Feb Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002142"
+    },
+    {
+        "u_raw": "University of Toronto",
+        "p_raw": "Sociology PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Rejected on 9 Feb",
+        "stats_raw": "Rejected on 9 Feb Fall 2026 American",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002141"
+    },
+    {
+        "u_raw": "Northern Illinois University",
+        "p_raw": "Speech Language Pathology Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 13 Feb",
+        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.86",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002140"
+    },
+    {
+        "u_raw": "Lehigh University",
+        "p_raw": "English Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Rejected on 14 Feb",
+        "stats_raw": "Rejected on 14 Feb Fall 2026 American GPA 4.9",
+        "comm_raw": "Was surprised ngl",
+        "url_raw": "https://www.thegradcafe.com/result/1002139"
+    },
+    {
+        "u_raw": "Duke University",
+        "p_raw": "Pure Mathematics PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 5 Feb",
+        "stats_raw": "Accepted on 5 Feb Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002138"
+    },
+    {
+        "u_raw": "University of Southern California",
+        "p_raw": "Electrical And Computer Engineering PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 13 Feb",
+        "stats_raw": "Accepted on 13 Feb Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002137"
+    },
+    {
+        "u_raw": "Columbia University",
+        "p_raw": "Chemical Engineering Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 15 Feb",
+        "stats_raw": "Accepted on 15 Feb Fall 2026 American GPA 3.6",
+        "comm_raw": "MS Express. Application Submitted November 23. Received an email saying application status update .",
+        "url_raw": "https://www.thegradcafe.com/result/1002136"
+    },
+    {
+        "u_raw": "University of Florida",
+        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Interview on 13 Jan",
+        "stats_raw": "Interview on 13 Jan Fall 2026 American GPA 3.85",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002135"
+    },
+    {
+        "u_raw": "Massachusetts Institute of Technology (MIT)",
+        "p_raw": "Mechanical Engineering Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Wait listed on 15 Feb",
+        "stats_raw": "Wait listed on 15 Feb Fall 2026 American GRE 165 GRE V 170 GRE AW 4.5 GPA 3.95",
+        "comm_raw": "Zoom interview with PI last week. Applied for GRFP.",
+        "url_raw": "https://www.thegradcafe.com/result/1002134"
+    },
+    {
+        "u_raw": "Florida State University",
+        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 13 Feb",
+        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.85",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002133"
+    },
+    {
+        "u_raw": "The University of Texas at Austin",
+        "p_raw": "Counseling Psychology PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 24 Jan",
+        "stats_raw": "Accepted on 24 Jan Fall 2026 American GPA 3.8",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002132"
+    },
+    {
+        "u_raw": "University of Southern California",
+        "p_raw": "Electrical And Computer Engineering Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 12 Nov",
+        "stats_raw": "Accepted on 12 Nov Fall 2026 American GPA 3.70",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002131"
+    },
+    {
+        "u_raw": "University of Massachusetts Amherst",
+        "p_raw": "Communication PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Rejected on 15 Feb",
+        "stats_raw": "Rejected on 15 Feb Fall 2026 International",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002130"
+    },
+    {
+        "u_raw": "University of Texas at Dallas",
+        "p_raw": "Speech-Language Pathology Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 10 Feb",
+        "stats_raw": "Accepted on 10 Feb Fall 2026 American GRE V 151 GRE AW 3.5 GPA 3.85",
+        "comm_raw": "Submitted my application 1/4 and my application status changed to admitted on 2/9. I have many volunteer hours with various populations and tried to write a strong essay to make up for any weak areas of application!",
+        "url_raw": "https://www.thegradcafe.com/result/1002129"
+    },
+    {
+        "u_raw": "Columbia University",
+        "p_raw": "Electrical Engineering Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 23 Dec",
+        "stats_raw": "Accepted on 23 Dec Fall 2026 American GPA 3.7",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002128"
+    },
+    {
+        "u_raw": "George Mason University",
+        "p_raw": "Industrial Organizational Psychology PhD",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Rejected on 15 Feb",
+        "stats_raw": "Rejected on 15 Feb Fall 2026 American GPA 3.77",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002127"
+    },
+    {
+        "u_raw": "University of Oregon",
+        "p_raw": "Community and Regional Planning Masters",
+        "d_raw": "February 15, 2026",
+        "s_raw": "Accepted on 13 Feb",
+        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.98",
+        "comm_raw": "No comment",
+        "url_raw": "https://www.thegradcafe.com/result/1002126"
     }
 ]

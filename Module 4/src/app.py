@@ -55,7 +55,7 @@ def execute_scraping_task():
 def pull_data():
     global scraping_active
     if scraping_active:
-        flash("A data pull is already in progress. Please wait for it to complete.")
+        return "Busy", 409
     else:
         scraping_active = True
         threading.Thread(target=execute_scraping_task).start() 
