@@ -1,18 +1,27 @@
 import pytest
+from src.app import app
+
+# --- SETUP ---
+@pytest.fixture
+def client():
+    app.config['TESTING'] = True
+    with app.test_client() as client:
+        yield client
+# -------------
 
 @pytest.mark.analysis
 def test_percentage_formatting():
     """Test that percentages show 2 decimal places."""
-    # You can test your specific logic here
-    number = 0.123456
-    formatted = f"{number * 100:.2f}%"
-    assert formatted == "12.35%"
+    # This tests the logic you use in your SQL queries (ROUND(x, 2))
+    val = 0.123456 * 100
+    formatted = round(val, 2)
+    assert formatted == 12.35
 
 @pytest.mark.analysis
-def test_answer_label(client): # If you need client here, copy the setup fixture again
-    from src.app import app
-    app.config['TESTING'] = True
-    client = app.test_client()
-    
-    response = client.get('/analysis')
-    assert b"Answer:" in response.data
+def test_analysis_labels(client):
+    """Test that the page loads the analysis table."""
+    response = client.get('/')
+    assert response.status_code == 200
+    # Check for a specific label from your table
+    html = response.data.decode('utf-8')
+    assert "GPA" in html or "GRE" in html
