@@ -7,9 +7,9 @@ build:
 
 python:
   install:
-    # Use quotes to handle the space if you didn't rename the folder
+    # Use quotes because of the space in "Module 4"
     - requirements: "Module 4/requirements.txt"
 
 sphinx:
-  # Use quotes to handle the space if you didn't rename the folder
+  # Use quotes because of the space in "Module 4"
   configuration: "Module 4/docs/source/conf.py"
