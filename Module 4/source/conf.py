@@ -6,7 +6,7 @@ import sys
 sys.path.insert(0, os.path.abspath('../../src'))
 
 # -- Project information -----------------------------------------------------
-project = 'Grad Cafe Analytics'
+project = 'Grad Cafe Analytics 4'
 copyright = '2026, Masaomi Enami'
 author = 'Masaomi Enami'
 release = '1.0'
