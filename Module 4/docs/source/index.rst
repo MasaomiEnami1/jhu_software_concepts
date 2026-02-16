@@ -1,12 +1,11 @@
-Grad Cafe Analytics Documentation
-=================================
+Grad Cafe Analytics
+===================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    setup
-   architecture
+   arch
    api
-   testing
-
+   tests
