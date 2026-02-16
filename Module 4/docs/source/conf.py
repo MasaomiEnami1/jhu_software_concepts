@@ -3,8 +3,8 @@ import sys
 
 # -- Path setup --------------------------------------------------------------
 # We go up two levels from docs/source to find the project root, then into /src
+# Go up from source, up from docs, then into src
 sys.path.insert(0, os.path.abspath('../../src'))
-
 # -- Project information -----------------------------------------------------
 project = 'Grad Cafe Analytics 4'
 copyright = '2026, Masaomi Enami'
