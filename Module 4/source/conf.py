@@ -1,6 +1,8 @@
 import os
 import sys
-# This tells Sphinx to look in the src folder relative to this conf.py file
+
+# -- Path setup --------------------------------------------------------------
+# We go up two levels from docs/source to find the project root, then into /src
 sys.path.insert(0, os.path.abspath('../../src'))
 
 # -- Project information -----------------------------------------------------
