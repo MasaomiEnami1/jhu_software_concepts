@@ -1,0 +1,226 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>app &mdash; Grad Cafe Analytics 4 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Grad Cafe Analytics 4
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Grad Cafe Analytics 4</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Module code</a></li>
+      <li class="breadcrumb-item active">app</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for app</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">redirect</span><span class="p">,</span> <span class="n">url_for</span><span class="p">,</span> <span class="n">flash</span>
+<span class="kn">import</span> <span class="nn">psycopg2</span>
+<span class="kn">import</span> <span class="nn">threading</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="c1"># --- PART B: IMPORT YOUR SCRAPER ---</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">src.scrapy</span> <span class="kn">import</span> <span class="n">run_scraper</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+<div class="viewcode-block" id="run_scraper">
+<a class="viewcode-back" href="../api.html#app.run_scraper">[docs]</a>
+    <span class="k">def</span> <span class="nf">run_scraper</span><span class="p">():</span>
+        <span class="kn">import</span> <span class="nn">time</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Scraper finished background task.&quot;</span><span class="p">)</span></div>
+
+
+<span class="c1"># --- CONFIGURATION ---</span>
+<span class="n">template_dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\Users\Masaomi Enami\Python Project\jhu_software_concepts\Module 3\templates&quot;</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">template_folder</span><span class="o">=</span><span class="n">template_dir</span><span class="p">)</span>
+<span class="n">app</span><span class="o">.</span><span class="n">secret_key</span> <span class="o">=</span> <span class="s2">&quot;jhu_secret_key&quot;</span> 
+
+<span class="n">scraping_active</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="n">DB_CONFIG</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;database&quot;</span><span class="p">:</span> <span class="s2">&quot;postgres&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;postgres&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;postgres&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;port&quot;</span><span class="p">:</span> <span class="s2">&quot;5432&quot;</span>
+<span class="p">}</span>
+
+<div class="viewcode-block" id="get_db_connection">
+<a class="viewcode-back" href="../api.html#app.get_db_connection">[docs]</a>
+<span class="k">def</span> <span class="nf">get_db_connection</span><span class="p">():</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="o">**</span><span class="n">DB_CONFIG</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error connecting to database: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="get_val">
+<a class="viewcode-back" href="../api.html#app.get_val">[docs]</a>
+<span class="k">def</span> <span class="nf">get_val</span><span class="p">(</span><span class="n">cursor</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">result</span> <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="mi">0</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">rollback</span><span class="p">()</span> 
+        <span class="k">return</span> <span class="mi">0</span></div>
+
+
+<span class="c1"># --- HELPER FOR THREADING (Enables 100% Coverage) ---</span>
+<div class="viewcode-block" id="execute_scraping_task">
+<a class="viewcode-back" href="../api.html#app.execute_scraping_task">[docs]</a>
+<span class="k">def</span> <span class="nf">execute_scraping_task</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">scraping_active</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">run_scraper</span><span class="p">()</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="n">scraping_active</span> <span class="o">=</span> <span class="kc">False</span></div>
+
+
+<div class="viewcode-block" id="pull_data">
+<a class="viewcode-back" href="../api.html#app.pull_data">[docs]</a>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/pull_data&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;POST&#39;</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">pull_data</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">scraping_active</span>
+    <span class="k">if</span> <span class="n">scraping_active</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Busy&quot;</span><span class="p">,</span> <span class="mi">409</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">scraping_active</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">execute_scraping_task</span><span class="p">)</span><span class="o">.</span><span class="n">start</span><span class="p">()</span> 
+        <span class="n">flash</span><span class="p">(</span><span class="s2">&quot;Success: &#39;Pull Data&#39; initiated. Scraper is running in background.&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">url_for</span><span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="update_analysis">
+<a class="viewcode-back" href="../api.html#app.update_analysis">[docs]</a>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/update_analysis&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">update_analysis</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">scraping_active</span>
+    <span class="k">if</span> <span class="n">scraping_active</span><span class="p">:</span>
+        <span class="n">flash</span><span class="p">(</span><span class="s2">&quot;Update Blocked: A data pull is currently running.&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">flash</span><span class="p">(</span><span class="s2">&quot;Analysis Updated: Results have been refreshed.&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="n">url_for</span><span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="index">
+<a class="viewcode-back" href="../api.html#app.index">[docs]</a>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">get_db_connection</span><span class="p">()</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;scraping_status&quot;</span><span class="p">:</span> <span class="n">scraping_active</span><span class="p">}</span>
+    <span class="k">if</span> <span class="n">conn</span><span class="p">:</span>
+        <span class="n">cur</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;q1&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_val</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="s2">&quot;SELECT COUNT(*) FROM applicants WHERE term = &#39;Fall 2026&#39;;&quot;</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;q2&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">get_val</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="s2">&quot;SELECT (COUNT(*) FILTER (WHERE us_or_international = &#39;International&#39;)::numeric / NULLIF(COUNT(*), 0)::numeric) * 100 FROM applicants;&quot;</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;avg_gpa&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">get_val</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="s2">&quot;SELECT AVG(gpa) FROM applicants WHERE term = &#39;Fall 2026&#39; AND gpa &lt;= 4.0;&quot;</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;avg_gre&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">get_val</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="s2">&quot;SELECT AVG(gre) FROM applicants WHERE term = &#39;Fall 2026&#39; AND gre BETWEEN 130 AND 170;&quot;</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;avg_gre_v&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">get_val</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="s2">&quot;SELECT AVG(gre_v) FROM applicants WHERE term = &#39;Fall 2026&#39; AND gre_v BETWEEN 130 AND 170;&quot;</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;avg_gre_aw&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">get_val</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="s2">&quot;SELECT AVG(gre_aw) FROM applicants WHERE term = &#39;Fall 2026&#39; AND gre_aw BETWEEN 0 AND 6;&quot;</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;q4&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">get_val</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="s2">&quot;SELECT AVG(gpa) FROM applicants WHERE term = &#39;Fall 2026&#39; AND us_or_international = &#39;American&#39; AND gpa &lt;= 4.0;&quot;</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;q5&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">get_val</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="s2">&quot;SELECT (COUNT(*) FILTER (WHERE status = &#39;Accepted&#39; AND term = &#39;Fall 2026&#39;)::numeric / NULLIF(COUNT(*) FILTER (WHERE term = &#39;Fall 2026&#39;), 0)::numeric) * 100 FROM applicants;&quot;</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;q6&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">get_val</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="s2">&quot;SELECT AVG(gpa) FROM applicants WHERE term = &#39;Fall 2026&#39; AND status = &#39;Accepted&#39; AND gpa &lt;= 4.0;&quot;</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;q7&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_val</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="s2">&quot;SELECT COUNT(*) FROM applicants WHERE llm_generated_university ILIKE &#39;%Johns Hopkins%&#39; AND degree = &#39;Masters&#39; AND llm_generated_program ILIKE &#39;%Computer Science%&#39;;&quot;</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;q8&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_val</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="s2">&quot;SELECT COUNT(*) FROM applicants WHERE status = &#39;Accepted&#39; AND term = &#39;Fall 2026&#39; AND degree = &#39;PhD&#39; AND (program ILIKE &#39;%MIT%&#39; OR program ILIKE &#39;%Stanford%&#39; OR program ILIKE &#39;%Carnegie%&#39; OR program ILIKE &#39;%CMU%&#39;);&quot;</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;q9&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_val</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="s2">&quot;SELECT COUNT(*) FROM applicants WHERE status = &#39;Accepted&#39; AND term = &#39;Fall 2026&#39; AND degree = &#39;PhD&#39; AND llm_generated_program ILIKE &#39;%Computer Science%&#39; AND llm_generated_university IN (&#39;MIT&#39;, &#39;Stanford University&#39;, &#39;Carnegie Mellon University&#39;);&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT llm_generated_university, COUNT(*) as c FROM applicants WHERE term = &#39;Fall 2026&#39; AND llm_generated_university IS NOT NULL GROUP BY llm_generated_university ORDER BY c DESC LIMIT 5;&quot;</span><span class="p">)</span>
+            <span class="n">data</span><span class="p">[</span><span class="s2">&quot;q10&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+            <span class="n">cur</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT TRIM(BOTH &#39;[] &#39;&#39; &#39; FROM llm_generated_university) AS cleaned_uni, COUNT(*) as c FROM applicants WHERE term = &#39;Fall 2026&#39; AND llm_generated_university IS NOT NULL GROUP BY cleaned_uni ORDER BY c ASC, cleaned_uni ASC LIMIT 5;&quot;</span><span class="p">)</span>
+            <span class="n">data</span><span class="p">[</span><span class="s2">&quot;q11&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">rollback</span><span class="p">()</span>
+        <span class="n">cur</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5001</span><span class="p">)</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Masaomi Enami.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
