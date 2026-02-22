@@ -13,7 +13,7 @@ except ImportError:
         print("Scraper finished background task.")
 
 # --- CONFIGURATION ---
-template_dir = r"C:\Users\Masaomi Enami\Python Project\jhu_software_concepts\Module 3\templates"
+template_dir = r"C:\Users\Masaomi Enami\Python Project\jhu_software_concepts\Module_3\src\templates"
 app = Flask(__name__, template_folder=template_dir)
 app.secret_key = "jhu_secret_key" 
 
