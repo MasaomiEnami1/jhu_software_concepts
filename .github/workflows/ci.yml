@@ -58,4 +58,7 @@ jobs:
 
     - name: 4. Run Pytest
       run: |
-        pytest
+        # Set PYTHONPATH so pytest can see your 'src' folder
+        export PYTHONPATH=$PYTHONPATH:$(pwd)
+        # Only run tests inside Module_5/tests to avoid conflict with Module 4
+        python -m pytest tests/ --cov=src --cov-report=term-missing
