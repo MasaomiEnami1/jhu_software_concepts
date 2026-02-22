@@ -1,8 +1,10 @@
+# pylint: disable=duplicate-code
 """
 Main Flask application handling admissions data analysis and web routing.
 Includes background threading for asynchronous data scraping and secure database connections.
 """
 
+import os
 import threading
 import time
 
@@ -10,6 +12,10 @@ import time
 import psycopg
 from psycopg import sql
 from flask import Flask, render_template, redirect, url_for, flash
+from dotenv import load_dotenv
+
+# Load environment variables from the .env file
+load_dotenv()
 
 # --- PART B: IMPORT YOUR SCRAPER ---
 try:
@@ -27,13 +33,14 @@ app.secret_key = "jhu_secret_key"
 
 SCRAPING_ACTIVE = False
 
-DB_CONFIG = {
-    "host": "localhost",
-    "dbname": "postgres",
-    "user": "postgres",
-    "password": "postgres",
-    "port": "5432"
-}
+# Module 5: Read credentials from environment variables safely
+DB_CONFIG = dict(
+    host=os.getenv("DB_HOST", "localhost"),
+    dbname=os.getenv("DB_NAME", "postgres"),
+    user=os.getenv("DB_USER", "gradcafe_web"),
+    password=os.getenv("DB_PASSWORD", "jhu_secure_pass_2026"),
+    port=os.getenv("DB_PORT", "5432")
+)
 
 def get_db_connection():
     """Establish and return a connection to the PostgreSQL database."""
@@ -43,10 +50,21 @@ def get_db_connection():
         print(f"Error connecting to database: {e}")
         return None
 
-def get_val(cursor, conn, query):
-    """Execute a query and return the first scalar value, returning 0 on failure."""
+def get_safe_limit(requested_limit):
+    """
+    Module 5 Requirement: Enforce a maximum allowed limit.
+    Clamp the limit to strictly between 1 and 100.
+    """
     try:
-        cursor.execute(query)
+        return max(1, min(int(requested_limit), 100))
+    except (ValueError, TypeError):
+        return 10
+
+def get_val(cursor, conn, query, params=None):
+    """Execute a query with parameters and return the first scalar value."""
+    try:
+        # Module 5 Requirement: Separate execution from parameters
+        cursor.execute(query, params)
         result = cursor.fetchone()
         return result[0] if result and result[0] is not None else 0
     except psycopg.Error:
@@ -93,100 +111,161 @@ def index():
 
     if conn:
         cur = conn.cursor()
+        
+        # We clamp all our single-value queries to a safe limit of 1
+        safe_single_limit = get_safe_limit(1)
 
-        # Module 5 requires sql.SQL() composition and LIMIT on every query.
-        q1 = sql.SQL("SELECT COUNT(*) FROM applicants WHERE term = 'Fall 2026' LIMIT 1;")
-        data["q1"] = get_val(cur, conn, q1)
+        # Q1: Parameterized value (%s) and composed Identifier/Literal
+        q1 = sql.SQL("SELECT COUNT(*) FROM {table} WHERE term = %s LIMIT {limit};").format(
+            table=sql.Identifier("applicants"),
+            limit=sql.Literal(safe_single_limit)
+        )
+        data["q1"] = get_val(cur, conn, q1, ("Fall 2026",))
 
+        # Q2
         q2 = sql.SQL(
-            "SELECT (COUNT(*) FILTER (WHERE us_or_international = 'International')::numeric / "
-            "NULLIF(COUNT(*), 0)::numeric) * 100 FROM applicants LIMIT 1;"
+            "SELECT ROUND((COUNT(*) FILTER (WHERE us_or_international = %s)::numeric / "
+            "NULLIF(COUNT(*), 0)::numeric) * 100, 2) FROM {table} LIMIT {limit};"
+        ).format(
+            table=sql.Identifier("applicants"),
+            limit=sql.Literal(safe_single_limit)
         )
-        data["q2"] = round(get_val(cur, conn, q2), 2)
+        data["q2"] = get_val(cur, conn, q2, ("International",))
 
+        # Q3
         q3 = sql.SQL(
-            "SELECT AVG(gpa) FROM applicants "
-            "WHERE term = 'Fall 2026' AND gpa <= 4.0 LIMIT 1;"
+            "SELECT AVG(gpa) FROM {table} WHERE term = %s AND gpa <= %s LIMIT {limit};"
+        ).format(
+            table=sql.Identifier("applicants"),
+            limit=sql.Literal(safe_single_limit)
         )
-        data["avg_gpa"] = round(get_val(cur, conn, q3), 2)
+        data["avg_gpa"] = round(get_val(cur, conn, q3, ("Fall 2026", 4.0)), 2)
 
+        # Q4
         q4 = sql.SQL(
-            "SELECT AVG(gre) FROM applicants "
-            "WHERE term = 'Fall 2026' AND gre BETWEEN 130 AND 170 LIMIT 1;"
+            "SELECT AVG(gre) FROM {table} WHERE term = %s AND gre BETWEEN %s AND %s LIMIT {limit};"
+        ).format(
+            table=sql.Identifier("applicants"),
+            limit=sql.Literal(safe_single_limit)
         )
-        data["avg_gre"] = round(get_val(cur, conn, q4), 2)
+        data["avg_gre"] = round(get_val(cur, conn, q4, ("Fall 2026", 130, 170)), 2)
 
+        # Q5
         q5 = sql.SQL(
-            "SELECT AVG(gre_v) FROM applicants "
-            "WHERE term = 'Fall 2026' AND gre_v BETWEEN 130 AND 170 LIMIT 1;"
+            "SELECT AVG(gre_v) FROM {table} WHERE term = %s AND gre_v BETWEEN %s AND %s LIMIT {limit};"
+        ).format(
+            table=sql.Identifier("applicants"),
+            limit=sql.Literal(safe_single_limit)
         )
-        data["avg_gre_v"] = round(get_val(cur, conn, q5), 2)
+        data["avg_gre_v"] = round(get_val(cur, conn, q5, ("Fall 2026", 130, 170)), 2)
 
+        # Q6
         q6 = sql.SQL(
-            "SELECT AVG(gre_aw) FROM applicants "
-            "WHERE term = 'Fall 2026' AND gre_aw BETWEEN 0 AND 6 LIMIT 1;"
+            "SELECT AVG(gre_aw) FROM {table} WHERE term = %s AND gre_aw BETWEEN %s AND %s LIMIT {limit};"
+        ).format(
+            table=sql.Identifier("applicants"),
+            limit=sql.Literal(safe_single_limit)
         )
-        data["avg_gre_aw"] = round(get_val(cur, conn, q6), 2)
+        data["avg_gre_aw"] = round(get_val(cur, conn, q6, ("Fall 2026", 0, 6)), 2)
 
+        # Q7
         q7 = sql.SQL(
-            "SELECT AVG(gpa) FROM applicants "
-            "WHERE term = 'Fall 2026' AND us_or_international = 'American' "
-            "AND gpa <= 4.0 LIMIT 1;"
+            "SELECT AVG(gpa) FROM {table} "
+            "WHERE term = %s AND us_or_international = %s AND gpa <= %s LIMIT {limit};"
+        ).format(
+            table=sql.Identifier("applicants"),
+            limit=sql.Literal(safe_single_limit)
         )
-        data["q4"] = round(get_val(cur, conn, q7), 2)
+        data["q4"] = round(get_val(cur, conn, q7, ("Fall 2026", "American", 4.0)), 2)
 
+        # Q8
         q8 = sql.SQL(
-            "SELECT (COUNT(*) FILTER (WHERE status = 'Accepted' AND term = 'Fall 2026')::numeric "
-            "/ NULLIF(COUNT(*) FILTER (WHERE term = 'Fall 2026'), 0)::numeric) * 100 "
-            "FROM applicants LIMIT 1;"
+            "SELECT ROUND((COUNT(*) FILTER (WHERE status = %s AND term = %s)::numeric / "
+            "NULLIF(COUNT(*) FILTER (WHERE term = %s), 0)::numeric) * 100, 2) "
+            "FROM {table} LIMIT {limit};"
+        ).format(
+            table=sql.Identifier("applicants"),
+            limit=sql.Literal(safe_single_limit)
         )
-        data["q5"] = round(get_val(cur, conn, q8), 2)
+        data["q5"] = round(get_val(cur, conn, q8, ("Accepted", "Fall 2026", "Fall 2026")), 2)
 
+        # Q9
         q9 = sql.SQL(
-            "SELECT AVG(gpa) FROM applicants "
-            "WHERE term = 'Fall 2026' AND status = 'Accepted' AND gpa <= 4.0 LIMIT 1;"
+            "SELECT AVG(gpa) FROM {table} WHERE term = %s AND status = %s AND gpa <= %s LIMIT {limit};"
+        ).format(
+            table=sql.Identifier("applicants"),
+            limit=sql.Literal(safe_single_limit)
         )
-        data["q6"] = round(get_val(cur, conn, q9), 2)
+        data["q6"] = round(get_val(cur, conn, q9, ("Fall 2026", "Accepted", 4.0)), 2)
 
+        # Q10
         q10 = sql.SQL(
-            "SELECT COUNT(*) FROM applicants "
-            "WHERE llm_generated_university ILIKE '%Johns Hopkins%' AND degree = 'Masters' "
-            "AND llm_generated_program ILIKE '%Computer Science%' LIMIT 1;"
+            "SELECT COUNT(*) FROM {table} "
+            "WHERE llm_generated_university ILIKE %s AND degree = %s "
+            "AND llm_generated_program ILIKE %s LIMIT {limit};"
+        ).format(
+            table=sql.Identifier("applicants"),
+            limit=sql.Literal(safe_single_limit)
         )
-        data["q7"] = get_val(cur, conn, q10)
+        data["q7"] = get_val(cur, conn, q10, ("%Johns Hopkins%", "Masters", "%Computer Science%"))
 
+        # Q11
         q11 = sql.SQL(
-            "SELECT COUNT(*) FROM applicants "
-            "WHERE status = 'Accepted' AND term = 'Fall 2026' AND degree = 'PhD' "
-            "AND (program ILIKE '%MIT%' OR program ILIKE '%Stanford%' "
-            "OR program ILIKE '%Carnegie%' OR program ILIKE '%CMU%') LIMIT 1;"
+            "SELECT COUNT(*) FROM {table} "
+            "WHERE status = %s AND term = %s AND degree = %s "
+            "AND (program ILIKE %s OR program ILIKE %s OR program ILIKE %s OR program ILIKE %s) "
+            "LIMIT {limit};"
+        ).format(
+            table=sql.Identifier("applicants"),
+            limit=sql.Literal(safe_single_limit)
         )
-        data["q8"] = get_val(cur, conn, q11)
+        data["q8"] = get_val(cur, conn, q11, (
+            "Accepted", "Fall 2026", "PhD", 
+            "%MIT%", "%Stanford%", "%Carnegie%", "%CMU%"
+        ))
 
+        # Q12
         q12 = sql.SQL(
-            "SELECT COUNT(*) FROM applicants "
-            "WHERE status = 'Accepted' AND term = 'Fall 2026' AND degree = 'PhD' "
-            "AND llm_generated_program ILIKE '%Computer Science%' "
-            "AND llm_generated_university IN "
-            "('MIT', 'Stanford University', 'Carnegie Mellon University') LIMIT 1;"
+            "SELECT COUNT(*) FROM {table} "
+            "WHERE status = %s AND term = %s AND degree = %s "
+            "AND llm_generated_program ILIKE %s "
+            "AND llm_generated_university IN (%s, %s, %s) LIMIT {limit};"
+        ).format(
+            table=sql.Identifier("applicants"),
+            limit=sql.Literal(safe_single_limit)
         )
-        data["q9"] = get_val(cur, conn, q12)
+        data["q9"] = get_val(cur, conn, q12, (
+            "Accepted", "Fall 2026", "PhD", "%Computer Science%",
+            "MIT", "Stanford University", "Carnegie Mellon University"
+        ))
 
+        # Fetching list data (Top 5s)
         try:
-            cur.execute(sql.SQL(
-                "SELECT llm_generated_university, COUNT(*) as c FROM applicants "
-                "WHERE term = 'Fall 2026' AND llm_generated_university IS NOT NULL "
-                "GROUP BY llm_generated_university ORDER BY c DESC LIMIT 5;"
-            ))
+            safe_list_limit = get_safe_limit(5)
+            
+            list_q1 = sql.SQL(
+                "SELECT llm_generated_university, COUNT(*) as c FROM {table} "
+                "WHERE term = %s AND llm_generated_university IS NOT NULL "
+                "GROUP BY llm_generated_university ORDER BY c DESC LIMIT {limit};"
+            ).format(
+                table=sql.Identifier("applicants"),
+                limit=sql.Literal(safe_list_limit)
+            )
+            cur.execute(list_q1, ("Fall 2026",))
             data["q10"] = cur.fetchall()
 
-            cur.execute(sql.SQL(
+            list_q2 = sql.SQL(
                 "SELECT TRIM(BOTH '[] '' ' FROM llm_generated_university) AS cleaned_uni, "
-                "COUNT(*) as c FROM applicants WHERE term = 'Fall 2026' "
+                "COUNT(*) as c FROM {table} WHERE term = %s "
                 "AND llm_generated_university IS NOT NULL "
-                "GROUP BY cleaned_uni ORDER BY c ASC, cleaned_uni ASC LIMIT 5;"
-            ))
+                "GROUP BY cleaned_uni ORDER BY c ASC, cleaned_uni ASC LIMIT {limit};"
+            ).format(
+                table=sql.Identifier("applicants"),
+                limit=sql.Literal(safe_list_limit)
+            )
+            cur.execute(list_q2, ("Fall 2026",))
             data["q11"] = cur.fetchall()
+            
         except psycopg.Error:
             conn.rollback()
 

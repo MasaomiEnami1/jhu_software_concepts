@@ -4,18 +4,28 @@ Module for executing data analysis queries against the PostgreSQL database.
 Outputs formatting reports on applicant statistics.
 """
 
+import os
 import psycopg
 from psycopg import sql
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # --- CONFIGURATION ---
-# Use dict() instead of {} to prevent Pylint's duplicate-code checker (R0801)
 DB_CONFIG = dict(
-    host="localhost",
-    dbname="postgres",
-    user="postgres",
-    password="postgres",
-    port="5432"
+    host=os.getenv("DB_HOST", "localhost"),
+    dbname=os.getenv("DB_NAME", "postgres"),
+    user=os.getenv("DB_USER", "gradcafe_web"),
+    password=os.getenv("DB_PASSWORD", "jhu_secure_pass_2026"),
+    port=os.getenv("DB_PORT", "5432")
 )
+
+def get_safe_limit(requested_limit):
+    """Clamp the limit to strictly between 1 and 100."""
+    try:
+        return max(1, min(int(requested_limit), 100))
+    except (ValueError, TypeError):
+        return 10
 
 def fmt_avg(val):
     """Format an average value to 2 decimal places, handling None."""
@@ -34,134 +44,131 @@ def run_analysis():
     """Connect to the database, run analysis queries, and print the results."""
     conn = None
     try:
-        # 1. Establish connection to PostgreSQL
         conn = psycopg.connect(**DB_CONFIG)
         cur = conn.cursor()
+        
+        safe_single = get_safe_limit(1)
 
         print("\n" + "="*60)
         print("GRAD CAFE FINAL DATA ANALYSIS REPORT")
         print("="*60)
 
-        # Q1: Fall 2026 entries
-        cur.execute(sql.SQL(
-            "SELECT COUNT(*) FROM applicants WHERE term = 'Fall 2026' LIMIT 1;"
-        ))
-        q1 = cur.fetchone()[0]
-        print(f"1. Total Fall 2026 Entries: {q1}")
+        # Q1
+        q1 = sql.SQL("SELECT COUNT(*) FROM {table} WHERE term = %s LIMIT {limit};").format(
+            table=sql.Identifier("applicants"), limit=sql.Literal(safe_single)
+        )
+        cur.execute(q1, ("Fall 2026",))
+        print(f"1. Total Fall 2026 Entries: {cur.fetchone()[0]}")
 
-        # Q2: % International (Not American and Not Other)
-        cur.execute(sql.SQL(
-            "SELECT ROUND("
-            "(COUNT(*) FILTER (WHERE us_or_international = 'International')::numeric / "
-            "NULLIF(COUNT(*), 0)::numeric) * 100, 2) "
-            "FROM applicants LIMIT 1;"
-        ))
-        q2 = cur.fetchone()[0]
-        print(f"2. Percentage of International Students: {fmt_pct(q2)}")
+        # Q2
+        q2 = sql.SQL(
+            "SELECT ROUND((COUNT(*) FILTER (WHERE us_or_international = %s)::numeric / "
+            "NULLIF(COUNT(*), 0)::numeric) * 100, 2) FROM {table} LIMIT {limit};"
+        ).format(table=sql.Identifier("applicants"), limit=sql.Literal(safe_single))
+        cur.execute(q2, ("International",))
+        print(f"2. Percentage of International Students: {fmt_pct(cur.fetchone()[0])}")
 
-        # Q3: Global Averages (With Range Filters to ignore typos/old scores)
-        cur.execute(sql.SQL(
-            "SELECT "
-            "AVG(gpa) FILTER (WHERE gpa <= 4.0), "
-            "AVG(gre) FILTER (WHERE gre >= 130 AND gre <= 170), "
-            "AVG(gre_v) FILTER (WHERE gre_v >= 130 AND gre_v <= 170), "
-            "AVG(gre_aw) FILTER (WHERE gre_aw >= 0 AND gre_aw <= 6) "
-            "FROM applicants LIMIT 1;"
-        ))
+        # Q3
+        q3 = sql.SQL(
+            "SELECT AVG(gpa) FILTER (WHERE gpa <= %s), "
+            "AVG(gre) FILTER (WHERE gre >= %s AND gre <= %s), "
+            "AVG(gre_v) FILTER (WHERE gre_v >= %s AND gre_v <= %s), "
+            "AVG(gre_aw) FILTER (WHERE gre_aw >= %s AND gre_aw <= %s) "
+            "FROM {table} LIMIT {limit};"
+        ).format(table=sql.Identifier("applicants"), limit=sql.Literal(safe_single))
+        cur.execute(q3, (4.0, 130, 170, 130, 170, 0, 6))
         avg_gpa, avg_gre, avg_gre_v, avg_gre_aw = cur.fetchone()
+        
         print("3. Global Averages (Overall):")
-        print(f"   - GPA: {fmt_avg(avg_gpa)}")
-        print(f"   - GRE Quant: {fmt_avg(avg_gre)}")
-        print(f"   - GRE Verbal: {fmt_avg(avg_gre_v)}")
-        print(f"   - GRE Writing: {fmt_avg(avg_gre_aw)}")
+        print(f"   - GPA: {fmt_avg(avg_gpa)}\n   - GRE Quant: {fmt_avg(avg_gre)}")
+        print(f"   - GRE Verbal: {fmt_avg(avg_gre_v)}\n   - GRE Writing: {fmt_avg(avg_gre_aw)}")
 
-        # Q4: Avg GPA American Fall 2026 (With Sanity Filter)
-        cur.execute(sql.SQL(
-            "SELECT AVG(gpa) FROM applicants "
-            "WHERE us_or_international = 'American' "
-            "AND term = 'Fall 2026' AND gpa <= 4.0 LIMIT 1;"
+        # Q4
+        q4 = sql.SQL(
+            "SELECT AVG(gpa) FROM {table} WHERE us_or_international = %s "
+            "AND term = %s AND gpa <= %s LIMIT {limit};"
+        ).format(table=sql.Identifier("applicants"), limit=sql.Literal(safe_single))
+        cur.execute(q4, ("American", "Fall 2026", 4.0))
+        print(f"4. Avg GPA (American, Fall 2026): {fmt_avg(cur.fetchone()[0])}")
+
+        # Q5
+        q5 = sql.SQL(
+            "SELECT ROUND((COUNT(*) FILTER (WHERE status = %s AND term = %s)::numeric / "
+            "NULLIF(COUNT(*) FILTER (WHERE term = %s), 0)::numeric) * 100, 2) "
+            "FROM {table} LIMIT {limit};"
+        ).format(table=sql.Identifier("applicants"), limit=sql.Literal(safe_single))
+        cur.execute(q5, ("Accepted", "Fall 2026", "Fall 2026"))
+        print(f"5. Fall 2026 Acceptance Rate: {fmt_pct(cur.fetchone()[0])}")
+
+        # Q6
+        q6 = sql.SQL(
+            "SELECT AVG(gpa) FROM {table} WHERE term = %s AND status = %s AND gpa <= %s LIMIT {limit};"
+        ).format(table=sql.Identifier("applicants"), limit=sql.Literal(safe_single))
+        cur.execute(q6, ("Fall 2026", "Accepted", 4.0))
+        print(f"6. Avg GPA (Accepted, Fall 2026): {fmt_avg(cur.fetchone()[0])}")
+
+        # Q7
+        q7 = sql.SQL(
+            "SELECT COUNT(*) FROM {table} WHERE llm_generated_university ILIKE %s "
+            "AND degree = %s AND llm_generated_program ILIKE %s LIMIT {limit};"
+        ).format(table=sql.Identifier("applicants"), limit=sql.Literal(safe_single))
+        cur.execute(q7, ("%Johns Hopkins%", "Masters", "%Computer Science%"))
+        print(f"7. JHU Computer Science Masters Entries: {cur.fetchone()[0]}")
+
+        # Q8
+        q8 = sql.SQL(
+            "SELECT COUNT(*) FROM {table} WHERE status = %s AND term = %s AND degree = %s "
+            "AND program ILIKE %s AND (program ILIKE %s OR program ILIKE %s OR "
+            "program ILIKE %s OR program ILIKE %s OR program ILIKE %s OR program ILIKE %s) LIMIT {limit};"
+        ).format(table=sql.Identifier("applicants"), limit=sql.Literal(safe_single))
+        cur.execute(q8, (
+            "Accepted", "Fall 2026", "PhD", "%Computer Science%", 
+            "%Georgetown%", "%MIT%", "%Massachusetts Institute of Technology%", 
+            "%Stanford%", "%Carnegie%", "%CMU%"
         ))
-        q4 = cur.fetchone()[0]
-        print(f"4. Avg GPA (American, Fall 2026): {fmt_avg(q4)}")
+        val_q8 = cur.fetchone()[0]
+        print(f"8. Elite PhD CS Acceptances (Original Fields): {val_q8}")
 
-        # Q5: % Acceptances for Fall 2026
-        cur.execute(sql.SQL(
-            "SELECT ROUND("
-            "(COUNT(*) FILTER (WHERE status = 'Accepted' AND term = 'Fall 2026')::numeric / "
-            "NULLIF(COUNT(*) FILTER (WHERE term = 'Fall 2026'), 0)::numeric) * 100, 2) "
-            "FROM applicants LIMIT 1;"
+        # Q9
+        q9 = sql.SQL(
+            "SELECT COUNT(*) FROM {table} WHERE status = %s AND term = %s AND degree = %s "
+            "AND llm_generated_program ILIKE %s AND llm_generated_university IN (%s, %s, %s, %s) LIMIT {limit};"
+        ).format(table=sql.Identifier("applicants"), limit=sql.Literal(safe_single))
+        cur.execute(q9, (
+            "Accepted", "Fall 2026", "PhD", "%Computer Science%",
+            "Georgetown University", "MIT", "Stanford University", "Carnegie Mellon University"
         ))
-        q5 = cur.fetchone()[0]
-        print(f"5. Fall 2026 Acceptance Rate: {fmt_pct(q5)}")
+        val_q9 = cur.fetchone()[0]
+        print(f"9. Elite PhD CS Acceptances (LLM Fields): {val_q9}")
 
-        # Q6: Avg GPA Accepted Fall 2026 (With Sanity Filter)
-        cur.execute(sql.SQL(
-            "SELECT AVG(gpa) FROM applicants "
-            "WHERE term = 'Fall 2026' AND status = 'Accepted' AND gpa <= 4.0 LIMIT 1;"
-        ))
-        q6 = cur.fetchone()[0]
-        print(f"6. Avg GPA (Accepted, Fall 2026): {fmt_avg(q6)}")
-
-        # Q7: JHU CS Masters search
-        cur.execute(sql.SQL(
-            "SELECT COUNT(*) FROM applicants "
-            "WHERE llm_generated_university ILIKE '%Johns Hopkins%' "
-            "AND degree = 'Masters' AND llm_generated_program ILIKE '%Computer Science%' "
-            "LIMIT 1;"
-        ))
-        q7 = cur.fetchone()[0]
-        print(f"7. JHU Computer Science Masters Entries: {q7}")
-
-        # Q8: Elite PhD CS Acceptances (Original Fields - Expanded)
-        cur.execute(sql.SQL(
-            "SELECT COUNT(*) FROM applicants "
-            "WHERE status = 'Accepted' AND term = 'Fall 2026' AND degree = 'PhD' "
-            "AND program ILIKE '%Computer Science%' AND ("
-            "program ILIKE '%Georgetown%' OR program ILIKE '%MIT%' OR "
-            "program ILIKE '%Massachusetts Institute of Technology%' OR "
-            "program ILIKE '%Stanford%' OR program ILIKE '%Carnegie%' OR "
-            "program ILIKE '%CMU%') LIMIT 1;"
-        ))
-        q8 = cur.fetchone()[0]
-        print(f"8. Elite PhD CS Acceptances (Original Fields): {q8}")
-
-        # Q9: Elite PhD CS Acceptances (LLM Fields)
-        cur.execute(sql.SQL(
-            "SELECT COUNT(*) FROM applicants "
-            "WHERE status = 'Accepted' AND term = 'Fall 2026' AND degree = 'PhD' "
-            "AND llm_generated_program ILIKE '%Computer Science%' "
-            "AND llm_generated_university IN "
-            "('Georgetown University', 'MIT', 'Stanford University', "
-            "'Carnegie Mellon University') LIMIT 1;"
-        ))
-        q9 = cur.fetchone()[0]
-        print(f"9. Elite PhD CS Acceptances (LLM Fields): {q9}")
-
-        diff = q9 - q8
+        diff = val_q9 - val_q8
         comparison_text = 'more' if diff >= 0 else 'fewer'
         print(f"   -> Analysis: LLM fields found {abs(diff)} {comparison_text} entries.")
 
         # --- ADDITIONAL RESEARCH QUESTIONS ---
+        safe_list = get_safe_limit(5)
         print("\n--- ADDITIONAL RESEARCH QUESTIONS ---")
 
-        # Question 10: Top 5 most applied-to universities
+        # Q10
         print("10. Top 5 Most Applied-To Universities:")
-        cur.execute(sql.SQL(
-            "SELECT llm_generated_university, COUNT(*) as apps "
-            "FROM applicants WHERE llm_generated_university IS NOT NULL "
-            "GROUP BY llm_generated_university ORDER BY apps DESC LIMIT 5;"
-        ))
+        q10 = sql.SQL(
+            "SELECT llm_generated_university, COUNT(*) as apps FROM {table} "
+            "WHERE llm_generated_university IS NOT NULL "
+            "GROUP BY llm_generated_university ORDER BY apps DESC LIMIT {limit};"
+        ).format(table=sql.Identifier("applicants"), limit=sql.Literal(safe_list))
+        cur.execute(q10)
         for rank, row in enumerate(cur.fetchall(), 1):
             print(f"    {rank}. {row[0]}: {row[1]} applications")
 
-        # Question 11: Top 5 Lowest Application Counts (Cleaned)
+        # Q11
         print("\n11. Top 5 Universities with the Lowest Application Counts:")
-        cur.execute(sql.SQL(
+        q11 = sql.SQL(
             "SELECT TRIM(BOTH '[] '' ' FROM llm_generated_university) AS cleaned_uni, "
-            "COUNT(*) as apps FROM applicants "
-            "WHERE llm_generated_university IS NOT NULL AND llm_generated_university != '' "
-            "GROUP BY cleaned_uni ORDER BY apps ASC, cleaned_uni ASC LIMIT 5;"
-        ))
+            "COUNT(*) as apps FROM {table} "
+            "WHERE llm_generated_university IS NOT NULL AND llm_generated_university != %s "
+            "GROUP BY cleaned_uni ORDER BY apps ASC, cleaned_uni ASC LIMIT {limit};"
+        ).format(table=sql.Identifier("applicants"), limit=sql.Literal(safe_list))
+        cur.execute(q11, ("",))
         for rank, row in enumerate(cur.fetchall(), 1):
             display_name = row[0].split(',')[0].strip("[]'\" ")
             print(f"    {rank}. {display_name}: {row[1]} application(s)")
