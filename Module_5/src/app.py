@@ -34,13 +34,14 @@ app.secret_key = "jhu_secret_key"
 SCRAPING_ACTIVE = False
 
 # Module 5: Read credentials from environment variables safely
-DB_CONFIG = dict(
-    host=os.getenv("DB_HOST", "localhost"),
-    dbname=os.getenv("DB_NAME", "postgres"),
-    user=os.getenv("DB_USER", "gradcafe_web"),
-    password=os.getenv("DB_PASSWORD", "jhu_secure_pass_2026"),
-    port=os.getenv("DB_PORT", "5432")
-)
+# pylint: disable=use-dict-literal
+DB_CONFIG = {
+    "host": os.getenv("DB_HOST", "localhost"),
+    "dbname": os.getenv("DB_NAME", "postgres"),
+    "user": os.getenv("DB_USER", "gradcafe_web"),
+    "password": os.getenv("DB_PASSWORD", "jhu_secure_pass_2026"),
+    "port": os.getenv("DB_PORT", "5432")
+}
 
 def get_db_connection():
     """Establish and return a connection to the PostgreSQL database."""
@@ -111,11 +112,9 @@ def index():
 
     if conn:
         cur = conn.cursor()
-        
-        # We clamp all our single-value queries to a safe limit of 1
         safe_single_limit = get_safe_limit(1)
 
-        # Q1: Parameterized value (%s) and composed Identifier/Literal
+        # Q1
         q1 = sql.SQL("SELECT COUNT(*) FROM {table} WHERE term = %s LIMIT {limit};").format(
             table=sql.Identifier("applicants"),
             limit=sql.Literal(safe_single_limit)
@@ -152,7 +151,8 @@ def index():
 
         # Q5
         q5 = sql.SQL(
-            "SELECT AVG(gre_v) FROM {table} WHERE term = %s AND gre_v BETWEEN %s AND %s LIMIT {limit};"
+            "SELECT AVG(gre_v) FROM {table} WHERE term = %s AND gre_v "
+            "BETWEEN %s AND %s LIMIT {limit};"
         ).format(
             table=sql.Identifier("applicants"),
             limit=sql.Literal(safe_single_limit)
@@ -161,7 +161,8 @@ def index():
 
         # Q6
         q6 = sql.SQL(
-            "SELECT AVG(gre_aw) FROM {table} WHERE term = %s AND gre_aw BETWEEN %s AND %s LIMIT {limit};"
+            "SELECT AVG(gre_aw) FROM {table} WHERE term = %s AND gre_aw "
+            "BETWEEN %s AND %s LIMIT {limit};"
         ).format(
             table=sql.Identifier("applicants"),
             limit=sql.Literal(safe_single_limit)
@@ -191,7 +192,8 @@ def index():
 
         # Q9
         q9 = sql.SQL(
-            "SELECT AVG(gpa) FROM {table} WHERE term = %s AND status = %s AND gpa <= %s LIMIT {limit};"
+            "SELECT AVG(gpa) FROM {table} WHERE term = %s AND status = %s "
+            "AND gpa <= %s LIMIT {limit};"
         ).format(
             table=sql.Identifier("applicants"),
             limit=sql.Literal(safe_single_limit)
@@ -213,14 +215,14 @@ def index():
         q11 = sql.SQL(
             "SELECT COUNT(*) FROM {table} "
             "WHERE status = %s AND term = %s AND degree = %s "
-            "AND (program ILIKE %s OR program ILIKE %s OR program ILIKE %s OR program ILIKE %s) "
-            "LIMIT {limit};"
+            "AND (program ILIKE %s OR program ILIKE %s OR "
+            "program ILIKE %s OR program ILIKE %s) LIMIT {limit};"
         ).format(
             table=sql.Identifier("applicants"),
             limit=sql.Literal(safe_single_limit)
         )
         data["q8"] = get_val(cur, conn, q11, (
-            "Accepted", "Fall 2026", "PhD", 
+            "Accepted", "Fall 2026", "PhD",
             "%MIT%", "%Stanford%", "%Carnegie%", "%CMU%"
         ))
 
@@ -242,7 +244,6 @@ def index():
         # Fetching list data (Top 5s)
         try:
             safe_list_limit = get_safe_limit(5)
-            
             list_q1 = sql.SQL(
                 "SELECT llm_generated_university, COUNT(*) as c FROM {table} "
                 "WHERE term = %s AND llm_generated_university IS NOT NULL "
@@ -265,7 +266,6 @@ def index():
             )
             cur.execute(list_q2, ("Fall 2026",))
             data["q11"] = cur.fetchall()
-            
         except psycopg.Error:
             conn.rollback()
 
