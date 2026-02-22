@@ -63,15 +63,3 @@ module_4/
 ├── pytest.ini         # Test configuration and markers
 ├── requirements.txt   # Project dependencies
 └── .readthedocs.yaml  # Read the Docs build configuration
-
-# GradCafe Admissions Analyzer
-
-## Fresh Install Instructions
-
-To run this project from scratch on a new machine, you must install the required dependencies and perform an editable install of the package. You can do this using standard `pip` or the faster `uv` package manager.
-
-### Option 1: Standard Installation (pip)
-Activate your virtual environment, then run the following commands to install the frozen dependencies and install the local package in editable mode:
-```bash
-pip install -r requirements.txt
-pip install -e .
