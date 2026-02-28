@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grad School Cafe Data Analysis</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; color: #333; background-color: #fff; }
+        .container { max-width: 950px; margin: auto; position: relative; }
+        
+        /* Header and Buttons */
+        .header-flex { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px; }
+        .btn-update { background-color: #34495e; color: white; padding: 8px 15px; border: none; border-radius: 4px; cursor: pointer; }
+        
+        h2 { font-size: 24px; margin-bottom: 25px; }
+        .item-box { background-color: #f7f7f7; padding: 20px; margin-bottom: 15px; border-radius: 2px; }
+        .question { font-weight: bold; font-size: 15px; margin-bottom: 8px; }
+        .answer { font-size: 14px; color: #444; }
+        
+        .btn-pull { background-color: #27ae60; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-bottom: 10px; }
+        .btn-pull:disabled { background-color: #bdc3c7; cursor: not-allowed; }
+        
+        .flash-msg { background-color: #d5f5e3; border: 1px solid #2ecc71; padding: 15px; margin-bottom: 20px; color: #155724; border-radius: 4px; }
+        .info-sub { font-size: 12px; color: #777; font-style: italic; }
+
+        table { width: 100%; margin-top: 10px; border-collapse: collapse; font-size: 14px; }
+        td { padding: 8px 0; border-bottom: 1px dotted #ccc; }
+        .rank-col { width: 40px; font-weight: bold; }
+        .count-col { text-align: right; color: #666; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-flex">
+        <h1 style="font-size: 16px; color: #777; font-weight: normal; margin: 0;">Grad School Cafe Data Analysis</h1>
+        <div>
+            <form action="{{ url_for('update_analysis') }}">
+                <button type="submit" class="btn-update">Update Analysis</button>
+            </form>
+            <p class="info-sub">Updates results once a data pull finishes.</p>
+        </div>
+    </div>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <div class="flash-msg">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <h2>Analysis</h2>
+
+    <div class="item-box" style="border-left: 5px solid #27ae60;">
+        <div class="question">Add New Data to Database</div>
+        <form action="{{ url_for('pull_data') }}" method="POST">
+            <button type="submit" class="btn-pull" {% if data.scraping_status %}disabled{% endif %}>Pull Data</button>
+        </form>
+        <div class="answer">
+            Explanation: Clicking this button runs our web scraper to find new entries on Grad Cafe. 
+            The process runs in the background so you can continue viewing the current results.
+        </div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">How many entries do you have in your database who have applied for Fall 2026?</div>
+        <div class="answer">Answer: Applicant count: {{ data.q1 }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">What percentage of entries are from International students (to two decimal places)?</div>
+        <div class="answer">Answer: Percent International: {{ data.q2 }}%</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">What is the average GPA, GRE, GRE V, GRE AW of applicants in Fall 2026?</div>
+        <div class="answer">Answer: GPA: {{ data.avg_gpa }}, GRE: {{ data.avg_gre }}, GRE V: {{ data.avg_gre_v }}, GRE AW: {{ data.avg_gre_aw }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">What is the average GPA of American students in Fall 2026?</div>
+        <div class="answer">Answer: Average GPA American: {{ data.q4 }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">What percent of entries for Fall 2026 are Acceptances (to two decimal places)?</div>
+        <div class="answer">Answer: Acceptance percent: {{ data.q5 }}%</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">What is the average GPA of applicants who applied for Fall 2026 who applied for Acceptances?</div>
+        <div class="answer">Answer: Average GPA Acceptance: {{ data.q6 }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">How many Johns Hopkins Computer Science Masters entries are in the database?</div>
+        <div class="answer">Answer: JHU CS Masters Count: {{ data.q7 }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">How many Elite PhD CS Acceptances were found using original fields for Fall 2026?</div>
+        <div class="answer">Answer: Elite PhD CS (Original): {{ data.q8 }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">How many Elite PhD CS Acceptances were found using LLM generated fields for Fall 2026?</div>
+        <div class="answer">Answer: Elite PhD CS (LLM Fields): {{ data.q9 }}</div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">Top 5 Most Applied-To Universities</div>
+        <div class="answer">
+            <table>
+                {% for row in data.q10 %}
+                <tr><td class="rank-col">#{{ loop.index }}</td><td>{{ row[0] }}</td><td class="count-col">{{ row[1] }} applications</td></tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+    <div class="item-box">
+        <div class="question">Top 5 Universities with the Lowest Application Counts</div>
+        <div class="answer">
+            <table>
+                {% for row in data.q11 %}
+                <tr><td class="rank-col">#{{ loop.index }}</td><td>{{ row[0] }}</td><td class="count-col">{{ row[1] }} application(s)</td></tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
