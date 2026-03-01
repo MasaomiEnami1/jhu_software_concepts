@@ -1,0 +1,89 @@
+version: '3.8'
+
+services:
+  # 1. Database Service
+  db:
+    image: postgres:15
+    container_name: module6-db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: applicant_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./src/db:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d applicant_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - app-network
+
+  # 2. Message Broker Service
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    container_name: module6-rabbitmq
+    ports:
+      - "15672:15672" # Management UI
+      - "5672:5672"   # AMQP Port
+    healthcheck:
+      test: ["CMD-SHELL", "rabbitmq-diagnostics -q ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    networks:
+      - app-network
+
+  # 3. Flask Web Application
+  web:
+    build: ./src/web
+    container_name: module6-web
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      FLASK_ENV: development
+      DATABASE_HOST: db
+      DATABASE_USER: user
+      DATABASE_PASSWORD: password
+      DATABASE_DB: applicant_db
+      RABBITMQ_HOST: rabbitmq
+      # ⬇️ INSERT THE NEW LINE HERE ⬇️
+      RABBITMQ_URL: "amqp://guest:guest@rabbitmq:5672/%2f"
+    networks:
+      - app-network
+
+  # 4. Background Worker
+  worker:
+    build: ./src/worker
+    container_name: module6-worker
+    depends_on:
+      db:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      DATABASE_HOST: db
+      DATABASE_USER: user
+      DATABASE_PASSWORD: password
+      DATABASE_DB: applicant_db
+      RABBITMQ_HOST: rabbitmq
+      # You might want it here too for the worker, eventually
+      RABBITMQ_URL: "amqp://guest:guest@rabbitmq:5672/%2f"
+    # REQUIRED: Mount the data folder so the worker can read the JSON file
+    volumes:
+      - ./src/data:/data:ro
+    networks:
+      - app-network
+
+volumes:
+  postgres_data:
+
+networks:
+  app-network:
+    driver: bridge

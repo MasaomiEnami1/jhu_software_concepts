@@ -1,0 +1,12 @@
+# RabbitMQ Client (To listen for messages)
+pika==1.3.2
+
+# Database Adapter (To write results to Postgres)
+psycopg2-binary==2.9.9
+
+# Web Scraping Tools (For your ETL/Scraper logic)
+requests==2.31.0
+beautifulsoup4==4.12.3
+
+# Optional: If your scraper uses pandas for data manipulation
+# pandas==2.2.0
