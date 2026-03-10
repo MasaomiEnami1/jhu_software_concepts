@@ -82,3 +82,19 @@ Security Best Practices
     Least Privilege: The dailyWork-ME IAM user is used for all operations.
 
     No Hardcoding: Credentials are managed via python-dotenv.
+
+# Module 7: Cloud-Scale Microservices Deployment
+
+## How to Run the Notebook
+1. Open `grad-cafe-pipeline.ipynb` in VS Code or Jupyter.
+2. Ensure `requirements.txt` dependencies are installed: `pip install -r requirements.txt`.
+3. Run all cells to execute the data scraping, S3 upload, and local processing logic.
+4. **Outputs:** Local data is saved to the `data/` folder, and processed results are uploaded to the S3 bucket shown in `grad-cafe-bucket.png`.
+
+## EC2 Deployment
+The application is deployed as a multi-container microservice (Flask, Worker, RabbitMQ, and PostgreSQL) on an AWS EC2 instance.
+* Detailed deployment steps and troubleshooting notes are located in: `ec2/EC2_DEPLOYMENT.md`.
+* The live application was verified at: `http://3.144.21.196:8080`.
+
+## Cloud Cleanup
+**Important:** To manage AWS costs and credits, all AWS resources (EC2 Instance and S3 Bucket) have been stopped or emptied following the successful capture of project screenshots.
