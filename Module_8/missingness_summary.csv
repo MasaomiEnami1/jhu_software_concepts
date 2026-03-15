@@ -1,0 +1,14 @@
+Column Name,Number of Missing Values,Percentage Missing (%)
+program,0,0.0
+masters_or_phd,0,0.0
+comments,24565,49.17
+date_added,0,0.0
+url,0,0.0
+applicant_status,0,0.0
+decision_date,0,0.0
+semester_year_start,0,0.0
+citizenship,5745,11.5
+gpa,22163,44.36
+gre,45256,90.58
+gre_v,45831,91.74
+gre_aw,46116,92.31
