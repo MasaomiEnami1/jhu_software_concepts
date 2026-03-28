@@ -1,0 +1,19 @@
+# Module 9: Data Preparation & Models Assignment
+
+## Author
+Masaomi Enami
+
+## Description
+This module focuses on grouping similar graduate school program applications using Natural Language Processing (NLP) and Machine Learning. The included script, `kmeans.py`, performs the following operations:
+
+1. **Data Cleaning:** Ingests `cleaned_gradcafe.json` and standardizes missing program/university inputs.
+2. **Vectorization:** Converts textual "Program" names into a numerical matrix using SciKit-Learn's `TfidfVectorizer`.
+3. **Dimensionality Reduction:** Uses Principal Component Analysis (PCA) to compress the sparse matrix into a dense, manageable format.
+4. **Initial Clustering:** Groups the data into 50 clusters and visualizes the distribution.
+5. **Elbow Method:** Runs K-Means across a range of cluster sizes (5 to 100) on a 75-component PCA to determine the optimal number of clusters mathematically.
+6. **Final Analysis (K=85):** Applies the optimal cluster count to the dataset, extracts clean GRE scores using RegEx, and outputs comparative box plots for Computer Science and Philosophy majors to identify data entry anomalies.
+
+## Execution
+Ensure you have the required libraries installed (`pandas`, `scikit-learn`, `matplotlib`).
+Run the script from the terminal:
+`python kmeans.py`
