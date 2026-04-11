@@ -1,43 +1,52 @@
+"""
+MLOps pipeline for GradCafe clustering using KMeans and MLflow.
+
+This module performs text vectorization, PCA dimensionality reduction,
+and KMeans clustering while tracking results to a local MLflow server.
+"""
+
+import warnings
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 import mlflow
 import mlflow.sklearn
-import warnings
 
 # Suppress memory leak warnings
 warnings.filterwarnings('ignore')
 
 def main():
+    """
+    Main function to execute the clustering and MLOps tracking pipeline.
+    """
     # --- 1. MLOPS SETUP ---
-    # Replace 'localhost' with your specific IP if you are running on a remote machine
     mlflow.set_tracking_uri("http://localhost:8080")
     mlflow.set_experiment("GradCafe_KMeans_Assignment")
 
     # --- 2. DATA PREPARATION ---
     print("Loading and cleaning data...")
     try:
-        df = pd.read_json('cleaned_gradcafe.json')
+        df_raw = pd.read_json('cleaned_gradcafe.json')
     except FileNotFoundError:
-        print("Error: 'cleaned_gradcafe.json' not found. Please ensure it is in your Module_11 folder.")
+        print("Error: 'cleaned_gradcafe.json' not found in the Module_11 folder.")
         return
 
-    df = df.dropna(subset=['Program'])
-    df = df[df['Program'].astype(str).str.strip().str.lower() != 'none']
-    
+    df_clean = df_raw.dropna(subset=['Program'])
+    df_clean = df_clean[df_clean['Program'].astype(str).str.strip().str.lower() != 'none']
+
     # --- 3. VECTORIZATION & PCA ---
     print("Vectorizing and reducing dimensionality...")
     vectorizer = TfidfVectorizer(stop_words='english')
-    X_sparse = vectorizer.fit_transform(df['Program'].fillna(''))
-    X_dense = X_sparse.toarray()
-    
+    # Renamed variables to snake_case for Pylint compliance
+    sparse_features = vectorizer.fit_transform(df_clean['Program'].fillna(''))
+    dense_features = sparse_features.toarray()
+
     # Using 75 components as determined in the elbow method section
     pca = PCA(n_components=75)
-    X_pca = pca.fit_transform(X_dense)
+    pca_features = pca.fit_transform(dense_features)
 
     # --- 4. THE TRACKED RUN ---
-    # Define parameters exactly as shown in your image
     params = {
         "max_iter": 500,
         "n_clusters": 25,
@@ -47,24 +56,23 @@ def main():
 
     with mlflow.start_run(run_name="KMeans_Assigned_Params"):
         print("Running K-Means with specified parameters...")
-        
-        # 1. Log the entire parameter dictionary at once
+
+        # 1. Log the entire parameter dictionary
         mlflow.log_params(params)
-        
-        # 2. Initialize and fit the model using the dictionary
-        # The ** syntax 'unpacks' the dictionary into the function arguments
+
+        # 2. Initialize and fit the model
         model = KMeans(**params)
-        model.fit(X_pca)
+        model.fit(pca_features)
 
         # 3. Log the performance metric: inertia_
-        # In MLflow, we use log_metric for values that represent performance
         mlflow.log_metric("inertia", model.inertia_)
-        
+
         # 4. Log the model artifact
         mlflow.sklearn.log_model(model, artifact_path="kmeans-model")
 
         print("-" * 30)
-        print(f"✅ Run Successful!")
+        # Removed 'f' prefix from strings without interpolation to fix W1309
+        print("✅ Run Successful!")
         print(f"Logged Parameters: {params}")
         print(f"Logged Inertia: {model.inertia_:.2f}")
         print("-" * 30)
