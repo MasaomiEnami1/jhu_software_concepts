@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Prediction Result</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 600px; margin: 100px auto; text-align: center; background-color: #f4f7f6; }
+        .card { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .Accepted { color: #27ae60; font-size: 2.5em; font-weight: bold; }
+        .Rejected { color: #c0392b; font-size: 2.5em; font-weight: bold; }
+        .score { font-size: 1.2em; color: #7f8c8d; margin-top: 10px; }
+        .btn { display: inline-block; margin-top: 30px; padding: 10px 20px; background: #3498db; color: white; text-decoration: none; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Admission Prediction</h1>
+        <div class="{{ prediction }}">
+            Prediction: {{ prediction }}
+        </div>
+        <p class="score">Model Confidence Score: <strong>{{ confidence }}</strong></p>
+        
+        <a href="/will-you-get-in" class="btn">Try Another Applicant</a>
+    </div>
+</body>
+</html>
