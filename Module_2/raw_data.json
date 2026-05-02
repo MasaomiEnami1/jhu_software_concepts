@@ -1,902 +1,1122 @@
 [
     {
-        "u_raw": "American University",
-        "p_raw": "International Affairs Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2025 American GPA 3.7",
-        "comm_raw": "I got an email stating that my funding decision would be released in March and congratulating me but never received an update in my portal or a formal acceptance email.",
-        "url_raw": "https://www.thegradcafe.com/result/1002145"
+        "u_raw": "McGill University",
+        "p_raw": "Chemistry Masters",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on May 02",
+        "stats_raw": "Accepted on May 02 Fall 2026 Other",
+        "comm_raw": "Domestic, out of province Email first, then letter posted on portal immediately after"
     },
     {
-        "u_raw": "University of Illinois Chicago(UIC)",
-        "p_raw": "Computer Science PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 International GPA 4.00",
-        "comm_raw": "RA funding offer received",
-        "url_raw": "https://www.thegradcafe.com/result/1002144"
+        "u_raw": "University of British Columbia",
+        "p_raw": "Materials Engineering PhD",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on Apr 29",
+        "stats_raw": "Accepted on Apr 29 Fall 2026 International",
+        "comm_raw": "Centre for Digital Media Master of Digital Media Masters May 02, 2026 Accepted on Mar 17 Total comments"
     },
     {
-        "u_raw": "University of Miami",
-        "p_raw": "English PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 14 Feb",
-        "stats_raw": "Accepted on 14 Feb Fall 2026 American GPA 4.0",
-        "comm_raw": "First acceptance! 1a/3r/9p",
-        "url_raw": "https://www.thegradcafe.com/result/1002143"
+        "u_raw": "Centre for Digital Media",
+        "p_raw": "Master of Digital Media Masters",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on Mar 17",
+        "stats_raw": "Accepted on Mar 17 Fall 2026 International",
+        "comm_raw": "Conditional Offer. Communication bundle"
     },
     {
-        "u_raw": "London School of Economics and Political Science (LSE)",
-        "p_raw": "Sociology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 6 Feb",
-        "stats_raw": "Rejected on 6 Feb Fall 2026 American",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002142"
+        "u_raw": "York University",
+        "p_raw": "Law PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 International GPA 4.00",
+        "comm_raw": "No notification, just saw status update when I randomly checked portal"
+    },
+    {
+        "u_raw": "University of Alabama at Huntsville",
+        "p_raw": "Atmospheric Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Accepted on Jan 23",
+        "stats_raw": "Accepted on Jan 23 Fall 2026 American GPA 3.94",
+        "comm_raw": "Waiting to hear about funding"
+    },
+    {
+        "u_raw": "Penn State University",
+        "p_raw": "Atmospheric Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American GPA 3.94",
+        "comm_raw": "Communication could have been better, but still could be worse. This was my first rejection notification from any program. Others remain silent..."
+    },
+    {
+        "u_raw": "Saint Louis University",
+        "p_raw": "Public Health Studies PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American",
+        "comm_raw": "health services research / health policy track"
+    },
+    {
+        "u_raw": "CUNY Graduate Center",
+        "p_raw": "Astrophysics Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Wait listed on May 01",
+        "stats_raw": "Wait listed on May 01 Fall 2026 American GPA 3.70",
+        "comm_raw": "Only masters program I applied to this cycle. Got rejected from all the PhD programs I applied to. Please let them know if you have other offers / are not going to attend. I really want this and it\u2019s my dream program ;("
+    },
+    {
+        "u_raw": "North Carolina State University",
+        "p_raw": "Electrical Engineering Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Accepted on Mar 31",
+        "stats_raw": "Accepted on Mar 31 Fall 2026 International GPA 3.30",
+        "comm_raw": "GRE and TOEFL waived."
+    },
+    {
+        "u_raw": "Northwestern University",
+        "p_raw": "Media, Technology, and Society PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American GPA 3.98",
+        "comm_raw": "GPA Masters. Absolutely insulting for them to string along any applicant until May 1st. Zero notification beforehand, they didn't answer any emails sent to them about the process, nothing. Waiting almost six months for a decision to a school is an incredibly red flag, I would never apply here again. Terrible end to an even worse cycle 0.5a/0w/0i/5.5r"
+    },
+    {
+        "u_raw": "University of Western Ontario",
+        "p_raw": "Master of Computer Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 International GPA 3.85",
+        "comm_raw": "Simon Fraser University Anthropology Masters May 01, 2026 Wait listed on Apr 29 Total comments"
+    },
+    {
+        "u_raw": "Simon Fraser University",
+        "p_raw": "Anthropology Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Wait listed on Apr 29",
+        "stats_raw": "Wait listed on Apr 29 Fall 2026 International",
+        "comm_raw": "University of Toronto Masters of Visual Studies (studio) MFA May 01, 2026 Rejected on Apr 30 Total comments"
     },
     {
         "u_raw": "University of Toronto",
-        "p_raw": "Sociology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 9 Feb",
-        "stats_raw": "Rejected on 9 Feb Fall 2026 American",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002141"
+        "p_raw": "Masters of Visual Studies (studio) MFA",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 Other GPA 3.80",
+        "comm_raw": "Not a high GPA but still shocked at the rejection. Lots of experience worldwide with group and solo exhibitions in galleries. 3 residencies and lots of relevant work experience. Got an email saying to check the portal and there was a rejection letter."
     },
     {
-        "u_raw": "Northern Illinois University",
-        "p_raw": "Speech Language Pathology Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.86",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002140"
+        "u_raw": "Northeastern University",
+        "p_raw": "Criminology and Criminal Justice Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 30",
+        "stats_raw": "Accepted on Apr 30 Fall 2026 American GPA 3.79",
+        "comm_raw": "Brandeis University Computer Science PhD Apr 30, 2026 Accepted on Apr 30 Total comments"
     },
     {
-        "u_raw": "Lehigh University",
-        "p_raw": "English Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 14 Feb",
-        "stats_raw": "Rejected on 14 Feb Fall 2026 American GPA 4.9",
-        "comm_raw": "Was surprised ngl",
-        "url_raw": "https://www.thegradcafe.com/result/1002139"
-    },
-    {
-        "u_raw": "Duke University",
-        "p_raw": "Pure Mathematics PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 5 Feb",
-        "stats_raw": "Accepted on 5 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002138"
-    },
-    {
-        "u_raw": "University of Southern California",
-        "p_raw": "Electrical And Computer Engineering PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002137"
-    },
-    {
-        "u_raw": "Columbia University",
-        "p_raw": "Chemical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 15 Feb",
-        "stats_raw": "Accepted on 15 Feb Fall 2026 American GPA 3.6",
-        "comm_raw": "MS Express. Application Submitted November 23. Received an email saying application status update .",
-        "url_raw": "https://www.thegradcafe.com/result/1002136"
-    },
-    {
-        "u_raw": "University of Florida",
-        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Interview on 13 Jan",
-        "stats_raw": "Interview on 13 Jan Fall 2026 American GPA 3.85",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002135"
-    },
-    {
-        "u_raw": "Massachusetts Institute of Technology (MIT)",
-        "p_raw": "Mechanical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Wait listed on 15 Feb",
-        "stats_raw": "Wait listed on 15 Feb Fall 2026 American GRE 165 GRE V 170 GRE AW 4.5 GPA 3.95",
-        "comm_raw": "Zoom interview with PI last week. Applied for GRFP.",
-        "url_raw": "https://www.thegradcafe.com/result/1002134"
-    },
-    {
-        "u_raw": "Florida State University",
-        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.85",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002133"
-    },
-    {
-        "u_raw": "The University of Texas at Austin",
-        "p_raw": "Counseling Psychology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 24 Jan",
-        "stats_raw": "Accepted on 24 Jan Fall 2026 American GPA 3.8",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002132"
-    },
-    {
-        "u_raw": "University of Southern California",
-        "p_raw": "Electrical And Computer Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 12 Nov",
-        "stats_raw": "Accepted on 12 Nov Fall 2026 American GPA 3.70",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002131"
-    },
-    {
-        "u_raw": "University of Massachusetts Amherst",
-        "p_raw": "Communication PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 15 Feb",
-        "stats_raw": "Rejected on 15 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002130"
-    },
-    {
-        "u_raw": "University of Texas at Dallas",
-        "p_raw": "Speech-Language Pathology Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 10 Feb",
-        "stats_raw": "Accepted on 10 Feb Fall 2026 American GRE V 151 GRE AW 3.5 GPA 3.85",
-        "comm_raw": "Submitted my application 1/4 and my application status changed to admitted on 2/9. I have many volunteer hours with various populations and tried to write a strong essay to make up for any weak areas of application!",
-        "url_raw": "https://www.thegradcafe.com/result/1002129"
-    },
-    {
-        "u_raw": "Columbia University",
-        "p_raw": "Electrical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 23 Dec",
-        "stats_raw": "Accepted on 23 Dec Fall 2026 American GPA 3.7",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002128"
-    },
-    {
-        "u_raw": "George Mason University",
-        "p_raw": "Industrial Organizational Psychology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 15 Feb",
-        "stats_raw": "Rejected on 15 Feb Fall 2026 American GPA 3.77",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002127"
-    },
-    {
-        "u_raw": "University of Oregon",
-        "p_raw": "Community and Regional Planning Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.98",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002126"
-    },
-    {
-        "u_raw": "American University",
-        "p_raw": "International Affairs Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2025 American GPA 3.7",
-        "comm_raw": "I got an email stating that my funding decision would be released in March and congratulating me but never received an update in my portal or a formal acceptance email.",
-        "url_raw": "https://www.thegradcafe.com/result/1002145"
-    },
-    {
-        "u_raw": "University of Illinois Chicago(UIC)",
+        "u_raw": "Brandeis University",
         "p_raw": "Computer Science PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 International GPA 4.00",
-        "comm_raw": "RA funding offer received",
-        "url_raw": "https://www.thegradcafe.com/result/1002144"
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 30",
+        "stats_raw": "Accepted on Apr 30 Fall 2026 American GPA 3.95",
+        "comm_raw": "Interview on the 27th, acceptance email on the 30th"
     },
     {
-        "u_raw": "University of Miami",
-        "p_raw": "English PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 14 Feb",
-        "stats_raw": "Accepted on 14 Feb Fall 2026 American GPA 4.0",
-        "comm_raw": "First acceptance! 1a/3r/9p",
-        "url_raw": "https://www.thegradcafe.com/result/1002143"
+        "u_raw": "University of California, Riverside",
+        "p_raw": "Astronomy PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.46",
+        "comm_raw": "Email to check status update in portal."
     },
     {
-        "u_raw": "London School of Economics and Political Science (LSE)",
-        "p_raw": "Sociology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 6 Feb",
-        "stats_raw": "Rejected on 6 Feb Fall 2026 American",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002142"
+        "u_raw": "Boston University",
+        "p_raw": "Criminal Justice Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 17",
+        "stats_raw": "Accepted on Apr 17 Fall 2026 American GPA 3.79",
+        "comm_raw": "Tufts University School Psychology Masters Apr 30, 2026 Rejected on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "Tufts University",
+        "p_raw": "School Psychology Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.70",
+        "comm_raw": "University of South Florida Integrative Biology Masters Apr 30, 2026 Wait listed on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "University of South Florida",
+        "p_raw": "Integrative Biology Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Wait listed on Apr 30",
+        "stats_raw": "Wait listed on Apr 30 Fall 2026 International GPA 3.75",
+        "comm_raw": "I had applied back on Nov 28, as deadline was on 30. Applied after having an interview with PI who has opened the vacancy. I have one publication in Q2 journal as a first author. Do not know why they are taking forever to make decision. It was strange that I put into waitlist at first place, as my PI was super excited to recruit me (now on maternity leave). I tried to contact with Program Chair, and administrative assistant but the mail response is 10:1, they barely said I am in the waiting list but am yet to hear back from them like in position of waitlist I am right now. I had other offer from Southern Illinois University Carbondale, but I declined in May 20 thinking I will get this offer, but I am literally fed up, and living in a thread of hope."
+    },
+    {
+        "u_raw": "North Carolina State University",
+        "p_raw": "Mathematics PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.70",
+        "comm_raw": "I genuinely don't know what went wrong. I was led on by a potential advisor. Really sucks"
+    },
+    {
+        "u_raw": "McGill University",
+        "p_raw": "Chemistry Masters",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on May 02",
+        "stats_raw": "Accepted on May 02 Fall 2026 Other",
+        "comm_raw": "Domestic, out of province Email first, then letter posted on portal immediately after"
+    },
+    {
+        "u_raw": "University of British Columbia",
+        "p_raw": "Materials Engineering PhD",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on Apr 29",
+        "stats_raw": "Accepted on Apr 29 Fall 2026 International",
+        "comm_raw": "Centre for Digital Media Master of Digital Media Masters May 02, 2026 Accepted on Mar 17 Total comments"
+    },
+    {
+        "u_raw": "Centre for Digital Media",
+        "p_raw": "Master of Digital Media Masters",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on Mar 17",
+        "stats_raw": "Accepted on Mar 17 Fall 2026 International",
+        "comm_raw": "Conditional Offer. Communication bundle"
+    },
+    {
+        "u_raw": "York University",
+        "p_raw": "Law PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 International GPA 4.00",
+        "comm_raw": "No notification, just saw status update when I randomly checked portal"
+    },
+    {
+        "u_raw": "University of Alabama at Huntsville",
+        "p_raw": "Atmospheric Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Accepted on Jan 23",
+        "stats_raw": "Accepted on Jan 23 Fall 2026 American GPA 3.94",
+        "comm_raw": "Waiting to hear about funding"
+    },
+    {
+        "u_raw": "Penn State University",
+        "p_raw": "Atmospheric Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American GPA 3.94",
+        "comm_raw": "Communication could have been better, but still could be worse. This was my first rejection notification from any program. Others remain silent..."
+    },
+    {
+        "u_raw": "Saint Louis University",
+        "p_raw": "Public Health Studies PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American",
+        "comm_raw": "health services research / health policy track"
+    },
+    {
+        "u_raw": "CUNY Graduate Center",
+        "p_raw": "Astrophysics Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Wait listed on May 01",
+        "stats_raw": "Wait listed on May 01 Fall 2026 American GPA 3.70",
+        "comm_raw": "Only masters program I applied to this cycle. Got rejected from all the PhD programs I applied to. Please let them know if you have other offers / are not going to attend. I really want this and it\u2019s my dream program ;("
+    },
+    {
+        "u_raw": "North Carolina State University",
+        "p_raw": "Electrical Engineering Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Accepted on Mar 31",
+        "stats_raw": "Accepted on Mar 31 Fall 2026 International GPA 3.30",
+        "comm_raw": "GRE and TOEFL waived."
+    },
+    {
+        "u_raw": "Northwestern University",
+        "p_raw": "Media, Technology, and Society PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American GPA 3.98",
+        "comm_raw": "GPA Masters. Absolutely insulting for them to string along any applicant until May 1st. Zero notification beforehand, they didn't answer any emails sent to them about the process, nothing. Waiting almost six months for a decision to a school is an incredibly red flag, I would never apply here again. Terrible end to an even worse cycle 0.5a/0w/0i/5.5r"
+    },
+    {
+        "u_raw": "University of Western Ontario",
+        "p_raw": "Master of Computer Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 International GPA 3.85",
+        "comm_raw": "Simon Fraser University Anthropology Masters May 01, 2026 Wait listed on Apr 29 Total comments"
+    },
+    {
+        "u_raw": "Simon Fraser University",
+        "p_raw": "Anthropology Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Wait listed on Apr 29",
+        "stats_raw": "Wait listed on Apr 29 Fall 2026 International",
+        "comm_raw": "University of Toronto Masters of Visual Studies (studio) MFA May 01, 2026 Rejected on Apr 30 Total comments"
     },
     {
         "u_raw": "University of Toronto",
-        "p_raw": "Sociology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 9 Feb",
-        "stats_raw": "Rejected on 9 Feb Fall 2026 American",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002141"
+        "p_raw": "Masters of Visual Studies (studio) MFA",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 Other GPA 3.80",
+        "comm_raw": "Not a high GPA but still shocked at the rejection. Lots of experience worldwide with group and solo exhibitions in galleries. 3 residencies and lots of relevant work experience. Got an email saying to check the portal and there was a rejection letter."
     },
     {
-        "u_raw": "Northern Illinois University",
-        "p_raw": "Speech Language Pathology Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.86",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002140"
+        "u_raw": "Northeastern University",
+        "p_raw": "Criminology and Criminal Justice Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 30",
+        "stats_raw": "Accepted on Apr 30 Fall 2026 American GPA 3.79",
+        "comm_raw": "Brandeis University Computer Science PhD Apr 30, 2026 Accepted on Apr 30 Total comments"
     },
     {
-        "u_raw": "Lehigh University",
-        "p_raw": "English Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 14 Feb",
-        "stats_raw": "Rejected on 14 Feb Fall 2026 American GPA 4.9",
-        "comm_raw": "Was surprised ngl",
-        "url_raw": "https://www.thegradcafe.com/result/1002139"
-    },
-    {
-        "u_raw": "Duke University",
-        "p_raw": "Pure Mathematics PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 5 Feb",
-        "stats_raw": "Accepted on 5 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002138"
-    },
-    {
-        "u_raw": "University of Southern California",
-        "p_raw": "Electrical And Computer Engineering PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002137"
-    },
-    {
-        "u_raw": "Columbia University",
-        "p_raw": "Chemical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 15 Feb",
-        "stats_raw": "Accepted on 15 Feb Fall 2026 American GPA 3.6",
-        "comm_raw": "MS Express. Application Submitted November 23. Received an email saying application status update .",
-        "url_raw": "https://www.thegradcafe.com/result/1002136"
-    },
-    {
-        "u_raw": "University of Florida",
-        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Interview on 13 Jan",
-        "stats_raw": "Interview on 13 Jan Fall 2026 American GPA 3.85",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002135"
-    },
-    {
-        "u_raw": "Massachusetts Institute of Technology (MIT)",
-        "p_raw": "Mechanical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Wait listed on 15 Feb",
-        "stats_raw": "Wait listed on 15 Feb Fall 2026 American GRE 165 GRE V 170 GRE AW 4.5 GPA 3.95",
-        "comm_raw": "Zoom interview with PI last week. Applied for GRFP.",
-        "url_raw": "https://www.thegradcafe.com/result/1002134"
-    },
-    {
-        "u_raw": "Florida State University",
-        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.85",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002133"
-    },
-    {
-        "u_raw": "The University of Texas at Austin",
-        "p_raw": "Counseling Psychology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 24 Jan",
-        "stats_raw": "Accepted on 24 Jan Fall 2026 American GPA 3.8",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002132"
-    },
-    {
-        "u_raw": "University of Southern California",
-        "p_raw": "Electrical And Computer Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 12 Nov",
-        "stats_raw": "Accepted on 12 Nov Fall 2026 American GPA 3.70",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002131"
-    },
-    {
-        "u_raw": "University of Massachusetts Amherst",
-        "p_raw": "Communication PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 15 Feb",
-        "stats_raw": "Rejected on 15 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002130"
-    },
-    {
-        "u_raw": "University of Texas at Dallas",
-        "p_raw": "Speech-Language Pathology Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 10 Feb",
-        "stats_raw": "Accepted on 10 Feb Fall 2026 American GRE V 151 GRE AW 3.5 GPA 3.85",
-        "comm_raw": "Submitted my application 1/4 and my application status changed to admitted on 2/9. I have many volunteer hours with various populations and tried to write a strong essay to make up for any weak areas of application!",
-        "url_raw": "https://www.thegradcafe.com/result/1002129"
-    },
-    {
-        "u_raw": "Columbia University",
-        "p_raw": "Electrical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 23 Dec",
-        "stats_raw": "Accepted on 23 Dec Fall 2026 American GPA 3.7",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002128"
-    },
-    {
-        "u_raw": "George Mason University",
-        "p_raw": "Industrial Organizational Psychology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 15 Feb",
-        "stats_raw": "Rejected on 15 Feb Fall 2026 American GPA 3.77",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002127"
-    },
-    {
-        "u_raw": "University of Oregon",
-        "p_raw": "Community and Regional Planning Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.98",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002126"
-    },
-    {
-        "u_raw": "American University",
-        "p_raw": "International Affairs Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2025 American GPA 3.7",
-        "comm_raw": "I got an email stating that my funding decision would be released in March and congratulating me but never received an update in my portal or a formal acceptance email.",
-        "url_raw": "https://www.thegradcafe.com/result/1002145"
-    },
-    {
-        "u_raw": "University of Illinois Chicago(UIC)",
+        "u_raw": "Brandeis University",
         "p_raw": "Computer Science PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 International GPA 4.00",
-        "comm_raw": "RA funding offer received",
-        "url_raw": "https://www.thegradcafe.com/result/1002144"
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 30",
+        "stats_raw": "Accepted on Apr 30 Fall 2026 American GPA 3.95",
+        "comm_raw": "Interview on the 27th, acceptance email on the 30th"
     },
     {
-        "u_raw": "University of Miami",
-        "p_raw": "English PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 14 Feb",
-        "stats_raw": "Accepted on 14 Feb Fall 2026 American GPA 4.0",
-        "comm_raw": "First acceptance! 1a/3r/9p",
-        "url_raw": "https://www.thegradcafe.com/result/1002143"
+        "u_raw": "University of California, Riverside",
+        "p_raw": "Astronomy PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.46",
+        "comm_raw": "Email to check status update in portal."
     },
     {
-        "u_raw": "London School of Economics and Political Science (LSE)",
-        "p_raw": "Sociology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 6 Feb",
-        "stats_raw": "Rejected on 6 Feb Fall 2026 American",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002142"
+        "u_raw": "Boston University",
+        "p_raw": "Criminal Justice Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 17",
+        "stats_raw": "Accepted on Apr 17 Fall 2026 American GPA 3.79",
+        "comm_raw": "Tufts University School Psychology Masters Apr 30, 2026 Rejected on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "Tufts University",
+        "p_raw": "School Psychology Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.70",
+        "comm_raw": "University of South Florida Integrative Biology Masters Apr 30, 2026 Wait listed on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "University of South Florida",
+        "p_raw": "Integrative Biology Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Wait listed on Apr 30",
+        "stats_raw": "Wait listed on Apr 30 Fall 2026 International GPA 3.75",
+        "comm_raw": "I had applied back on Nov 28, as deadline was on 30. Applied after having an interview with PI who has opened the vacancy. I have one publication in Q2 journal as a first author. Do not know why they are taking forever to make decision. It was strange that I put into waitlist at first place, as my PI was super excited to recruit me (now on maternity leave). I tried to contact with Program Chair, and administrative assistant but the mail response is 10:1, they barely said I am in the waiting list but am yet to hear back from them like in position of waitlist I am right now. I had other offer from Southern Illinois University Carbondale, but I declined in May 20 thinking I will get this offer, but I am literally fed up, and living in a thread of hope."
+    },
+    {
+        "u_raw": "North Carolina State University",
+        "p_raw": "Mathematics PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.70",
+        "comm_raw": "I genuinely don't know what went wrong. I was led on by a potential advisor. Really sucks"
+    },
+    {
+        "u_raw": "McGill University",
+        "p_raw": "Chemistry Masters",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on May 02",
+        "stats_raw": "Accepted on May 02 Fall 2026 Other",
+        "comm_raw": "Domestic, out of province Email first, then letter posted on portal immediately after"
+    },
+    {
+        "u_raw": "University of British Columbia",
+        "p_raw": "Materials Engineering PhD",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on Apr 29",
+        "stats_raw": "Accepted on Apr 29 Fall 2026 International",
+        "comm_raw": "Centre for Digital Media Master of Digital Media Masters May 02, 2026 Accepted on Mar 17 Total comments"
+    },
+    {
+        "u_raw": "Centre for Digital Media",
+        "p_raw": "Master of Digital Media Masters",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on Mar 17",
+        "stats_raw": "Accepted on Mar 17 Fall 2026 International",
+        "comm_raw": "Conditional Offer. Communication bundle"
+    },
+    {
+        "u_raw": "York University",
+        "p_raw": "Law PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 International GPA 4.00",
+        "comm_raw": "No notification, just saw status update when I randomly checked portal"
+    },
+    {
+        "u_raw": "University of Alabama at Huntsville",
+        "p_raw": "Atmospheric Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Accepted on Jan 23",
+        "stats_raw": "Accepted on Jan 23 Fall 2026 American GPA 3.94",
+        "comm_raw": "Waiting to hear about funding"
+    },
+    {
+        "u_raw": "Penn State University",
+        "p_raw": "Atmospheric Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American GPA 3.94",
+        "comm_raw": "Communication could have been better, but still could be worse. This was my first rejection notification from any program. Others remain silent..."
+    },
+    {
+        "u_raw": "Saint Louis University",
+        "p_raw": "Public Health Studies PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American",
+        "comm_raw": "health services research / health policy track"
+    },
+    {
+        "u_raw": "CUNY Graduate Center",
+        "p_raw": "Astrophysics Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Wait listed on May 01",
+        "stats_raw": "Wait listed on May 01 Fall 2026 American GPA 3.70",
+        "comm_raw": "Only masters program I applied to this cycle. Got rejected from all the PhD programs I applied to. Please let them know if you have other offers / are not going to attend. I really want this and it\u2019s my dream program ;("
+    },
+    {
+        "u_raw": "North Carolina State University",
+        "p_raw": "Electrical Engineering Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Accepted on Mar 31",
+        "stats_raw": "Accepted on Mar 31 Fall 2026 International GPA 3.30",
+        "comm_raw": "GRE and TOEFL waived."
+    },
+    {
+        "u_raw": "Northwestern University",
+        "p_raw": "Media, Technology, and Society PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American GPA 3.98",
+        "comm_raw": "GPA Masters. Absolutely insulting for them to string along any applicant until May 1st. Zero notification beforehand, they didn't answer any emails sent to them about the process, nothing. Waiting almost six months for a decision to a school is an incredibly red flag, I would never apply here again. Terrible end to an even worse cycle 0.5a/0w/0i/5.5r"
+    },
+    {
+        "u_raw": "University of Western Ontario",
+        "p_raw": "Master of Computer Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 International GPA 3.85",
+        "comm_raw": "Simon Fraser University Anthropology Masters May 01, 2026 Wait listed on Apr 29 Total comments"
+    },
+    {
+        "u_raw": "Simon Fraser University",
+        "p_raw": "Anthropology Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Wait listed on Apr 29",
+        "stats_raw": "Wait listed on Apr 29 Fall 2026 International",
+        "comm_raw": "University of Toronto Masters of Visual Studies (studio) MFA May 01, 2026 Rejected on Apr 30 Total comments"
     },
     {
         "u_raw": "University of Toronto",
-        "p_raw": "Sociology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 9 Feb",
-        "stats_raw": "Rejected on 9 Feb Fall 2026 American",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002141"
+        "p_raw": "Masters of Visual Studies (studio) MFA",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 Other GPA 3.80",
+        "comm_raw": "Not a high GPA but still shocked at the rejection. Lots of experience worldwide with group and solo exhibitions in galleries. 3 residencies and lots of relevant work experience. Got an email saying to check the portal and there was a rejection letter."
     },
     {
-        "u_raw": "Northern Illinois University",
-        "p_raw": "Speech Language Pathology Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.86",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002140"
+        "u_raw": "Northeastern University",
+        "p_raw": "Criminology and Criminal Justice Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 30",
+        "stats_raw": "Accepted on Apr 30 Fall 2026 American GPA 3.79",
+        "comm_raw": "Brandeis University Computer Science PhD Apr 30, 2026 Accepted on Apr 30 Total comments"
     },
     {
-        "u_raw": "Lehigh University",
-        "p_raw": "English Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 14 Feb",
-        "stats_raw": "Rejected on 14 Feb Fall 2026 American GPA 4.9",
-        "comm_raw": "Was surprised ngl",
-        "url_raw": "https://www.thegradcafe.com/result/1002139"
-    },
-    {
-        "u_raw": "Duke University",
-        "p_raw": "Pure Mathematics PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 5 Feb",
-        "stats_raw": "Accepted on 5 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002138"
-    },
-    {
-        "u_raw": "University of Southern California",
-        "p_raw": "Electrical And Computer Engineering PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002137"
-    },
-    {
-        "u_raw": "Columbia University",
-        "p_raw": "Chemical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 15 Feb",
-        "stats_raw": "Accepted on 15 Feb Fall 2026 American GPA 3.6",
-        "comm_raw": "MS Express. Application Submitted November 23. Received an email saying application status update .",
-        "url_raw": "https://www.thegradcafe.com/result/1002136"
-    },
-    {
-        "u_raw": "University of Florida",
-        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Interview on 13 Jan",
-        "stats_raw": "Interview on 13 Jan Fall 2026 American GPA 3.85",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002135"
-    },
-    {
-        "u_raw": "Massachusetts Institute of Technology (MIT)",
-        "p_raw": "Mechanical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Wait listed on 15 Feb",
-        "stats_raw": "Wait listed on 15 Feb Fall 2026 American GRE 165 GRE V 170 GRE AW 4.5 GPA 3.95",
-        "comm_raw": "Zoom interview with PI last week. Applied for GRFP.",
-        "url_raw": "https://www.thegradcafe.com/result/1002134"
-    },
-    {
-        "u_raw": "Florida State University",
-        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.85",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002133"
-    },
-    {
-        "u_raw": "The University of Texas at Austin",
-        "p_raw": "Counseling Psychology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 24 Jan",
-        "stats_raw": "Accepted on 24 Jan Fall 2026 American GPA 3.8",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002132"
-    },
-    {
-        "u_raw": "University of Southern California",
-        "p_raw": "Electrical And Computer Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 12 Nov",
-        "stats_raw": "Accepted on 12 Nov Fall 2026 American GPA 3.70",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002131"
-    },
-    {
-        "u_raw": "University of Massachusetts Amherst",
-        "p_raw": "Communication PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 15 Feb",
-        "stats_raw": "Rejected on 15 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002130"
-    },
-    {
-        "u_raw": "University of Texas at Dallas",
-        "p_raw": "Speech-Language Pathology Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 10 Feb",
-        "stats_raw": "Accepted on 10 Feb Fall 2026 American GRE V 151 GRE AW 3.5 GPA 3.85",
-        "comm_raw": "Submitted my application 1/4 and my application status changed to admitted on 2/9. I have many volunteer hours with various populations and tried to write a strong essay to make up for any weak areas of application!",
-        "url_raw": "https://www.thegradcafe.com/result/1002129"
-    },
-    {
-        "u_raw": "Columbia University",
-        "p_raw": "Electrical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 23 Dec",
-        "stats_raw": "Accepted on 23 Dec Fall 2026 American GPA 3.7",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002128"
-    },
-    {
-        "u_raw": "George Mason University",
-        "p_raw": "Industrial Organizational Psychology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 15 Feb",
-        "stats_raw": "Rejected on 15 Feb Fall 2026 American GPA 3.77",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002127"
-    },
-    {
-        "u_raw": "University of Oregon",
-        "p_raw": "Community and Regional Planning Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.98",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002126"
-    },
-    {
-        "u_raw": "American University",
-        "p_raw": "International Affairs Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2025 American GPA 3.7",
-        "comm_raw": "I got an email stating that my funding decision would be released in March and congratulating me but never received an update in my portal or a formal acceptance email.",
-        "url_raw": "https://www.thegradcafe.com/result/1002145"
-    },
-    {
-        "u_raw": "University of Illinois Chicago(UIC)",
+        "u_raw": "Brandeis University",
         "p_raw": "Computer Science PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 International GPA 4.00",
-        "comm_raw": "RA funding offer received",
-        "url_raw": "https://www.thegradcafe.com/result/1002144"
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 30",
+        "stats_raw": "Accepted on Apr 30 Fall 2026 American GPA 3.95",
+        "comm_raw": "Interview on the 27th, acceptance email on the 30th"
     },
     {
-        "u_raw": "University of Miami",
-        "p_raw": "English PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 14 Feb",
-        "stats_raw": "Accepted on 14 Feb Fall 2026 American GPA 4.0",
-        "comm_raw": "First acceptance! 1a/3r/9p",
-        "url_raw": "https://www.thegradcafe.com/result/1002143"
+        "u_raw": "University of California, Riverside",
+        "p_raw": "Astronomy PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.46",
+        "comm_raw": "Email to check status update in portal."
     },
     {
-        "u_raw": "London School of Economics and Political Science (LSE)",
-        "p_raw": "Sociology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 6 Feb",
-        "stats_raw": "Rejected on 6 Feb Fall 2026 American",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002142"
+        "u_raw": "Boston University",
+        "p_raw": "Criminal Justice Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 17",
+        "stats_raw": "Accepted on Apr 17 Fall 2026 American GPA 3.79",
+        "comm_raw": "Tufts University School Psychology Masters Apr 30, 2026 Rejected on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "Tufts University",
+        "p_raw": "School Psychology Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.70",
+        "comm_raw": "University of South Florida Integrative Biology Masters Apr 30, 2026 Wait listed on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "University of South Florida",
+        "p_raw": "Integrative Biology Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Wait listed on Apr 30",
+        "stats_raw": "Wait listed on Apr 30 Fall 2026 International GPA 3.75",
+        "comm_raw": "I had applied back on Nov 28, as deadline was on 30. Applied after having an interview with PI who has opened the vacancy. I have one publication in Q2 journal as a first author. Do not know why they are taking forever to make decision. It was strange that I put into waitlist at first place, as my PI was super excited to recruit me (now on maternity leave). I tried to contact with Program Chair, and administrative assistant but the mail response is 10:1, they barely said I am in the waiting list but am yet to hear back from them like in position of waitlist I am right now. I had other offer from Southern Illinois University Carbondale, but I declined in May 20 thinking I will get this offer, but I am literally fed up, and living in a thread of hope."
+    },
+    {
+        "u_raw": "North Carolina State University",
+        "p_raw": "Mathematics PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.70",
+        "comm_raw": "I genuinely don't know what went wrong. I was led on by a potential advisor. Really sucks"
+    },
+    {
+        "u_raw": "McGill University",
+        "p_raw": "Chemistry Masters",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on May 02",
+        "stats_raw": "Accepted on May 02 Fall 2026 Other",
+        "comm_raw": "Domestic, out of province Email first, then letter posted on portal immediately after"
+    },
+    {
+        "u_raw": "University of British Columbia",
+        "p_raw": "Materials Engineering PhD",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on Apr 29",
+        "stats_raw": "Accepted on Apr 29 Fall 2026 International",
+        "comm_raw": "Centre for Digital Media Master of Digital Media Masters May 02, 2026 Accepted on Mar 17 Total comments"
+    },
+    {
+        "u_raw": "Centre for Digital Media",
+        "p_raw": "Master of Digital Media Masters",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on Mar 17",
+        "stats_raw": "Accepted on Mar 17 Fall 2026 International",
+        "comm_raw": "Conditional Offer. Communication bundle"
+    },
+    {
+        "u_raw": "York University",
+        "p_raw": "Law PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 International GPA 4.00",
+        "comm_raw": "No notification, just saw status update when I randomly checked portal"
+    },
+    {
+        "u_raw": "University of Alabama at Huntsville",
+        "p_raw": "Atmospheric Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Accepted on Jan 23",
+        "stats_raw": "Accepted on Jan 23 Fall 2026 American GPA 3.94",
+        "comm_raw": "Waiting to hear about funding"
+    },
+    {
+        "u_raw": "Penn State University",
+        "p_raw": "Atmospheric Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American GPA 3.94",
+        "comm_raw": "Communication could have been better, but still could be worse. This was my first rejection notification from any program. Others remain silent..."
+    },
+    {
+        "u_raw": "Saint Louis University",
+        "p_raw": "Public Health Studies PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American",
+        "comm_raw": "health services research / health policy track"
+    },
+    {
+        "u_raw": "CUNY Graduate Center",
+        "p_raw": "Astrophysics Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Wait listed on May 01",
+        "stats_raw": "Wait listed on May 01 Fall 2026 American GPA 3.70",
+        "comm_raw": "Only masters program I applied to this cycle. Got rejected from all the PhD programs I applied to. Please let them know if you have other offers / are not going to attend. I really want this and it\u2019s my dream program ;("
+    },
+    {
+        "u_raw": "North Carolina State University",
+        "p_raw": "Electrical Engineering Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Accepted on Mar 31",
+        "stats_raw": "Accepted on Mar 31 Fall 2026 International GPA 3.30",
+        "comm_raw": "GRE and TOEFL waived."
+    },
+    {
+        "u_raw": "Northwestern University",
+        "p_raw": "Media, Technology, and Society PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American GPA 3.98",
+        "comm_raw": "GPA Masters. Absolutely insulting for them to string along any applicant until May 1st. Zero notification beforehand, they didn't answer any emails sent to them about the process, nothing. Waiting almost six months for a decision to a school is an incredibly red flag, I would never apply here again. Terrible end to an even worse cycle 0.5a/0w/0i/5.5r"
+    },
+    {
+        "u_raw": "University of Western Ontario",
+        "p_raw": "Master of Computer Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 International GPA 3.85",
+        "comm_raw": "Simon Fraser University Anthropology Masters May 01, 2026 Wait listed on Apr 29 Total comments"
+    },
+    {
+        "u_raw": "Simon Fraser University",
+        "p_raw": "Anthropology Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Wait listed on Apr 29",
+        "stats_raw": "Wait listed on Apr 29 Fall 2026 International",
+        "comm_raw": "University of Toronto Masters of Visual Studies (studio) MFA May 01, 2026 Rejected on Apr 30 Total comments"
     },
     {
         "u_raw": "University of Toronto",
-        "p_raw": "Sociology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 9 Feb",
-        "stats_raw": "Rejected on 9 Feb Fall 2026 American",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002141"
+        "p_raw": "Masters of Visual Studies (studio) MFA",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 Other GPA 3.80",
+        "comm_raw": "Not a high GPA but still shocked at the rejection. Lots of experience worldwide with group and solo exhibitions in galleries. 3 residencies and lots of relevant work experience. Got an email saying to check the portal and there was a rejection letter."
     },
     {
-        "u_raw": "Northern Illinois University",
-        "p_raw": "Speech Language Pathology Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.86",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002140"
+        "u_raw": "Northeastern University",
+        "p_raw": "Criminology and Criminal Justice Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 30",
+        "stats_raw": "Accepted on Apr 30 Fall 2026 American GPA 3.79",
+        "comm_raw": "Brandeis University Computer Science PhD Apr 30, 2026 Accepted on Apr 30 Total comments"
     },
     {
-        "u_raw": "Lehigh University",
-        "p_raw": "English Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 14 Feb",
-        "stats_raw": "Rejected on 14 Feb Fall 2026 American GPA 4.9",
-        "comm_raw": "Was surprised ngl",
-        "url_raw": "https://www.thegradcafe.com/result/1002139"
-    },
-    {
-        "u_raw": "Duke University",
-        "p_raw": "Pure Mathematics PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 5 Feb",
-        "stats_raw": "Accepted on 5 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002138"
-    },
-    {
-        "u_raw": "University of Southern California",
-        "p_raw": "Electrical And Computer Engineering PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002137"
-    },
-    {
-        "u_raw": "Columbia University",
-        "p_raw": "Chemical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 15 Feb",
-        "stats_raw": "Accepted on 15 Feb Fall 2026 American GPA 3.6",
-        "comm_raw": "MS Express. Application Submitted November 23. Received an email saying application status update .",
-        "url_raw": "https://www.thegradcafe.com/result/1002136"
-    },
-    {
-        "u_raw": "University of Florida",
-        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Interview on 13 Jan",
-        "stats_raw": "Interview on 13 Jan Fall 2026 American GPA 3.85",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002135"
-    },
-    {
-        "u_raw": "Massachusetts Institute of Technology (MIT)",
-        "p_raw": "Mechanical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Wait listed on 15 Feb",
-        "stats_raw": "Wait listed on 15 Feb Fall 2026 American GRE 165 GRE V 170 GRE AW 4.5 GPA 3.95",
-        "comm_raw": "Zoom interview with PI last week. Applied for GRFP.",
-        "url_raw": "https://www.thegradcafe.com/result/1002134"
-    },
-    {
-        "u_raw": "Florida State University",
-        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.85",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002133"
-    },
-    {
-        "u_raw": "The University of Texas at Austin",
-        "p_raw": "Counseling Psychology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 24 Jan",
-        "stats_raw": "Accepted on 24 Jan Fall 2026 American GPA 3.8",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002132"
-    },
-    {
-        "u_raw": "University of Southern California",
-        "p_raw": "Electrical And Computer Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 12 Nov",
-        "stats_raw": "Accepted on 12 Nov Fall 2026 American GPA 3.70",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002131"
-    },
-    {
-        "u_raw": "University of Massachusetts Amherst",
-        "p_raw": "Communication PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 15 Feb",
-        "stats_raw": "Rejected on 15 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002130"
-    },
-    {
-        "u_raw": "University of Texas at Dallas",
-        "p_raw": "Speech-Language Pathology Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 10 Feb",
-        "stats_raw": "Accepted on 10 Feb Fall 2026 American GRE V 151 GRE AW 3.5 GPA 3.85",
-        "comm_raw": "Submitted my application 1/4 and my application status changed to admitted on 2/9. I have many volunteer hours with various populations and tried to write a strong essay to make up for any weak areas of application!",
-        "url_raw": "https://www.thegradcafe.com/result/1002129"
-    },
-    {
-        "u_raw": "Columbia University",
-        "p_raw": "Electrical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 23 Dec",
-        "stats_raw": "Accepted on 23 Dec Fall 2026 American GPA 3.7",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002128"
-    },
-    {
-        "u_raw": "George Mason University",
-        "p_raw": "Industrial Organizational Psychology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 15 Feb",
-        "stats_raw": "Rejected on 15 Feb Fall 2026 American GPA 3.77",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002127"
-    },
-    {
-        "u_raw": "University of Oregon",
-        "p_raw": "Community and Regional Planning Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.98",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002126"
-    },
-    {
-        "u_raw": "American University",
-        "p_raw": "International Affairs Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2025 American GPA 3.7",
-        "comm_raw": "I got an email stating that my funding decision would be released in March and congratulating me but never received an update in my portal or a formal acceptance email.",
-        "url_raw": "https://www.thegradcafe.com/result/1002145"
-    },
-    {
-        "u_raw": "University of Illinois Chicago(UIC)",
+        "u_raw": "Brandeis University",
         "p_raw": "Computer Science PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 International GPA 4.00",
-        "comm_raw": "RA funding offer received",
-        "url_raw": "https://www.thegradcafe.com/result/1002144"
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 30",
+        "stats_raw": "Accepted on Apr 30 Fall 2026 American GPA 3.95",
+        "comm_raw": "Interview on the 27th, acceptance email on the 30th"
     },
     {
-        "u_raw": "University of Miami",
-        "p_raw": "English PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 14 Feb",
-        "stats_raw": "Accepted on 14 Feb Fall 2026 American GPA 4.0",
-        "comm_raw": "First acceptance! 1a/3r/9p",
-        "url_raw": "https://www.thegradcafe.com/result/1002143"
+        "u_raw": "University of California, Riverside",
+        "p_raw": "Astronomy PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.46",
+        "comm_raw": "Email to check status update in portal."
     },
     {
-        "u_raw": "London School of Economics and Political Science (LSE)",
-        "p_raw": "Sociology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 6 Feb",
-        "stats_raw": "Rejected on 6 Feb Fall 2026 American",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002142"
+        "u_raw": "Boston University",
+        "p_raw": "Criminal Justice Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 17",
+        "stats_raw": "Accepted on Apr 17 Fall 2026 American GPA 3.79",
+        "comm_raw": "Tufts University School Psychology Masters Apr 30, 2026 Rejected on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "Tufts University",
+        "p_raw": "School Psychology Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.70",
+        "comm_raw": "University of South Florida Integrative Biology Masters Apr 30, 2026 Wait listed on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "University of South Florida",
+        "p_raw": "Integrative Biology Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Wait listed on Apr 30",
+        "stats_raw": "Wait listed on Apr 30 Fall 2026 International GPA 3.75",
+        "comm_raw": "I had applied back on Nov 28, as deadline was on 30. Applied after having an interview with PI who has opened the vacancy. I have one publication in Q2 journal as a first author. Do not know why they are taking forever to make decision. It was strange that I put into waitlist at first place, as my PI was super excited to recruit me (now on maternity leave). I tried to contact with Program Chair, and administrative assistant but the mail response is 10:1, they barely said I am in the waiting list but am yet to hear back from them like in position of waitlist I am right now. I had other offer from Southern Illinois University Carbondale, but I declined in May 20 thinking I will get this offer, but I am literally fed up, and living in a thread of hope."
+    },
+    {
+        "u_raw": "North Carolina State University",
+        "p_raw": "Mathematics PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.70",
+        "comm_raw": "I genuinely don't know what went wrong. I was led on by a potential advisor. Really sucks"
+    },
+    {
+        "u_raw": "McGill University",
+        "p_raw": "Chemistry Masters",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on May 02",
+        "stats_raw": "Accepted on May 02 Fall 2026 Other",
+        "comm_raw": "Domestic, out of province Email first, then letter posted on portal immediately after"
+    },
+    {
+        "u_raw": "University of British Columbia",
+        "p_raw": "Materials Engineering PhD",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on Apr 29",
+        "stats_raw": "Accepted on Apr 29 Fall 2026 International",
+        "comm_raw": "Centre for Digital Media Master of Digital Media Masters May 02, 2026 Accepted on Mar 17 Total comments"
+    },
+    {
+        "u_raw": "Centre for Digital Media",
+        "p_raw": "Master of Digital Media Masters",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on Mar 17",
+        "stats_raw": "Accepted on Mar 17 Fall 2026 International",
+        "comm_raw": "Conditional Offer. Communication bundle"
+    },
+    {
+        "u_raw": "York University",
+        "p_raw": "Law PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 International GPA 4.00",
+        "comm_raw": "No notification, just saw status update when I randomly checked portal"
+    },
+    {
+        "u_raw": "University of Alabama at Huntsville",
+        "p_raw": "Atmospheric Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Accepted on Jan 23",
+        "stats_raw": "Accepted on Jan 23 Fall 2026 American GPA 3.94",
+        "comm_raw": "Waiting to hear about funding"
+    },
+    {
+        "u_raw": "Penn State University",
+        "p_raw": "Atmospheric Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American GPA 3.94",
+        "comm_raw": "Communication could have been better, but still could be worse. This was my first rejection notification from any program. Others remain silent..."
+    },
+    {
+        "u_raw": "Saint Louis University",
+        "p_raw": "Public Health Studies PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American",
+        "comm_raw": "health services research / health policy track"
+    },
+    {
+        "u_raw": "CUNY Graduate Center",
+        "p_raw": "Astrophysics Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Wait listed on May 01",
+        "stats_raw": "Wait listed on May 01 Fall 2026 American GPA 3.70",
+        "comm_raw": "Only masters program I applied to this cycle. Got rejected from all the PhD programs I applied to. Please let them know if you have other offers / are not going to attend. I really want this and it\u2019s my dream program ;("
+    },
+    {
+        "u_raw": "North Carolina State University",
+        "p_raw": "Electrical Engineering Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Accepted on Mar 31",
+        "stats_raw": "Accepted on Mar 31 Fall 2026 International GPA 3.30",
+        "comm_raw": "GRE and TOEFL waived."
+    },
+    {
+        "u_raw": "Northwestern University",
+        "p_raw": "Media, Technology, and Society PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American GPA 3.98",
+        "comm_raw": "GPA Masters. Absolutely insulting for them to string along any applicant until May 1st. Zero notification beforehand, they didn't answer any emails sent to them about the process, nothing. Waiting almost six months for a decision to a school is an incredibly red flag, I would never apply here again. Terrible end to an even worse cycle 0.5a/0w/0i/5.5r"
+    },
+    {
+        "u_raw": "University of Western Ontario",
+        "p_raw": "Master of Computer Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 International GPA 3.85",
+        "comm_raw": "Simon Fraser University Anthropology Masters May 01, 2026 Wait listed on Apr 29 Total comments"
+    },
+    {
+        "u_raw": "Simon Fraser University",
+        "p_raw": "Anthropology Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Wait listed on Apr 29",
+        "stats_raw": "Wait listed on Apr 29 Fall 2026 International",
+        "comm_raw": "University of Toronto Masters of Visual Studies (studio) MFA May 01, 2026 Rejected on Apr 30 Total comments"
     },
     {
         "u_raw": "University of Toronto",
-        "p_raw": "Sociology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 9 Feb",
-        "stats_raw": "Rejected on 9 Feb Fall 2026 American",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002141"
+        "p_raw": "Masters of Visual Studies (studio) MFA",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 Other GPA 3.80",
+        "comm_raw": "Not a high GPA but still shocked at the rejection. Lots of experience worldwide with group and solo exhibitions in galleries. 3 residencies and lots of relevant work experience. Got an email saying to check the portal and there was a rejection letter."
     },
     {
-        "u_raw": "Northern Illinois University",
-        "p_raw": "Speech Language Pathology Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.86",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002140"
+        "u_raw": "Northeastern University",
+        "p_raw": "Criminology and Criminal Justice Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 30",
+        "stats_raw": "Accepted on Apr 30 Fall 2026 American GPA 3.79",
+        "comm_raw": "Brandeis University Computer Science PhD Apr 30, 2026 Accepted on Apr 30 Total comments"
     },
     {
-        "u_raw": "Lehigh University",
-        "p_raw": "English Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 14 Feb",
-        "stats_raw": "Rejected on 14 Feb Fall 2026 American GPA 4.9",
-        "comm_raw": "Was surprised ngl",
-        "url_raw": "https://www.thegradcafe.com/result/1002139"
+        "u_raw": "Brandeis University",
+        "p_raw": "Computer Science PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 30",
+        "stats_raw": "Accepted on Apr 30 Fall 2026 American GPA 3.95",
+        "comm_raw": "Interview on the 27th, acceptance email on the 30th"
     },
     {
-        "u_raw": "Duke University",
-        "p_raw": "Pure Mathematics PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 5 Feb",
-        "stats_raw": "Accepted on 5 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002138"
+        "u_raw": "University of California, Riverside",
+        "p_raw": "Astronomy PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.46",
+        "comm_raw": "Email to check status update in portal."
     },
     {
-        "u_raw": "University of Southern California",
-        "p_raw": "Electrical And Computer Engineering PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002137"
+        "u_raw": "Boston University",
+        "p_raw": "Criminal Justice Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 17",
+        "stats_raw": "Accepted on Apr 17 Fall 2026 American GPA 3.79",
+        "comm_raw": "Tufts University School Psychology Masters Apr 30, 2026 Rejected on Apr 30 Total comments"
     },
     {
-        "u_raw": "Columbia University",
-        "p_raw": "Chemical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 15 Feb",
-        "stats_raw": "Accepted on 15 Feb Fall 2026 American GPA 3.6",
-        "comm_raw": "MS Express. Application Submitted November 23. Received an email saying application status update .",
-        "url_raw": "https://www.thegradcafe.com/result/1002136"
+        "u_raw": "Tufts University",
+        "p_raw": "School Psychology Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.70",
+        "comm_raw": "University of South Florida Integrative Biology Masters Apr 30, 2026 Wait listed on Apr 30 Total comments"
     },
     {
-        "u_raw": "University of Florida",
-        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Interview on 13 Jan",
-        "stats_raw": "Interview on 13 Jan Fall 2026 American GPA 3.85",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002135"
+        "u_raw": "University of South Florida",
+        "p_raw": "Integrative Biology Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Wait listed on Apr 30",
+        "stats_raw": "Wait listed on Apr 30 Fall 2026 International GPA 3.75",
+        "comm_raw": "I had applied back on Nov 28, as deadline was on 30. Applied after having an interview with PI who has opened the vacancy. I have one publication in Q2 journal as a first author. Do not know why they are taking forever to make decision. It was strange that I put into waitlist at first place, as my PI was super excited to recruit me (now on maternity leave). I tried to contact with Program Chair, and administrative assistant but the mail response is 10:1, they barely said I am in the waiting list but am yet to hear back from them like in position of waitlist I am right now. I had other offer from Southern Illinois University Carbondale, but I declined in May 20 thinking I will get this offer, but I am literally fed up, and living in a thread of hope."
     },
     {
-        "u_raw": "Massachusetts Institute of Technology (MIT)",
-        "p_raw": "Mechanical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Wait listed on 15 Feb",
-        "stats_raw": "Wait listed on 15 Feb Fall 2026 American GRE 165 GRE V 170 GRE AW 4.5 GPA 3.95",
-        "comm_raw": "Zoom interview with PI last week. Applied for GRFP.",
-        "url_raw": "https://www.thegradcafe.com/result/1002134"
+        "u_raw": "North Carolina State University",
+        "p_raw": "Mathematics PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.70",
+        "comm_raw": "I genuinely don't know what went wrong. I was led on by a potential advisor. Really sucks"
     },
     {
-        "u_raw": "Florida State University",
-        "p_raw": "Biomedical Sciences Graduate Program (BIMS) PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.85",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002133"
+        "u_raw": "McGill University",
+        "p_raw": "Chemistry Masters",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on May 02",
+        "stats_raw": "Accepted on May 02 Fall 2026 Other",
+        "comm_raw": "Domestic, out of province Email first, then letter posted on portal immediately after"
     },
     {
-        "u_raw": "The University of Texas at Austin",
-        "p_raw": "Counseling Psychology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 24 Jan",
-        "stats_raw": "Accepted on 24 Jan Fall 2026 American GPA 3.8",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002132"
+        "u_raw": "University of British Columbia",
+        "p_raw": "Materials Engineering PhD",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on Apr 29",
+        "stats_raw": "Accepted on Apr 29 Fall 2026 International",
+        "comm_raw": "Centre for Digital Media Master of Digital Media Masters May 02, 2026 Accepted on Mar 17 Total comments"
     },
     {
-        "u_raw": "University of Southern California",
-        "p_raw": "Electrical And Computer Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 12 Nov",
-        "stats_raw": "Accepted on 12 Nov Fall 2026 American GPA 3.70",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002131"
+        "u_raw": "Centre for Digital Media",
+        "p_raw": "Master of Digital Media Masters",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on Mar 17",
+        "stats_raw": "Accepted on Mar 17 Fall 2026 International",
+        "comm_raw": "Conditional Offer. Communication bundle"
     },
     {
-        "u_raw": "University of Massachusetts Amherst",
-        "p_raw": "Communication PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 15 Feb",
-        "stats_raw": "Rejected on 15 Feb Fall 2026 International",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002130"
+        "u_raw": "York University",
+        "p_raw": "Law PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 International GPA 4.00",
+        "comm_raw": "No notification, just saw status update when I randomly checked portal"
     },
     {
-        "u_raw": "University of Texas at Dallas",
-        "p_raw": "Speech-Language Pathology Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 10 Feb",
-        "stats_raw": "Accepted on 10 Feb Fall 2026 American GRE V 151 GRE AW 3.5 GPA 3.85",
-        "comm_raw": "Submitted my application 1/4 and my application status changed to admitted on 2/9. I have many volunteer hours with various populations and tried to write a strong essay to make up for any weak areas of application!",
-        "url_raw": "https://www.thegradcafe.com/result/1002129"
+        "u_raw": "University of Alabama at Huntsville",
+        "p_raw": "Atmospheric Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Accepted on Jan 23",
+        "stats_raw": "Accepted on Jan 23 Fall 2026 American GPA 3.94",
+        "comm_raw": "Waiting to hear about funding"
     },
     {
-        "u_raw": "Columbia University",
+        "u_raw": "Penn State University",
+        "p_raw": "Atmospheric Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American GPA 3.94",
+        "comm_raw": "Communication could have been better, but still could be worse. This was my first rejection notification from any program. Others remain silent..."
+    },
+    {
+        "u_raw": "Saint Louis University",
+        "p_raw": "Public Health Studies PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American",
+        "comm_raw": "health services research / health policy track"
+    },
+    {
+        "u_raw": "CUNY Graduate Center",
+        "p_raw": "Astrophysics Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Wait listed on May 01",
+        "stats_raw": "Wait listed on May 01 Fall 2026 American GPA 3.70",
+        "comm_raw": "Only masters program I applied to this cycle. Got rejected from all the PhD programs I applied to. Please let them know if you have other offers / are not going to attend. I really want this and it\u2019s my dream program ;("
+    },
+    {
+        "u_raw": "North Carolina State University",
         "p_raw": "Electrical Engineering Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 23 Dec",
-        "stats_raw": "Accepted on 23 Dec Fall 2026 American GPA 3.7",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002128"
+        "d_raw": "May 01, 2026",
+        "s_raw": "Accepted on Mar 31",
+        "stats_raw": "Accepted on Mar 31 Fall 2026 International GPA 3.30",
+        "comm_raw": "GRE and TOEFL waived."
     },
     {
-        "u_raw": "George Mason University",
-        "p_raw": "Industrial Organizational Psychology PhD",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Rejected on 15 Feb",
-        "stats_raw": "Rejected on 15 Feb Fall 2026 American GPA 3.77",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002127"
+        "u_raw": "Northwestern University",
+        "p_raw": "Media, Technology, and Society PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American GPA 3.98",
+        "comm_raw": "GPA Masters. Absolutely insulting for them to string along any applicant until May 1st. Zero notification beforehand, they didn't answer any emails sent to them about the process, nothing. Waiting almost six months for a decision to a school is an incredibly red flag, I would never apply here again. Terrible end to an even worse cycle 0.5a/0w/0i/5.5r"
     },
     {
-        "u_raw": "University of Oregon",
-        "p_raw": "Community and Regional Planning Masters",
-        "d_raw": "February 15, 2026",
-        "s_raw": "Accepted on 13 Feb",
-        "stats_raw": "Accepted on 13 Feb Fall 2026 American GPA 3.98",
-        "comm_raw": "No comment",
-        "url_raw": "https://www.thegradcafe.com/result/1002126"
+        "u_raw": "University of Western Ontario",
+        "p_raw": "Master of Computer Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 International GPA 3.85",
+        "comm_raw": "Simon Fraser University Anthropology Masters May 01, 2026 Wait listed on Apr 29 Total comments"
+    },
+    {
+        "u_raw": "Simon Fraser University",
+        "p_raw": "Anthropology Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Wait listed on Apr 29",
+        "stats_raw": "Wait listed on Apr 29 Fall 2026 International",
+        "comm_raw": "University of Toronto Masters of Visual Studies (studio) MFA May 01, 2026 Rejected on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "University of Toronto",
+        "p_raw": "Masters of Visual Studies (studio) MFA",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 Other GPA 3.80",
+        "comm_raw": "Not a high GPA but still shocked at the rejection. Lots of experience worldwide with group and solo exhibitions in galleries. 3 residencies and lots of relevant work experience. Got an email saying to check the portal and there was a rejection letter."
+    },
+    {
+        "u_raw": "Northeastern University",
+        "p_raw": "Criminology and Criminal Justice Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 30",
+        "stats_raw": "Accepted on Apr 30 Fall 2026 American GPA 3.79",
+        "comm_raw": "Brandeis University Computer Science PhD Apr 30, 2026 Accepted on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "Brandeis University",
+        "p_raw": "Computer Science PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 30",
+        "stats_raw": "Accepted on Apr 30 Fall 2026 American GPA 3.95",
+        "comm_raw": "Interview on the 27th, acceptance email on the 30th"
+    },
+    {
+        "u_raw": "University of California, Riverside",
+        "p_raw": "Astronomy PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.46",
+        "comm_raw": "Email to check status update in portal."
+    },
+    {
+        "u_raw": "Boston University",
+        "p_raw": "Criminal Justice Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 17",
+        "stats_raw": "Accepted on Apr 17 Fall 2026 American GPA 3.79",
+        "comm_raw": "Tufts University School Psychology Masters Apr 30, 2026 Rejected on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "Tufts University",
+        "p_raw": "School Psychology Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.70",
+        "comm_raw": "University of South Florida Integrative Biology Masters Apr 30, 2026 Wait listed on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "University of South Florida",
+        "p_raw": "Integrative Biology Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Wait listed on Apr 30",
+        "stats_raw": "Wait listed on Apr 30 Fall 2026 International GPA 3.75",
+        "comm_raw": "I had applied back on Nov 28, as deadline was on 30. Applied after having an interview with PI who has opened the vacancy. I have one publication in Q2 journal as a first author. Do not know why they are taking forever to make decision. It was strange that I put into waitlist at first place, as my PI was super excited to recruit me (now on maternity leave). I tried to contact with Program Chair, and administrative assistant but the mail response is 10:1, they barely said I am in the waiting list but am yet to hear back from them like in position of waitlist I am right now. I had other offer from Southern Illinois University Carbondale, but I declined in May 20 thinking I will get this offer, but I am literally fed up, and living in a thread of hope."
+    },
+    {
+        "u_raw": "North Carolina State University",
+        "p_raw": "Mathematics PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.70",
+        "comm_raw": "I genuinely don't know what went wrong. I was led on by a potential advisor. Really sucks"
+    },
+    {
+        "u_raw": "McGill University",
+        "p_raw": "Chemistry Masters",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on May 02",
+        "stats_raw": "Accepted on May 02 Fall 2026 Other",
+        "comm_raw": "Domestic, out of province Email first, then letter posted on portal immediately after"
+    },
+    {
+        "u_raw": "University of British Columbia",
+        "p_raw": "Materials Engineering PhD",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on Apr 29",
+        "stats_raw": "Accepted on Apr 29 Fall 2026 International",
+        "comm_raw": "Centre for Digital Media Master of Digital Media Masters May 02, 2026 Accepted on Mar 17 Total comments"
+    },
+    {
+        "u_raw": "Centre for Digital Media",
+        "p_raw": "Master of Digital Media Masters",
+        "d_raw": "May 02, 2026",
+        "s_raw": "Accepted on Mar 17",
+        "stats_raw": "Accepted on Mar 17 Fall 2026 International",
+        "comm_raw": "Conditional Offer. Communication bundle"
+    },
+    {
+        "u_raw": "York University",
+        "p_raw": "Law PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 International GPA 4.00",
+        "comm_raw": "No notification, just saw status update when I randomly checked portal"
+    },
+    {
+        "u_raw": "University of Alabama at Huntsville",
+        "p_raw": "Atmospheric Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Accepted on Jan 23",
+        "stats_raw": "Accepted on Jan 23 Fall 2026 American GPA 3.94",
+        "comm_raw": "Waiting to hear about funding"
+    },
+    {
+        "u_raw": "Penn State University",
+        "p_raw": "Atmospheric Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American GPA 3.94",
+        "comm_raw": "Communication could have been better, but still could be worse. This was my first rejection notification from any program. Others remain silent..."
+    },
+    {
+        "u_raw": "Saint Louis University",
+        "p_raw": "Public Health Studies PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American",
+        "comm_raw": "health services research / health policy track"
+    },
+    {
+        "u_raw": "CUNY Graduate Center",
+        "p_raw": "Astrophysics Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Wait listed on May 01",
+        "stats_raw": "Wait listed on May 01 Fall 2026 American GPA 3.70",
+        "comm_raw": "Only masters program I applied to this cycle. Got rejected from all the PhD programs I applied to. Please let them know if you have other offers / are not going to attend. I really want this and it\u2019s my dream program ;("
+    },
+    {
+        "u_raw": "North Carolina State University",
+        "p_raw": "Electrical Engineering Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Accepted on Mar 31",
+        "stats_raw": "Accepted on Mar 31 Fall 2026 International GPA 3.30",
+        "comm_raw": "GRE and TOEFL waived."
+    },
+    {
+        "u_raw": "Northwestern University",
+        "p_raw": "Media, Technology, and Society PhD",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 American GPA 3.98",
+        "comm_raw": "GPA Masters. Absolutely insulting for them to string along any applicant until May 1st. Zero notification beforehand, they didn't answer any emails sent to them about the process, nothing. Waiting almost six months for a decision to a school is an incredibly red flag, I would never apply here again. Terrible end to an even worse cycle 0.5a/0w/0i/5.5r"
+    },
+    {
+        "u_raw": "University of Western Ontario",
+        "p_raw": "Master of Computer Science Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on May 01",
+        "stats_raw": "Rejected on May 01 Fall 2026 International GPA 3.85",
+        "comm_raw": "Simon Fraser University Anthropology Masters May 01, 2026 Wait listed on Apr 29 Total comments"
+    },
+    {
+        "u_raw": "Simon Fraser University",
+        "p_raw": "Anthropology Masters",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Wait listed on Apr 29",
+        "stats_raw": "Wait listed on Apr 29 Fall 2026 International",
+        "comm_raw": "University of Toronto Masters of Visual Studies (studio) MFA May 01, 2026 Rejected on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "University of Toronto",
+        "p_raw": "Masters of Visual Studies (studio) MFA",
+        "d_raw": "May 01, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 Other GPA 3.80",
+        "comm_raw": "Not a high GPA but still shocked at the rejection. Lots of experience worldwide with group and solo exhibitions in galleries. 3 residencies and lots of relevant work experience. Got an email saying to check the portal and there was a rejection letter."
+    },
+    {
+        "u_raw": "Northeastern University",
+        "p_raw": "Criminology and Criminal Justice Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 30",
+        "stats_raw": "Accepted on Apr 30 Fall 2026 American GPA 3.79",
+        "comm_raw": "Brandeis University Computer Science PhD Apr 30, 2026 Accepted on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "Brandeis University",
+        "p_raw": "Computer Science PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 30",
+        "stats_raw": "Accepted on Apr 30 Fall 2026 American GPA 3.95",
+        "comm_raw": "Interview on the 27th, acceptance email on the 30th"
+    },
+    {
+        "u_raw": "University of California, Riverside",
+        "p_raw": "Astronomy PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.46",
+        "comm_raw": "Email to check status update in portal."
+    },
+    {
+        "u_raw": "Boston University",
+        "p_raw": "Criminal Justice Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Accepted on Apr 17",
+        "stats_raw": "Accepted on Apr 17 Fall 2026 American GPA 3.79",
+        "comm_raw": "Tufts University School Psychology Masters Apr 30, 2026 Rejected on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "Tufts University",
+        "p_raw": "School Psychology Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.70",
+        "comm_raw": "University of South Florida Integrative Biology Masters Apr 30, 2026 Wait listed on Apr 30 Total comments"
+    },
+    {
+        "u_raw": "University of South Florida",
+        "p_raw": "Integrative Biology Masters",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Wait listed on Apr 30",
+        "stats_raw": "Wait listed on Apr 30 Fall 2026 International GPA 3.75",
+        "comm_raw": "I had applied back on Nov 28, as deadline was on 30. Applied after having an interview with PI who has opened the vacancy. I have one publication in Q2 journal as a first author. Do not know why they are taking forever to make decision. It was strange that I put into waitlist at first place, as my PI was super excited to recruit me (now on maternity leave). I tried to contact with Program Chair, and administrative assistant but the mail response is 10:1, they barely said I am in the waiting list but am yet to hear back from them like in position of waitlist I am right now. I had other offer from Southern Illinois University Carbondale, but I declined in May 20 thinking I will get this offer, but I am literally fed up, and living in a thread of hope."
+    },
+    {
+        "u_raw": "North Carolina State University",
+        "p_raw": "Mathematics PhD",
+        "d_raw": "Apr 30, 2026",
+        "s_raw": "Rejected on Apr 30",
+        "stats_raw": "Rejected on Apr 30 Fall 2026 American GPA 3.70",
+        "comm_raw": "I genuinely don't know what went wrong. I was led on by a potential advisor. Really sucks"
     }
 ]
