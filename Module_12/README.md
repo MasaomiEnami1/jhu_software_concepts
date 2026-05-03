@@ -21,3 +21,11 @@ This program implements a two-layer neural network from scratch using purely Num
 * Console printouts detailing the dataset size, preprocessing steps, and training progress (every 100 epochs).
 * A file named `training.log` capturing the full console output.
 * A file named `mse_curve.png` representing the training vs testing error over time.
+
+Machine Learning & Preprocessing (Module 12)
+
+    Audit Trail: Integrated a comprehensive logging system that outputs data lifecycle statistics (original vs. filtered row counts) to a dedicated training.log.
+
+    Data Leakage Prevention: Re-engineered the scaling pipeline to perform the Train-Test Split before normalization. Parameters for StandardScaler are now derived strictly from Xtrain​ to prevent information leakage from the test set.
+
+    Custom Neural Network: Developed a 2-layer Neural Network from scratch using only NumPy, featuring Sigmoid activation, backpropagation, and Early Stopping.
