@@ -1,0 +1,32 @@
+# Portfolio & Web
+flask
+jinja2
+playwright
+beautifulsoup4
+cloudscraper
+requests
+
+# Data Science & Engineering
+pandas
+numpy
+openpyxl
+scikit-learn
+scipy
+
+# Visualization
+plotly
+dash
+matplotlib
+seaborn
+
+# Database & Cloud
+boto3
+psycopg2-binary
+
+# Neural Networks
+torch
+
+# Testing & Quality
+pytest
+pytest-cov
+pylint

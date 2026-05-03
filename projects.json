@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": "Module 1: Professional Portfolio Architecture",
+    "overview": "Established a responsive personal website using Flask and Jinja2, focusing on a clean UI/UX for technical presentations.",
+    "github_url": "https://github.com/MasaomiEnami1/jhu_software_concepts/tree/main/Module_1",
+    "learned": "I implemented a dynamic templating system to separate content from presentation, a core principle in scalable software design."
+  },
+  {
+    "id": 2,
+    "title": "Module 2: High-Volume Web Scraping",
+    "overview": "Built a high-concurrency browser automation scraper using Playwright to collect 30,000+ records from The Grad Cafe.",
+    "github_url": "https://github.com/MasaomiEnami1/jhu_software_concepts/tree/main/Module_2",
+    "learned": "I mastered asynchronous execution and bypassed advanced anti-bot mitigation strategies to ensure data scale and integrity."
+  },
+  {
+    "id": 3,
+    "title": "Module 3: Relational Database Design",
+    "overview": "Designed and queried normalized SQL databases to handle complex relational datasets and analytical reporting.",
+    "github_url": "https://github.com/MasaomiEnami1/jhu_software_concepts/tree/main/Module_3",
+    "learned": "I learned to write optimized JOIN queries and manage schema constraints to maintain data consistency in multi-user systems."
+  },
+  {
+    "id": 4,
+    "title": "Module 4: Software Assurance & Testing",
+    "overview": "Implemented a comprehensive test suite using Pytest, achieving 100% branch coverage across core modules.",
+    "github_url": "https://github.com/MasaomiEnami1/jhu_software_concepts/tree/main/Module_4",
+    "learned": "I adopted a test-driven development (TDD) mindset, using markers and coverage reports to quantify software reliability."
+  },
+  {
+    "id": 5,
+    "title": "Module 5: Documentation & Software Standards",
+    "overview": "Developed automated documentation pipelines and adhered to PEP 8 standards using Pylint and Sphinx.",
+    "github_url": "https://github.com/MasaomiEnami1/jhu_software_concepts/tree/main/Module_5",
+    "learned": "I realized that code is read more often than it is written, making standardized docstrings and automated documentation essential."
+  },
+  {
+    "id": 6,
+    "title": "Module 6: Dockerized Microservices",
+    "overview": "Architected a multi-container environment with PostgreSQL, RabbitMQ, and Python workers using Docker Compose.",
+    "github_url": "https://github.com/MasaomiEnami1/jhu_software_concepts/tree/main/Module_6",
+    "learned": "I mastered container orchestration and learned to solve deployment race conditions in distributed systems."
+  },
+  {
+    "id": 7,
+    "title": "Module 7: AWS Cloud Integration",
+    "overview": "Integrated Python applications with AWS S3 using Boto3, focusing on secure IAM credential management.",
+    "github_url": "https://github.com/MasaomiEnami1/jhu_software_concepts/tree/main/Module_7",
+    "learned": "I learned the security implications of cloud storage and how to manage object-based data programmatically."
+  },
+  {
+    "id": 8,
+    "title": "Module 8: Data Engineering Pipelines",
+    "overview": "Built robust data cleaning pipelines in Pandas to handle outliers, missing values, and type conversions.",
+    "github_url": "https://github.com/MasaomiEnami1/jhu_software_concepts/tree/main/Module_8",
+    "learned": "I learned that data preparation is the most critical stage of the ML pipeline, requiring rigorous validation and outlier detection."
+  },
+  {
+    "id": 9,
+    "title": "Module 9: Unsupervised Learning & Clustering",
+    "overview": "Applied K-Means clustering to identify patterns in high-dimensional datasets, optimized via the Elbow Method.",
+    "github_url": "https://github.com/MasaomiEnami1/jhu_software_concepts/tree/main/Module_9",
+    "learned": "I deepened my understanding of hyperparameter tuning and the math behind inertia-based cluster optimization."
+  },
+  {
+    "id": 10,
+    "title": "Module 10: Interactive Data Dashboards",
+    "overview": "Created a responsive analytical dashboard using Plotly and Dash to visualize complex price-to-feature relationships.",
+    "github_url": "https://github.com/MasaomiEnami1/jhu_software_concepts/tree/main/Module_10",
+    "learned": "I learned to translate complex data findings into interactive visual narratives for non-technical stakeholders."
+  },
+  {
+    "id": 11,
+    "title": "Module 11: Advanced Preprocessing",
+    "overview": "Implemented specialized feature engineering techniques, including encoding, scaling, and dimensionality assessment.",
+    "github_url": "https://github.com/MasaomiEnami1/jhu_software_concepts/tree/main/Module_11",
+    "learned": "I gained experience in optimizing feature sets to improve model performance and reduce computational overhead."
+  },
+  {
+    "id": 12,
+    "title": "Module 12: Neural Networks from Scratch",
+    "overview": "Developed a two-layer neural network using only NumPy, implementing manual backpropagation and weight updates.",
+    "github_url": "https://github.com/MasaomiEnami1/jhu_software_concepts/tree/main/Module_12",
+    "learned": "Writing the backpropagation math manually solidified my understanding of how gradients flow through a network."
+  },
+  {
+    "id": 13,
+    "title": "Module 13: Model Deployment & LLMs",
+    "overview": "Deployed a real-time inference service for admissions prediction using Flask and modern PyTorch-based model weights.",
+    "github_url": "https://github.com/MasaomiEnami1/jhu_software_concepts/tree/main/Module_13",
+    "learned": "I learned the logistical pipeline required to move a model from a training notebook to a production-ready API."
+  }
+]
