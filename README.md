@@ -63,9 +63,9 @@ Module 7 – AWS Integration Assignment
 
     Grader Comment: Boto3 implementation does not use IAM credentials correctly; output file misnamed.
 
-    Revision Made: Updated the boto3 session management to utilize environment variables/profiles instead of hardcoded logic and renamed the output file to applicant_data_SM.json.
-
-    Improvement: Adheres to AWS security best practices (Principle of Least Privilege) and project-specific naming conventions.
+    Revision Made: Refactored S3 fetch logic to utilize the built-in Boto3 Credential Provider Chain. Hardcoded the destination filename to applicant_data_SM.json to ensure compliance with data pipeline requirements.
+    
+    Improvement: This change removes the risks associated with manual credential handling and ensures downstream scripts have a consistent filename to process.
 
 Module 8 – Data Engineering Assignment
 
