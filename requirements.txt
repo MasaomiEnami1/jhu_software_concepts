@@ -12,6 +12,7 @@ numpy
 openpyxl
 scikit-learn
 scipy
+python-dotenv
 
 # Visualization
 plotly

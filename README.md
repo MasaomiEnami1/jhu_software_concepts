@@ -34,8 +34,8 @@ The repository is structured by modules, each representing a specific domain of 
 
     requirements.txt – Global Project Dependencies
 
-Grader Corrections & Revision Log
-Module 2 – Web Scraping Assignment
+Grader Corrections & Revision Log:
+1. Module 2 – Web Scraping Assignment
 
     Grader Comment: Submission does not clearly show that at least 30,000 entries were collected.
 
@@ -64,7 +64,7 @@ Module 7 – AWS Integration Assignment
     Grader Comment: Boto3 implementation does not use IAM credentials correctly; output file misnamed.
 
     Revision Made: Refactored S3 fetch logic to utilize the built-in Boto3 Credential Provider Chain. Hardcoded the destination filename to applicant_data_SM.json to ensure compliance with data pipeline requirements.
-    
+
     Improvement: This change removes the risks associated with manual credential handling and ensures downstream scripts have a consistent filename to process.
 
 Module 8 – Data Engineering Assignment
