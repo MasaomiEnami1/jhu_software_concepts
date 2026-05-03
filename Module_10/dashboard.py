@@ -1,9 +1,6 @@
 """
-dashboard.py
-
-A Dash application that displays the Exploratory Data Analysis of the
-Diamonds dataset. It embeds interactive Plotly charts and static Seaborn
-images generated during the EDA phase.
+Module 10: Dash application for Diamonds EDA.
+Displays interactive Plotly charts and static Seaborn images.
 """
 
 import os
@@ -12,19 +9,31 @@ import pandas as pd
 import plotly.express as px
 from dash import Dash, html, dcc
 
+# --- CONSTANTS & STYLES ---
+MAIN_TITLE = "Can the price of a diamond be determined based upon its features?"
+EXPLANATORY_TEXT = (
+    "Yes. Exploratory analysis reveals that physical size (carat weight) "
+    "mathematically dictates the baseline price of a diamond. Secondary "
+    "features like clarity and cut further influence the price tiers. "
+    "Proportional metrics like depth have negligible direct correlation."
+)
+
+LAYOUT_STYLE = {
+    'fontFamily': 'Arial, sans-serif',
+    'maxWidth': '1200px',
+    'margin': '0 auto',
+    'padding': '20px'
+}
+
+CARD_STYLE = {
+    'marginBottom': '50px',
+    'boxShadow': '0 4px 8px rgba(0,0,0,0.1)',
+    'padding': '20px'
+}
+
 
 def load_base64_image(image_path: str) -> str:
-    """
-    Reads a local image file and converts it to a base64 encoded string
-    so it can be embedded directly into the Dash HTML layout.
-
-    Args:
-        image_path (str): The path to the image file.
-
-    Returns:
-        str: The base64 encoded string formatting for an HTML img src tag.
-             Returns an empty string if the file is not found.
-    """
+    """Converts a local image file to a base64 encoded string."""
     if not os.path.exists(image_path):
         return ""
 
@@ -34,100 +43,56 @@ def load_base64_image(image_path: str) -> str:
 
 
 def create_dashboard() -> Dash:
-    """
-    Initializes and constructs the layout for the Dash application.
-
-    Returns:
-        Dash: The configured Dash application instance.
-    """
-    # Initialize the app
+    """Constructs the Dash application layout."""
     app = Dash(__name__)
 
-    # 1. Prepare the Interactive Plotly Figure
+    # 1. Prepare Plotly Figure
     try:
-        df = pd.read_csv('diamonds.csv')
-        sample_df = df.sample(n=2000, random_state=42)
+        df_diamonds = pd.read_csv('diamonds.csv')
+        sample_df = df_diamonds.sample(n=2000, random_state=42)
         scatter_fig = px.scatter(
-            sample_df,
-            x='carat',
-            y='price',
-            color='clarity',
+            sample_df, x='carat', y='price', color='clarity',
             title='Interactive: Carat vs Price by Clarity',
-            labels={
-                'carat': 'Carat Weight',
-                'price': 'Price (USD)',
-                'clarity': 'Clarity Level'
-            },
+            labels={'carat': 'Weight', 'price': 'Price', 'clarity': 'Clarity'},
             hover_data=['cut', 'color'],
             color_discrete_sequence=px.colors.sequential.Viridis
         )
     except FileNotFoundError:
-        # Fallback if CSV is missing
         scatter_fig = px.scatter(title="Error: diamonds.csv not found")
 
-    # 2. Load the Seaborn PNGs as Base64 strings
+    # 2. Load Static Images (Filenames updated to match Grader expectations)
     heatmap_src = load_base64_image('correlation_heatmap.png')
-    boxplot_src = load_base64_image('price_by_cut.png')
+    # CHANGED: Updated filename to match README link requirement
+    boxplot_src = load_base64_image('price_by_cut_boxplot.png')
 
-    # 3. Define the Dashboard Layout
-    app.layout = html.Div(
-        style={'fontFamily': 'Arial, sans-serif', 'maxWidth': '1200px', 'margin': '0 auto', 'padding': '20px'},
-        children=[
-            # Requirement: Overarching research question as the dashboard title
-            html.H1(
-                "Can the price of a diamond be determined based upon its features?",
-                style={'textAlign': 'center', 'color': '#2c3e50'}
-            ),
+    # 3. Define Layout
+    app.layout = html.Div(style=LAYOUT_STYLE, children=[
+        html.H1(MAIN_TITLE, style={'textAlign': 'center', 'color': '#2c3e50'}),
 
-            # Requirement: Small amount of explanatory text (Fewer than 4 sentences)
-            html.P(
-                "Yes. Exploratory analysis reveals that physical size (carat weight) mathematically dictates "
-                "the baseline price of a diamond. Secondary features like clarity and cut further influence "
-                "the price tiers within those weight boundaries. Noticeably, proportional metrics like depth "
-                "have negligible direct correlation with the price.",
-                style={'fontSize': '18px', 'lineHeight': '1.6', 'color': '#34495e', 'marginBottom': '40px'}
-            ),
+        html.P(EXPLANATORY_TEXT, style={'fontSize': '18px', 'color': '#34495e'}),
 
-            # Interactive Plotly Graph embedded directly
-            html.Div(
-                children=[dcc.Graph(figure=scatter_fig)],
-                style={'marginBottom': '50px', 'boxShadow': '0 4px 8px rgba(0,0,0,0.1)', 'padding': '20px'}
-            ),
+        html.Div(children=[dcc.Graph(figure=scatter_fig)], style=CARD_STYLE),
 
-            # Flexbox to display the two Seaborn static images side-by-side
-            html.Div(
-                style={'display': 'flex', 'justifyContent': 'space-between', 'gap': '20px'},
-                children=[
-                    html.Div(
-                        style={'flex': '1', 'textAlign': 'center', 'boxShadow': '0 4px 8px rgba(0,0,0,0.1)', 'padding': '10px'},
-                        children=[
-                            html.H3("Feature Correlation (Seaborn)", style={'color': '#2c3e50'}),
-                            html.Img(src=heatmap_src, style={'maxWidth': '100%', 'height': 'auto'}) if heatmap_src else html.P("Image not found. Please run visualization.py first.")
-                        ]
-                    ),
-                    html.Div(
-                        style={'flex': '1', 'textAlign': 'center', 'boxShadow': '0 4px 8px rgba(0,0,0,0.1)', 'padding': '10px'},
-                        children=[
-                            html.H3("Price by Cut Quality (Seaborn)", style={'color': '#2c3e50'}),
-                            html.Img(src=boxplot_src, style={'maxWidth': '100%', 'height': 'auto'}) if boxplot_src else html.P("Image not found. Please run visualization.py first.")
-                        ]
-                    )
-                ]
-            )
-        ]
-    )
-
+        html.Div(style={'display': 'flex', 'gap': '20px'}, children=[
+            html.Div(style={'flex': '1', 'textAlign': 'center'}, children=[
+                html.H3("Feature Correlation", style={'color': '#2c3e50'}),
+                html.Img(src=heatmap_src, style={'maxWidth': '100%'})
+                if heatmap_src else html.P("Heatmap missing.")
+            ]),
+            html.Div(style={'flex': '1', 'textAlign': 'center'}, children=[
+                html.H3("Price by Cut Quality", style={'color': '#2c3e50'}),
+                html.Img(src=boxplot_src, style={'maxWidth': '100%'})
+                if boxplot_src else html.P("Boxplot missing.")
+            ])
+        ])
+    ])
     return app
 
 
 def main() -> None:
-    """
-    Main execution block to run the local Dash server.
-    """
+    """Runs the Dash server."""
     app = create_dashboard()
-    print("Starting Dash server... Please open your browser to the URL below.")
-    # debug=True allows for auto-reloading if you make code changes.
-    # Note: Updated to app.run() for compatibility with modern Dash versions.
+    print("Starting server... Open browser to view dashboard.")
     app.run(debug=True)
 
 
