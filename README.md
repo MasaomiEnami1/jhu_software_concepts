@@ -98,3 +98,18 @@ Module 12 – Neural Networks Assignment
     Revision Made: Added explicit logging of dataframe shapes (before/after filtering) and included a technical write-up in the code comments explaining the necessity of using training-set medians to prevent leakage.
 
     Improvement: Increases transparency in data preprocessing and demonstrates theoretical competency in machine learning discipline.
+
+4. Final Reflection on Semester Growth
+
+The Most Challenging Module: Module 6 (Dockerized Microservices)
+
+Module 6 presented the most significant architectural hurdle of the semester. While writing Python logic is straightforward, orchestrating a distributed system involving PostgreSQL, RabbitMQ, and multiple worker services required a fundamental shift in mindset. The most difficult aspect was debugging the race conditions during the initial container spin-up—specifically ensuring the database schema was fully instantiated before the web service attempted to create views. Resolving this required a deep dive into Docker’s execution order and shell-scripting workarounds, which solidified my understanding of system reliability.
+The Module Reflecting My Strongest Work: Module 13 (Neural Network Deployment)
+
+Module 13 is the pinnacle of my semester’s work because it synthesized every skill I acquired. It wasn't just about the machine learning math; it was about the logistical pipeline required to serve that math to a user. Integrating a custom-built neural network with a Flask-based inference API demonstrated my ability to build "end-to-end" systems. The implementation was clean, the testing was thorough, and it represented the exact type of computational engineering I intend to pursue in my future research.
+Skills Most Improved: Software Assurance and Code Quality
+
+Coming into this course, I viewed code primarily as a means to an end. My understanding of Software Assurance has improved most significantly. Adopting a strict 10/10 Pylint standard and achieving 100% test coverage via Pytest changed my perspective on "finished" code. I no longer just ask, "Does it run?"; I now ask, "Is it maintainable, is it documented, and is it resilient to edge cases?" The shift from writing scripts to building verified software packages is the most valuable skill I am taking away from this course.
+Evolution of My Understanding of Python
+
+At the beginning of the semester, I viewed Python as a high-level tool primarily for data analysis and quick calculations. My understanding has evolved to see Python as a robust, industrial-grade ecosystem capable of handling asynchronous concurrency, microservice orchestration, and complex cloud integrations. I now see Python not just as a language, but as a framework for solving large-scale logic puzzles and building the connective tissue for modern technical infrastructure.

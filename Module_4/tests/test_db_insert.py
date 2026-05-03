@@ -2,6 +2,7 @@ import pytest
 from unittest.mock import MagicMock, patch
 from src.app import app, get_db_connection, get_val
 
+pytestmark = pytest.mark.assignment4
 @pytest.mark.db
 def test_database_connection_success():
     """Test that the app connects to the DB correctly."""

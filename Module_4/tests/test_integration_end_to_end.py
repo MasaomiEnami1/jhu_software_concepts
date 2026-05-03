@@ -2,6 +2,7 @@ import pytest
 from unittest.mock import MagicMock, patch, mock_open
 import sys, os, importlib, runpy
 
+pytestmark = pytest.mark.assignment4
 def wipe():
     for m in ['src.app', 'src.load_data', 'src.query_data', 'src.scrapy']:
         sys.modules.pop(m, None)

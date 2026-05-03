@@ -2,6 +2,7 @@ import pytest
 from unittest.mock import patch
 from src.app import app
 
+pytestmark = pytest.mark.assignment4
 # --- SETUP ---
 @pytest.fixture
 def client():
